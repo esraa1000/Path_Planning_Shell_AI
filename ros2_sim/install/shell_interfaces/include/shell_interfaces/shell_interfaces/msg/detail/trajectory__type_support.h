@@ -1,0 +1,1 @@
+/home/esraamustafa/Path_Planning_Shell_AI/ros2_sim/build/shell_interfaces/rosidl_generator_c/shell_interfaces/msg/detail/trajectory__type_support.h

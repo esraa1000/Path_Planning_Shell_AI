@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "shell_interfaces__py",
+		"source" : "/home/esraamustafa/Path_Planning_Shell_AI/ros2_sim/build/shell_interfaces/shell_interfaces__py"
+	}
+}

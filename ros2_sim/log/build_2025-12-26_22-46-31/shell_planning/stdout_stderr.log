@@ -1,0 +1,22 @@
+running develop
+running egg_info
+creating shell_planning.egg-info
+writing shell_planning.egg-info/PKG-INFO
+writing dependency_links to shell_planning.egg-info/dependency_links.txt
+writing entry points to shell_planning.egg-info/entry_points.txt
+writing requirements to shell_planning.egg-info/requires.txt
+writing top-level names to shell_planning.egg-info/top_level.txt
+writing manifest file 'shell_planning.egg-info/SOURCES.txt'
+reading manifest file 'shell_planning.egg-info/SOURCES.txt'
+writing manifest file 'shell_planning.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/esraamustafa/Path_Planning_Shell_AI/ros2_sim/install/shell_planning/lib/python3.10/site-packages/shell-planning.egg-link (link to .)
+Installing global_planner script to /home/esraamustafa/Path_Planning_Shell_AI/ros2_sim/install/shell_planning/lib/shell_planning
+
+Installed /home/esraamustafa/Path_Planning_Shell_AI/ros2_sim/build/shell_planning
+running symlink_data
+creating /home/esraamustafa/Path_Planning_Shell_AI/ros2_sim/install/shell_planning/share/ament_index
+creating /home/esraamustafa/Path_Planning_Shell_AI/ros2_sim/install/shell_planning/share/ament_index/resource_index
+creating /home/esraamustafa/Path_Planning_Shell_AI/ros2_sim/install/shell_planning/share/ament_index/resource_index/packages
+symbolically linking /home/esraamustafa/Path_Planning_Shell_AI/ros2_sim/build/shell_planning/resource/shell_planning -> /home/esraamustafa/Path_Planning_Shell_AI/ros2_sim/install/shell_planning/share/ament_index/resource_index/packages
+symbolically linking /home/esraamustafa/Path_Planning_Shell_AI/ros2_sim/build/shell_planning/package.xml -> /home/esraamustafa/Path_Planning_Shell_AI/ros2_sim/install/shell_planning/share/shell_planning

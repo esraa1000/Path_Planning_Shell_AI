@@ -1,0 +1,13 @@
+package.xml
+setup.cfg
+setup.py
+resource/shell_planning
+shell_planning/__init__.py
+shell_planning/global_planner.py
+shell_planning.egg-info/PKG-INFO
+shell_planning.egg-info/SOURCES.txt
+shell_planning.egg-info/dependency_links.txt
+shell_planning.egg-info/entry_points.txt
+shell_planning.egg-info/requires.txt
+shell_planning.egg-info/top_level.txt
+shell_planning.egg-info/zip-safe

@@ -1,0 +1,13 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from shell_interfaces/msg/Trajectory.msg
+// generated code does not contain a copyright notice
+
+#include "shell_interfaces/msg/TrajectoryPoint.idl"
+
+module shell_interfaces {
+  module msg {
+    struct Trajectory {
+      sequence<shell_interfaces::msg::TrajectoryPoint> points;
+    };
+  };
+};

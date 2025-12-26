@@ -1,0 +1,17 @@
+running develop
+running egg_info
+writing shell_test_nodes.egg-info/PKG-INFO
+writing dependency_links to shell_test_nodes.egg-info/dependency_links.txt
+writing entry points to shell_test_nodes.egg-info/entry_points.txt
+writing requirements to shell_test_nodes.egg-info/requires.txt
+writing top-level names to shell_test_nodes.egg-info/top_level.txt
+reading manifest file 'shell_test_nodes.egg-info/SOURCES.txt'
+writing manifest file 'shell_test_nodes.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/esraamustafa/Path_Planning_Shell_AI/ros2_sim/install/shell_test_nodes/lib/python3.10/site-packages/shell-test-nodes.egg-link (link to .)
+Installing fake_control script to /home/esraamustafa/Path_Planning_Shell_AI/ros2_sim/install/shell_test_nodes/lib/shell_test_nodes
+Installing fake_localization script to /home/esraamustafa/Path_Planning_Shell_AI/ros2_sim/install/shell_test_nodes/lib/shell_test_nodes
+Installing fake_perception script to /home/esraamustafa/Path_Planning_Shell_AI/ros2_sim/install/shell_test_nodes/lib/shell_test_nodes
+Installing fake_supervisor script to /home/esraamustafa/Path_Planning_Shell_AI/ros2_sim/install/shell_test_nodes/lib/shell_test_nodes
+
+Installed /home/esraamustafa/Path_Planning_Shell_AI/ros2_sim/build/shell_test_nodes

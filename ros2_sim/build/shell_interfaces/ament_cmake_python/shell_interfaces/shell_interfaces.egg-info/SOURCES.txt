@@ -1,0 +1,9 @@
+setup.py
+shell_interfaces/__init__.py
+shell_interfaces.egg-info/PKG-INFO
+shell_interfaces.egg-info/SOURCES.txt
+shell_interfaces.egg-info/dependency_links.txt
+shell_interfaces.egg-info/top_level.txt
+shell_interfaces/msg/__init__.py
+shell_interfaces/msg/_trajectory.py
+shell_interfaces/msg/_trajectory_point.py

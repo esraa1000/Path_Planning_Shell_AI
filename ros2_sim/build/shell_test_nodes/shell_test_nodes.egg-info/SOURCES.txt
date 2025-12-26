@@ -1,0 +1,14 @@
+setup.cfg
+setup.py
+shell_test_nodes/__init__.py
+shell_test_nodes/fake_control.py
+shell_test_nodes/fake_localization.py
+shell_test_nodes/fake_perception.py
+shell_test_nodes/fake_supervisor.py
+shell_test_nodes.egg-info/PKG-INFO
+shell_test_nodes.egg-info/SOURCES.txt
+shell_test_nodes.egg-info/dependency_links.txt
+shell_test_nodes.egg-info/entry_points.txt
+shell_test_nodes.egg-info/requires.txt
+shell_test_nodes.egg-info/top_level.txt
+shell_test_nodes.egg-info/zip-safe

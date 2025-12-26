@@ -1,0 +1,19 @@
+[0.668s] Invoking command in '/home/esraamustafa/Path_Planning_Shell_AI/ros2_sim/build/shell_test_nodes': PYTHONPATH=/home/esraamustafa/Path_Planning_Shell_AI/ros2_sim/build/shell_test_nodes/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/esraamustafa/Path_Planning_Shell_AI/ros2_sim/install/shell_test_nodes/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/esraamustafa/Path_Planning_Shell_AI/ros2_sim/build/shell_test_nodes/build --no-deps
+[0.801s] running develop
+[0.877s] running egg_info
+[0.877s] writing shell_test_nodes.egg-info/PKG-INFO
+[0.877s] writing dependency_links to shell_test_nodes.egg-info/dependency_links.txt
+[0.877s] writing entry points to shell_test_nodes.egg-info/entry_points.txt
+[0.877s] writing requirements to shell_test_nodes.egg-info/requires.txt
+[0.877s] writing top-level names to shell_test_nodes.egg-info/top_level.txt
+[0.878s] reading manifest file 'shell_test_nodes.egg-info/SOURCES.txt'
+[0.879s] writing manifest file 'shell_test_nodes.egg-info/SOURCES.txt'
+[0.880s] running build_ext
+[0.880s] Creating /home/esraamustafa/Path_Planning_Shell_AI/ros2_sim/install/shell_test_nodes/lib/python3.10/site-packages/shell-test-nodes.egg-link (link to .)
+[0.880s] Installing fake_control script to /home/esraamustafa/Path_Planning_Shell_AI/ros2_sim/install/shell_test_nodes/lib/shell_test_nodes
+[0.881s] Installing fake_localization script to /home/esraamustafa/Path_Planning_Shell_AI/ros2_sim/install/shell_test_nodes/lib/shell_test_nodes
+[0.881s] Installing fake_perception script to /home/esraamustafa/Path_Planning_Shell_AI/ros2_sim/install/shell_test_nodes/lib/shell_test_nodes
+[0.881s] Installing fake_supervisor script to /home/esraamustafa/Path_Planning_Shell_AI/ros2_sim/install/shell_test_nodes/lib/shell_test_nodes
+[0.881s] 
+[0.881s] Installed /home/esraamustafa/Path_Planning_Shell_AI/ros2_sim/build/shell_test_nodes
+[0.900s] Invoked command in '/home/esraamustafa/Path_Planning_Shell_AI/ros2_sim/build/shell_test_nodes' returned '0': PYTHONPATH=/home/esraamustafa/Path_Planning_Shell_AI/ros2_sim/build/shell_test_nodes/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/esraamustafa/Path_Planning_Shell_AI/ros2_sim/install/shell_test_nodes/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/esraamustafa/Path_Planning_Shell_AI/ros2_sim/build/shell_test_nodes/build --no-deps
