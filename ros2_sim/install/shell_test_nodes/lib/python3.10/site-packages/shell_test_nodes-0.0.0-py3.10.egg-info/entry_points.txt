@@ -1,0 +1,6 @@
+[console_scripts]
+fake_control = shell_test_nodes.fake_control:main
+fake_localization = shell_test_nodes.fake_localization:main
+fake_perception = shell_test_nodes.fake_perception:main
+fake_supervisor = shell_test_nodes.fake_supervisor:main
+

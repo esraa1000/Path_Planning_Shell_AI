@@ -1,0 +1,3 @@
+[  2%] Built target shell_interfaces__cpp
+[ 12%] Built target shell_interfaces__rosidl_generator_c
+[ 23%] Built target shell_interfaces__rosidl_typesupport_fastrtps_cpp

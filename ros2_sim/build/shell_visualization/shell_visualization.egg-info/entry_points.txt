@@ -1,0 +1,3 @@
+[console_scripts]
+planner_visualizer = shell_visualization.planner_visualizer:main
+

@@ -1,1 +1,4 @@
-/home/esraamustafa/Path_Planning_Shell_AI/ros2_sim/src/shell_interfaces/msg/TrajectoryPoint.msg
+float64 x
+float64 y
+float64 theta
+float64 v

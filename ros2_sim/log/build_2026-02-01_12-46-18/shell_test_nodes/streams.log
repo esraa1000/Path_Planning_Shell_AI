@@ -1,0 +1,26 @@
+[4.026s] Invoking command in '/home/esraamustafa/Path_Planning_Shell_AI/ros2_sim/src/shell_test_nodes': PYTHONPATH=/home/esraamustafa/Path_Planning_Shell_AI/ros2_sim/build/shell_test_nodes/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/esraamustafa/Path_Planning_Shell_AI/ros2_sim/install/shell_test_nodes/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/shell_test_nodes build --build-base /home/esraamustafa/Path_Planning_Shell_AI/ros2_sim/build/shell_test_nodes/build install --record /home/esraamustafa/Path_Planning_Shell_AI/ros2_sim/build/shell_test_nodes/install.log --single-version-externally-managed
+[4.691s] running egg_info
+[4.692s] writing ../../build/shell_test_nodes/shell_test_nodes.egg-info/PKG-INFO
+[4.692s] writing dependency_links to ../../build/shell_test_nodes/shell_test_nodes.egg-info/dependency_links.txt
+[4.694s] writing entry points to ../../build/shell_test_nodes/shell_test_nodes.egg-info/entry_points.txt
+[4.695s] writing requirements to ../../build/shell_test_nodes/shell_test_nodes.egg-info/requires.txt
+[4.696s] writing top-level names to ../../build/shell_test_nodes/shell_test_nodes.egg-info/top_level.txt
+[4.700s] reading manifest file '../../build/shell_test_nodes/shell_test_nodes.egg-info/SOURCES.txt'
+[4.703s] writing manifest file '../../build/shell_test_nodes/shell_test_nodes.egg-info/SOURCES.txt'
+[4.703s] running build
+[4.704s] running build_py
+[4.705s] copying shell_test_nodes/fake_perception.py -> /home/esraamustafa/Path_Planning_Shell_AI/ros2_sim/build/shell_test_nodes/build/lib/shell_test_nodes
+[4.705s] running install
+[4.706s] running install_lib
+[4.708s] copying /home/esraamustafa/Path_Planning_Shell_AI/ros2_sim/build/shell_test_nodes/build/lib/shell_test_nodes/fake_perception.py -> /home/esraamustafa/Path_Planning_Shell_AI/ros2_sim/install/shell_test_nodes/lib/python3.10/site-packages/shell_test_nodes
+[4.709s] byte-compiling /home/esraamustafa/Path_Planning_Shell_AI/ros2_sim/install/shell_test_nodes/lib/python3.10/site-packages/shell_test_nodes/fake_perception.py to fake_perception.cpython-310.pyc
+[4.713s] running install_egg_info
+[4.717s] removing '/home/esraamustafa/Path_Planning_Shell_AI/ros2_sim/install/shell_test_nodes/lib/python3.10/site-packages/shell_test_nodes-0.0.0-py3.10.egg-info' (and everything under it)
+[4.719s] Copying ../../build/shell_test_nodes/shell_test_nodes.egg-info to /home/esraamustafa/Path_Planning_Shell_AI/ros2_sim/install/shell_test_nodes/lib/python3.10/site-packages/shell_test_nodes-0.0.0-py3.10.egg-info
+[4.722s] running install_scripts
+[4.788s] Installing fake_control script to /home/esraamustafa/Path_Planning_Shell_AI/ros2_sim/install/shell_test_nodes/lib/shell_test_nodes
+[4.789s] Installing fake_localization script to /home/esraamustafa/Path_Planning_Shell_AI/ros2_sim/install/shell_test_nodes/lib/shell_test_nodes
+[4.789s] Installing fake_perception script to /home/esraamustafa/Path_Planning_Shell_AI/ros2_sim/install/shell_test_nodes/lib/shell_test_nodes
+[4.790s] Installing fake_supervisor script to /home/esraamustafa/Path_Planning_Shell_AI/ros2_sim/install/shell_test_nodes/lib/shell_test_nodes
+[4.791s] writing list of installed files to '/home/esraamustafa/Path_Planning_Shell_AI/ros2_sim/build/shell_test_nodes/install.log'
+[4.854s] Invoked command in '/home/esraamustafa/Path_Planning_Shell_AI/ros2_sim/src/shell_test_nodes' returned '0': PYTHONPATH=/home/esraamustafa/Path_Planning_Shell_AI/ros2_sim/build/shell_test_nodes/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/esraamustafa/Path_Planning_Shell_AI/ros2_sim/install/shell_test_nodes/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/shell_test_nodes build --build-base /home/esraamustafa/Path_Planning_Shell_AI/ros2_sim/build/shell_test_nodes/build install --record /home/esraamustafa/Path_Planning_Shell_AI/ros2_sim/build/shell_test_nodes/install.log --single-version-externally-managed

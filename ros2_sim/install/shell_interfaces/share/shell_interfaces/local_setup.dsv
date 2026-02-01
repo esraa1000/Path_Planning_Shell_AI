@@ -1,1 +1,4 @@
-/home/esraamustafa/Path_Planning_Shell_AI/ros2_sim/build/shell_interfaces/ament_cmake_environment_hooks/local_setup.dsv
+source;share/shell_interfaces/environment/ament_prefix_path.sh
+source;share/shell_interfaces/environment/library_path.sh
+source;share/shell_interfaces/environment/path.sh
+source;share/shell_interfaces/environment/pythonpath.sh
