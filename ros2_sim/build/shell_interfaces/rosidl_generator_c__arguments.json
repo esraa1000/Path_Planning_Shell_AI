@@ -1,10 +1,10 @@
 {
   "package_name": "shell_interfaces",
-  "output_dir": "/home/esraamustafa/Path_Planning_Shell_AI/ros2_sim/build/shell_interfaces/rosidl_generator_c/shell_interfaces",
+  "output_dir": "/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/build/shell_interfaces/rosidl_generator_c/shell_interfaces",
   "template_dir": "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource",
   "idl_tuples": [
-    "/home/esraamustafa/Path_Planning_Shell_AI/ros2_sim/build/shell_interfaces/rosidl_adapter/shell_interfaces:msg/TrajectoryPoint.idl",
-    "/home/esraamustafa/Path_Planning_Shell_AI/ros2_sim/build/shell_interfaces/rosidl_adapter/shell_interfaces:msg/Trajectory.idl"
+    "/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/build/shell_interfaces/rosidl_adapter/shell_interfaces:msg/TrajectoryPoint.idl",
+    "/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/build/shell_interfaces/rosidl_adapter/shell_interfaces:msg/Trajectory.idl"
   ],
   "target_dependencies": [
     "/opt/ros/humble/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c",
@@ -20,7 +20,7 @@
     "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/msg__struct.h.em",
     "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/msg__type_support.h.em",
     "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/srv__type_support.h.em",
-    "/home/esraamustafa/Path_Planning_Shell_AI/ros2_sim/build/shell_interfaces/rosidl_adapter/shell_interfaces/msg/TrajectoryPoint.idl",
-    "/home/esraamustafa/Path_Planning_Shell_AI/ros2_sim/build/shell_interfaces/rosidl_adapter/shell_interfaces/msg/Trajectory.idl"
+    "/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/build/shell_interfaces/rosidl_adapter/shell_interfaces/msg/TrajectoryPoint.idl",
+    "/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/build/shell_interfaces/rosidl_adapter/shell_interfaces/msg/Trajectory.idl"
   ]
 }

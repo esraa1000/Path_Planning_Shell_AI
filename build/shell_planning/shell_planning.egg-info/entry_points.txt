@@ -1,0 +1,3 @@
+[console_scripts]
+global_planner = shell_planning.global_planner_node:main
+
