@@ -12,16 +12,20 @@ from nav_msgs.msg import Odometry
 
 from shell_interfaces.msg import Trajectory, TrajectoryPoint
 
+# HYBRID A* PARAMETERS (URBAN TRACK)
 
-# HYBRID A* PARAMETERS
 XY_GRID_RESOLUTION = 0.5
-THETA_GRID_RESOLUTION = math.radians(15)
-DT = 0.3
-VEHICLE_SPEED = 2.5
+THETA_GRID_RESOLUTION = math.radians(10)
+
+DT = 0.15
+VEHICLE_SPEED = 15.0
 WHEELBASE = 2.5
-STEERING_ANGLES = [-0.6, -0.3, 0.0, 0.3, 0.6]
-CAR_RADIUS = 1.0
-SAFETY_MARGIN = 1.0
+
+STEERING_ANGLES = [-0.5, -0.35, -0.2, 0.0, 0.2, 0.35, 0.5]
+
+CAR_RADIUS = 0.7
+SAFETY_MARGIN = 0.2
+             
 
 
 # ==============================
@@ -148,7 +152,7 @@ class GlobalPlanner(Node):
         self.track_poly = None
         self.obstacles = []
         self.start_pose = None
-        self.goal = (180.0, 110.0)  # competition-style default goal
+        self.goal = (60.0, 15.0)
 
         self.get_logger().info("Global Planner (Hybrid A*) started")
 

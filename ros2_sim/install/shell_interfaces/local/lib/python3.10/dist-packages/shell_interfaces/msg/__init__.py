@@ -1,2 +1,1 @@
-from shell_interfaces.msg._trajectory import Trajectory  # noqa: F401
-from shell_interfaces.msg._trajectory_point import TrajectoryPoint  # noqa: F401
+/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/build/shell_interfaces/rosidl_generator_py/shell_interfaces/msg/__init__.py

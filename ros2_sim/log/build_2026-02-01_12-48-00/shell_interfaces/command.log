@@ -1,2 +1,0 @@
-Invoking command in '/home/esraamustafa/Path_Planning_Shell_AI/ros2_sim/build/shell_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/esraamustafa/Path_Planning_Shell_AI/ros2_sim/build/shell_interfaces -- -j12 -l12
-Invoked command in '/home/esraamustafa/Path_Planning_Shell_AI/ros2_sim/build/shell_interfaces' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/esraamustafa/Path_Planning_Shell_AI/ros2_sim/build/shell_interfaces -- -j12 -l12
