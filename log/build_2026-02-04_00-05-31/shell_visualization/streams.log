@@ -1,0 +1,17 @@
+[1.720s] Invoking command in '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/build/shell_visualization': AMENT_PREFIX_PATH=/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces LD_LIBRARY_PATH=/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/esraamustafa/path_planning/Path_Planning_Shell_AI/build/shell_visualization/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_visualization/lib/python3.10/site-packages:/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/esraamustafa/path_planning/Path_Planning_Shell_AI/build/shell_visualization/build --no-deps symlink_data
+[2.431s] running develop
+[2.806s] running egg_info
+[2.807s] writing shell_visualization.egg-info/PKG-INFO
+[2.807s] writing dependency_links to shell_visualization.egg-info/dependency_links.txt
+[2.808s] writing entry points to shell_visualization.egg-info/entry_points.txt
+[2.808s] writing requirements to shell_visualization.egg-info/requires.txt
+[2.809s] writing top-level names to shell_visualization.egg-info/top_level.txt
+[2.813s] reading manifest file 'shell_visualization.egg-info/SOURCES.txt'
+[2.814s] writing manifest file 'shell_visualization.egg-info/SOURCES.txt'
+[2.828s] running build_ext
+[2.828s] Creating /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_visualization/lib/python3.10/site-packages/shell-visualization.egg-link (link to .)
+[2.831s] Installing planner_visualizer script to /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_visualization/lib/shell_visualization
+[2.831s] 
+[2.831s] Installed /home/esraamustafa/path_planning/Path_Planning_Shell_AI/build/shell_visualization
+[2.831s] running symlink_data
+[2.981s] Invoked command in '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/build/shell_visualization' returned '0': AMENT_PREFIX_PATH=/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces LD_LIBRARY_PATH=/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/esraamustafa/path_planning/Path_Planning_Shell_AI/build/shell_visualization/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_visualization/lib/python3.10/site-packages:/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/esraamustafa/path_planning/Path_Planning_Shell_AI/build/shell_visualization/build --no-deps symlink_data

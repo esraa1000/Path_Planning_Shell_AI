@@ -30,8 +30,10 @@ setup(
     },
     entry_points={
         'console_scripts': [
-                    'global_planner = shell_planning.global_planner_node:main',
-
+            'global_planner = shell_planning.global_planner_node:main',
+            'local_planner  = shell_planning.local_planner_node:main',
         ],
     },
+    
+
 )

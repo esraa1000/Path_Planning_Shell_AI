@@ -358,17 +358,35 @@ include("/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/build/
 # install("TARGETS" "shell_interfaces__rosidl_typesupport_c__pyext" "DESTINATION" "local/lib/python3.10/dist-packages/shell_interfaces")
 include("/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/build/shell_interfaces/ament_cmake_symlink_install_targets_2_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
+# install(FILES "/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/build/shell_interfaces/rosidl_adapter/shell_interfaces/msg/Trajectory.idl" "DESTINATION" "share/shell_interfaces/msg")
+ament_cmake_symlink_install_files("/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/src/shell_interfaces" FILES "/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/build/shell_interfaces/rosidl_adapter/shell_interfaces/msg/Trajectory.idl" "DESTINATION" "share/shell_interfaces/msg")
+
 # install(FILES "/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/build/shell_interfaces/rosidl_adapter/shell_interfaces/msg/TrajectoryPoint.idl" "DESTINATION" "share/shell_interfaces/msg")
 ament_cmake_symlink_install_files("/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/src/shell_interfaces" FILES "/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/build/shell_interfaces/rosidl_adapter/shell_interfaces/msg/TrajectoryPoint.idl" "DESTINATION" "share/shell_interfaces/msg")
 
-# install(FILES "/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/build/shell_interfaces/rosidl_adapter/shell_interfaces/msg/Trajectory.idl" "DESTINATION" "share/shell_interfaces/msg")
-ament_cmake_symlink_install_files("/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/src/shell_interfaces" FILES "/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/build/shell_interfaces/rosidl_adapter/shell_interfaces/msg/Trajectory.idl" "DESTINATION" "share/shell_interfaces/msg")
+# install(FILES "/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/build/shell_interfaces/rosidl_adapter/shell_interfaces/msg/Boundary.idl" "DESTINATION" "share/shell_interfaces/msg")
+ament_cmake_symlink_install_files("/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/src/shell_interfaces" FILES "/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/build/shell_interfaces/rosidl_adapter/shell_interfaces/msg/Boundary.idl" "DESTINATION" "share/shell_interfaces/msg")
+
+# install(FILES "/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/build/shell_interfaces/rosidl_adapter/shell_interfaces/msg/Obstacle.idl" "DESTINATION" "share/shell_interfaces/msg")
+ament_cmake_symlink_install_files("/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/src/shell_interfaces" FILES "/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/build/shell_interfaces/rosidl_adapter/shell_interfaces/msg/Obstacle.idl" "DESTINATION" "share/shell_interfaces/msg")
+
+# install(FILES "/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/build/shell_interfaces/rosidl_adapter/shell_interfaces/msg/ObstacleArray.idl" "DESTINATION" "share/shell_interfaces/msg")
+ament_cmake_symlink_install_files("/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/src/shell_interfaces" FILES "/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/build/shell_interfaces/rosidl_adapter/shell_interfaces/msg/ObstacleArray.idl" "DESTINATION" "share/shell_interfaces/msg")
+
+# install(FILES "/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/src/shell_interfaces/msg/Trajectory.msg" "DESTINATION" "share/shell_interfaces/msg")
+ament_cmake_symlink_install_files("/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/src/shell_interfaces" FILES "/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/src/shell_interfaces/msg/Trajectory.msg" "DESTINATION" "share/shell_interfaces/msg")
 
 # install(FILES "/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/src/shell_interfaces/msg/TrajectoryPoint.msg" "DESTINATION" "share/shell_interfaces/msg")
 ament_cmake_symlink_install_files("/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/src/shell_interfaces" FILES "/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/src/shell_interfaces/msg/TrajectoryPoint.msg" "DESTINATION" "share/shell_interfaces/msg")
 
-# install(FILES "/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/src/shell_interfaces/msg/Trajectory.msg" "DESTINATION" "share/shell_interfaces/msg")
-ament_cmake_symlink_install_files("/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/src/shell_interfaces" FILES "/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/src/shell_interfaces/msg/Trajectory.msg" "DESTINATION" "share/shell_interfaces/msg")
+# install(FILES "/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/src/shell_interfaces/msg/Boundary.msg" "DESTINATION" "share/shell_interfaces/msg")
+ament_cmake_symlink_install_files("/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/src/shell_interfaces" FILES "/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/src/shell_interfaces/msg/Boundary.msg" "DESTINATION" "share/shell_interfaces/msg")
+
+# install(FILES "/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/src/shell_interfaces/msg/Obstacle.msg" "DESTINATION" "share/shell_interfaces/msg")
+ament_cmake_symlink_install_files("/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/src/shell_interfaces" FILES "/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/src/shell_interfaces/msg/Obstacle.msg" "DESTINATION" "share/shell_interfaces/msg")
+
+# install(FILES "/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/src/shell_interfaces/msg/ObstacleArray.msg" "DESTINATION" "share/shell_interfaces/msg")
+ament_cmake_symlink_install_files("/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/src/shell_interfaces" FILES "/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/src/shell_interfaces/msg/ObstacleArray.msg" "DESTINATION" "share/shell_interfaces/msg")
 
 # install(FILES "/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/build/shell_interfaces/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/shell_interfaces" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 ament_cmake_symlink_install_files("/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/src/shell_interfaces" FILES "/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/build/shell_interfaces/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/shell_interfaces" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
@@ -409,6 +427,9 @@ ament_cmake_symlink_install_files("/home/esraamustafa/path_planning/Path_Plannin
 # install(FILES "/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/build/shell_interfaces/rosidl_cmake/rosidl_cmake-extras.cmake" "DESTINATION" "share/shell_interfaces/cmake")
 ament_cmake_symlink_install_files("/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/src/shell_interfaces" FILES "/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/build/shell_interfaces/rosidl_cmake/rosidl_cmake-extras.cmake" "DESTINATION" "share/shell_interfaces/cmake")
 
+# install(FILES "/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/build/shell_interfaces/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/shell_interfaces/cmake")
+ament_cmake_symlink_install_files("/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/src/shell_interfaces" FILES "/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/build/shell_interfaces/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/shell_interfaces/cmake")
+
 # install(FILES "/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/build/shell_interfaces/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/shell_interfaces/cmake")
 ament_cmake_symlink_install_files("/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/src/shell_interfaces" FILES "/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/build/shell_interfaces/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/shell_interfaces/cmake")
 
@@ -420,9 +441,6 @@ ament_cmake_symlink_install_files("/home/esraamustafa/path_planning/Path_Plannin
 
 # install(FILES "/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/build/shell_interfaces/rosidl_cmake/rosidl_cmake_export_typesupport_targets-extras.cmake" "DESTINATION" "share/shell_interfaces/cmake")
 ament_cmake_symlink_install_files("/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/src/shell_interfaces" FILES "/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/build/shell_interfaces/rosidl_cmake/rosidl_cmake_export_typesupport_targets-extras.cmake" "DESTINATION" "share/shell_interfaces/cmake")
-
-# install(FILES "/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/build/shell_interfaces/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/shell_interfaces/cmake")
-ament_cmake_symlink_install_files("/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/src/shell_interfaces" FILES "/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/build/shell_interfaces/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/shell_interfaces/cmake")
 
 # install(FILES "/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/build/shell_interfaces/rosidl_cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake" "DESTINATION" "share/shell_interfaces/cmake")
 ament_cmake_symlink_install_files("/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/src/shell_interfaces" FILES "/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/build/shell_interfaces/rosidl_cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake" "DESTINATION" "share/shell_interfaces/cmake")

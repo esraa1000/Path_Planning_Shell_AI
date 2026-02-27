@@ -1,7 +1,10 @@
 {
   "package_name": "shell_interfaces",
   "non_idl_tuples": [
+    "/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/src/shell_interfaces:msg/Trajectory.msg",
     "/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/src/shell_interfaces:msg/TrajectoryPoint.msg",
-    "/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/src/shell_interfaces:msg/Trajectory.msg"
+    "/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/src/shell_interfaces:msg/Boundary.msg",
+    "/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/src/shell_interfaces:msg/Obstacle.msg",
+    "/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/src/shell_interfaces:msg/ObstacleArray.msg"
   ]
 }

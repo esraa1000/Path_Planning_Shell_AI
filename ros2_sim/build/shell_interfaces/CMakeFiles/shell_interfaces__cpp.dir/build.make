@@ -66,66 +66,206 @@ include CMakeFiles/shell_interfaces__cpp.dir/compiler_depend.make
 # Include the progress variables for this target.
 include CMakeFiles/shell_interfaces__cpp.dir/progress.make
 
-CMakeFiles/shell_interfaces__cpp: rosidl_generator_cpp/shell_interfaces/msg/trajectory_point.hpp
-CMakeFiles/shell_interfaces__cpp: rosidl_generator_cpp/shell_interfaces/msg/detail/trajectory_point__builder.hpp
-CMakeFiles/shell_interfaces__cpp: rosidl_generator_cpp/shell_interfaces/msg/detail/trajectory_point__struct.hpp
-CMakeFiles/shell_interfaces__cpp: rosidl_generator_cpp/shell_interfaces/msg/detail/trajectory_point__traits.hpp
-CMakeFiles/shell_interfaces__cpp: rosidl_generator_cpp/shell_interfaces/msg/detail/trajectory_point__type_support.hpp
 CMakeFiles/shell_interfaces__cpp: rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp
 CMakeFiles/shell_interfaces__cpp: rosidl_generator_cpp/shell_interfaces/msg/detail/trajectory__builder.hpp
 CMakeFiles/shell_interfaces__cpp: rosidl_generator_cpp/shell_interfaces/msg/detail/trajectory__struct.hpp
 CMakeFiles/shell_interfaces__cpp: rosidl_generator_cpp/shell_interfaces/msg/detail/trajectory__traits.hpp
 CMakeFiles/shell_interfaces__cpp: rosidl_generator_cpp/shell_interfaces/msg/detail/trajectory__type_support.hpp
+CMakeFiles/shell_interfaces__cpp: rosidl_generator_cpp/shell_interfaces/msg/trajectory_point.hpp
+CMakeFiles/shell_interfaces__cpp: rosidl_generator_cpp/shell_interfaces/msg/detail/trajectory_point__builder.hpp
+CMakeFiles/shell_interfaces__cpp: rosidl_generator_cpp/shell_interfaces/msg/detail/trajectory_point__struct.hpp
+CMakeFiles/shell_interfaces__cpp: rosidl_generator_cpp/shell_interfaces/msg/detail/trajectory_point__traits.hpp
+CMakeFiles/shell_interfaces__cpp: rosidl_generator_cpp/shell_interfaces/msg/detail/trajectory_point__type_support.hpp
+CMakeFiles/shell_interfaces__cpp: rosidl_generator_cpp/shell_interfaces/msg/boundary.hpp
+CMakeFiles/shell_interfaces__cpp: rosidl_generator_cpp/shell_interfaces/msg/detail/boundary__builder.hpp
+CMakeFiles/shell_interfaces__cpp: rosidl_generator_cpp/shell_interfaces/msg/detail/boundary__struct.hpp
+CMakeFiles/shell_interfaces__cpp: rosidl_generator_cpp/shell_interfaces/msg/detail/boundary__traits.hpp
+CMakeFiles/shell_interfaces__cpp: rosidl_generator_cpp/shell_interfaces/msg/detail/boundary__type_support.hpp
+CMakeFiles/shell_interfaces__cpp: rosidl_generator_cpp/shell_interfaces/msg/obstacle.hpp
+CMakeFiles/shell_interfaces__cpp: rosidl_generator_cpp/shell_interfaces/msg/detail/obstacle__builder.hpp
+CMakeFiles/shell_interfaces__cpp: rosidl_generator_cpp/shell_interfaces/msg/detail/obstacle__struct.hpp
+CMakeFiles/shell_interfaces__cpp: rosidl_generator_cpp/shell_interfaces/msg/detail/obstacle__traits.hpp
+CMakeFiles/shell_interfaces__cpp: rosidl_generator_cpp/shell_interfaces/msg/detail/obstacle__type_support.hpp
+CMakeFiles/shell_interfaces__cpp: rosidl_generator_cpp/shell_interfaces/msg/obstacle_array.hpp
+CMakeFiles/shell_interfaces__cpp: rosidl_generator_cpp/shell_interfaces/msg/detail/obstacle_array__builder.hpp
+CMakeFiles/shell_interfaces__cpp: rosidl_generator_cpp/shell_interfaces/msg/detail/obstacle_array__struct.hpp
+CMakeFiles/shell_interfaces__cpp: rosidl_generator_cpp/shell_interfaces/msg/detail/obstacle_array__traits.hpp
+CMakeFiles/shell_interfaces__cpp: rosidl_generator_cpp/shell_interfaces/msg/detail/obstacle_array__type_support.hpp
 CMakeFiles/shell_interfaces__cpp: rosidl_generator_cpp/shell_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
 
-rosidl_generator_cpp/shell_interfaces/msg/trajectory_point.hpp: /opt/ros/humble/lib/rosidl_generator_cpp/rosidl_generator_cpp
-rosidl_generator_cpp/shell_interfaces/msg/trajectory_point.hpp: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_cpp/__init__.py
-rosidl_generator_cpp/shell_interfaces/msg/trajectory_point.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/action__builder.hpp.em
-rosidl_generator_cpp/shell_interfaces/msg/trajectory_point.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/action__struct.hpp.em
-rosidl_generator_cpp/shell_interfaces/msg/trajectory_point.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/action__traits.hpp.em
-rosidl_generator_cpp/shell_interfaces/msg/trajectory_point.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/idl.hpp.em
-rosidl_generator_cpp/shell_interfaces/msg/trajectory_point.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/idl__builder.hpp.em
-rosidl_generator_cpp/shell_interfaces/msg/trajectory_point.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/idl__struct.hpp.em
-rosidl_generator_cpp/shell_interfaces/msg/trajectory_point.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/idl__traits.hpp.em
-rosidl_generator_cpp/shell_interfaces/msg/trajectory_point.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/msg__builder.hpp.em
-rosidl_generator_cpp/shell_interfaces/msg/trajectory_point.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/msg__struct.hpp.em
-rosidl_generator_cpp/shell_interfaces/msg/trajectory_point.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/msg__traits.hpp.em
-rosidl_generator_cpp/shell_interfaces/msg/trajectory_point.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/srv__builder.hpp.em
-rosidl_generator_cpp/shell_interfaces/msg/trajectory_point.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/srv__struct.hpp.em
-rosidl_generator_cpp/shell_interfaces/msg/trajectory_point.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/srv__traits.hpp.em
-rosidl_generator_cpp/shell_interfaces/msg/trajectory_point.hpp: rosidl_adapter/shell_interfaces/msg/TrajectoryPoint.idl
-rosidl_generator_cpp/shell_interfaces/msg/trajectory_point.hpp: rosidl_adapter/shell_interfaces/msg/Trajectory.idl
+rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp: /opt/ros/humble/lib/rosidl_generator_cpp/rosidl_generator_cpp
+rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_cpp/__init__.py
+rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/action__builder.hpp.em
+rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/action__struct.hpp.em
+rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/action__traits.hpp.em
+rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/idl.hpp.em
+rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/idl__builder.hpp.em
+rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/idl__struct.hpp.em
+rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/idl__traits.hpp.em
+rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/msg__builder.hpp.em
+rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/msg__struct.hpp.em
+rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/msg__traits.hpp.em
+rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/srv__builder.hpp.em
+rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/srv__struct.hpp.em
+rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/srv__traits.hpp.em
+rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp: rosidl_adapter/shell_interfaces/msg/Trajectory.idl
+rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp: rosidl_adapter/shell_interfaces/msg/TrajectoryPoint.idl
+rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp: rosidl_adapter/shell_interfaces/msg/Boundary.idl
+rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp: rosidl_adapter/shell_interfaces/msg/Obstacle.idl
+rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp: rosidl_adapter/shell_interfaces/msg/ObstacleArray.idl
+rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp: /opt/ros/humble/share/std_msgs/msg/Bool.idl
+rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp: /opt/ros/humble/share/std_msgs/msg/Byte.idl
+rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp: /opt/ros/humble/share/std_msgs/msg/ByteMultiArray.idl
+rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp: /opt/ros/humble/share/std_msgs/msg/Char.idl
+rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp: /opt/ros/humble/share/std_msgs/msg/ColorRGBA.idl
+rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp: /opt/ros/humble/share/std_msgs/msg/Empty.idl
+rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp: /opt/ros/humble/share/std_msgs/msg/Float32.idl
+rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp: /opt/ros/humble/share/std_msgs/msg/Float32MultiArray.idl
+rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp: /opt/ros/humble/share/std_msgs/msg/Float64.idl
+rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp: /opt/ros/humble/share/std_msgs/msg/Float64MultiArray.idl
+rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp: /opt/ros/humble/share/std_msgs/msg/Header.idl
+rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp: /opt/ros/humble/share/std_msgs/msg/Int16.idl
+rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp: /opt/ros/humble/share/std_msgs/msg/Int16MultiArray.idl
+rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp: /opt/ros/humble/share/std_msgs/msg/Int32.idl
+rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp: /opt/ros/humble/share/std_msgs/msg/Int32MultiArray.idl
+rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp: /opt/ros/humble/share/std_msgs/msg/Int64.idl
+rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp: /opt/ros/humble/share/std_msgs/msg/Int64MultiArray.idl
+rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp: /opt/ros/humble/share/std_msgs/msg/Int8.idl
+rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp: /opt/ros/humble/share/std_msgs/msg/Int8MultiArray.idl
+rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp: /opt/ros/humble/share/std_msgs/msg/MultiArrayDimension.idl
+rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp: /opt/ros/humble/share/std_msgs/msg/MultiArrayLayout.idl
+rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp: /opt/ros/humble/share/std_msgs/msg/String.idl
+rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp: /opt/ros/humble/share/std_msgs/msg/UInt16.idl
+rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp: /opt/ros/humble/share/std_msgs/msg/UInt16MultiArray.idl
+rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp: /opt/ros/humble/share/std_msgs/msg/UInt32.idl
+rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp: /opt/ros/humble/share/std_msgs/msg/UInt32MultiArray.idl
+rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp: /opt/ros/humble/share/std_msgs/msg/UInt64.idl
+rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp: /opt/ros/humble/share/std_msgs/msg/UInt64MultiArray.idl
+rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp: /opt/ros/humble/share/std_msgs/msg/UInt8.idl
+rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp: /opt/ros/humble/share/std_msgs/msg/UInt8MultiArray.idl
+rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
+rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
+rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp: /opt/ros/humble/share/geometry_msgs/msg/Accel.idl
+rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp: /opt/ros/humble/share/geometry_msgs/msg/AccelStamped.idl
+rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp: /opt/ros/humble/share/geometry_msgs/msg/AccelWithCovariance.idl
+rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp: /opt/ros/humble/share/geometry_msgs/msg/AccelWithCovarianceStamped.idl
+rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp: /opt/ros/humble/share/geometry_msgs/msg/Inertia.idl
+rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp: /opt/ros/humble/share/geometry_msgs/msg/InertiaStamped.idl
+rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp: /opt/ros/humble/share/geometry_msgs/msg/Point.idl
+rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp: /opt/ros/humble/share/geometry_msgs/msg/Point32.idl
+rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp: /opt/ros/humble/share/geometry_msgs/msg/PointStamped.idl
+rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp: /opt/ros/humble/share/geometry_msgs/msg/Polygon.idl
+rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp: /opt/ros/humble/share/geometry_msgs/msg/PolygonInstance.idl
+rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp: /opt/ros/humble/share/geometry_msgs/msg/PolygonInstanceStamped.idl
+rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp: /opt/ros/humble/share/geometry_msgs/msg/PolygonStamped.idl
+rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp: /opt/ros/humble/share/geometry_msgs/msg/Pose.idl
+rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp: /opt/ros/humble/share/geometry_msgs/msg/Pose2D.idl
+rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp: /opt/ros/humble/share/geometry_msgs/msg/PoseArray.idl
+rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp: /opt/ros/humble/share/geometry_msgs/msg/PoseStamped.idl
+rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp: /opt/ros/humble/share/geometry_msgs/msg/PoseWithCovariance.idl
+rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp: /opt/ros/humble/share/geometry_msgs/msg/PoseWithCovarianceStamped.idl
+rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp: /opt/ros/humble/share/geometry_msgs/msg/Quaternion.idl
+rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp: /opt/ros/humble/share/geometry_msgs/msg/QuaternionStamped.idl
+rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp: /opt/ros/humble/share/geometry_msgs/msg/Transform.idl
+rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp: /opt/ros/humble/share/geometry_msgs/msg/TransformStamped.idl
+rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp: /opt/ros/humble/share/geometry_msgs/msg/Twist.idl
+rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp: /opt/ros/humble/share/geometry_msgs/msg/TwistStamped.idl
+rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp: /opt/ros/humble/share/geometry_msgs/msg/TwistWithCovariance.idl
+rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp: /opt/ros/humble/share/geometry_msgs/msg/TwistWithCovarianceStamped.idl
+rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp: /opt/ros/humble/share/geometry_msgs/msg/Vector3.idl
+rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp: /opt/ros/humble/share/geometry_msgs/msg/Vector3Stamped.idl
+rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp: /opt/ros/humble/share/geometry_msgs/msg/VelocityStamped.idl
+rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp: /opt/ros/humble/share/geometry_msgs/msg/Wrench.idl
+rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp: /opt/ros/humble/share/geometry_msgs/msg/WrenchStamped.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/build/shell_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
 	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/build/shell_interfaces/rosidl_generator_cpp__arguments.json
 
-rosidl_generator_cpp/shell_interfaces/msg/detail/trajectory_point__builder.hpp: rosidl_generator_cpp/shell_interfaces/msg/trajectory_point.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/shell_interfaces/msg/detail/trajectory_point__builder.hpp
-
-rosidl_generator_cpp/shell_interfaces/msg/detail/trajectory_point__struct.hpp: rosidl_generator_cpp/shell_interfaces/msg/trajectory_point.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/shell_interfaces/msg/detail/trajectory_point__struct.hpp
-
-rosidl_generator_cpp/shell_interfaces/msg/detail/trajectory_point__traits.hpp: rosidl_generator_cpp/shell_interfaces/msg/trajectory_point.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/shell_interfaces/msg/detail/trajectory_point__traits.hpp
-
-rosidl_generator_cpp/shell_interfaces/msg/detail/trajectory_point__type_support.hpp: rosidl_generator_cpp/shell_interfaces/msg/trajectory_point.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/shell_interfaces/msg/detail/trajectory_point__type_support.hpp
-
-rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp: rosidl_generator_cpp/shell_interfaces/msg/trajectory_point.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp
-
-rosidl_generator_cpp/shell_interfaces/msg/detail/trajectory__builder.hpp: rosidl_generator_cpp/shell_interfaces/msg/trajectory_point.hpp
+rosidl_generator_cpp/shell_interfaces/msg/detail/trajectory__builder.hpp: rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/shell_interfaces/msg/detail/trajectory__builder.hpp
 
-rosidl_generator_cpp/shell_interfaces/msg/detail/trajectory__struct.hpp: rosidl_generator_cpp/shell_interfaces/msg/trajectory_point.hpp
+rosidl_generator_cpp/shell_interfaces/msg/detail/trajectory__struct.hpp: rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/shell_interfaces/msg/detail/trajectory__struct.hpp
 
-rosidl_generator_cpp/shell_interfaces/msg/detail/trajectory__traits.hpp: rosidl_generator_cpp/shell_interfaces/msg/trajectory_point.hpp
+rosidl_generator_cpp/shell_interfaces/msg/detail/trajectory__traits.hpp: rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/shell_interfaces/msg/detail/trajectory__traits.hpp
 
-rosidl_generator_cpp/shell_interfaces/msg/detail/trajectory__type_support.hpp: rosidl_generator_cpp/shell_interfaces/msg/trajectory_point.hpp
+rosidl_generator_cpp/shell_interfaces/msg/detail/trajectory__type_support.hpp: rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/shell_interfaces/msg/detail/trajectory__type_support.hpp
 
+rosidl_generator_cpp/shell_interfaces/msg/trajectory_point.hpp: rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/shell_interfaces/msg/trajectory_point.hpp
+
+rosidl_generator_cpp/shell_interfaces/msg/detail/trajectory_point__builder.hpp: rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/shell_interfaces/msg/detail/trajectory_point__builder.hpp
+
+rosidl_generator_cpp/shell_interfaces/msg/detail/trajectory_point__struct.hpp: rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/shell_interfaces/msg/detail/trajectory_point__struct.hpp
+
+rosidl_generator_cpp/shell_interfaces/msg/detail/trajectory_point__traits.hpp: rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/shell_interfaces/msg/detail/trajectory_point__traits.hpp
+
+rosidl_generator_cpp/shell_interfaces/msg/detail/trajectory_point__type_support.hpp: rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/shell_interfaces/msg/detail/trajectory_point__type_support.hpp
+
+rosidl_generator_cpp/shell_interfaces/msg/boundary.hpp: rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/shell_interfaces/msg/boundary.hpp
+
+rosidl_generator_cpp/shell_interfaces/msg/detail/boundary__builder.hpp: rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/shell_interfaces/msg/detail/boundary__builder.hpp
+
+rosidl_generator_cpp/shell_interfaces/msg/detail/boundary__struct.hpp: rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/shell_interfaces/msg/detail/boundary__struct.hpp
+
+rosidl_generator_cpp/shell_interfaces/msg/detail/boundary__traits.hpp: rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/shell_interfaces/msg/detail/boundary__traits.hpp
+
+rosidl_generator_cpp/shell_interfaces/msg/detail/boundary__type_support.hpp: rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/shell_interfaces/msg/detail/boundary__type_support.hpp
+
+rosidl_generator_cpp/shell_interfaces/msg/obstacle.hpp: rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/shell_interfaces/msg/obstacle.hpp
+
+rosidl_generator_cpp/shell_interfaces/msg/detail/obstacle__builder.hpp: rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/shell_interfaces/msg/detail/obstacle__builder.hpp
+
+rosidl_generator_cpp/shell_interfaces/msg/detail/obstacle__struct.hpp: rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/shell_interfaces/msg/detail/obstacle__struct.hpp
+
+rosidl_generator_cpp/shell_interfaces/msg/detail/obstacle__traits.hpp: rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/shell_interfaces/msg/detail/obstacle__traits.hpp
+
+rosidl_generator_cpp/shell_interfaces/msg/detail/obstacle__type_support.hpp: rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/shell_interfaces/msg/detail/obstacle__type_support.hpp
+
+rosidl_generator_cpp/shell_interfaces/msg/obstacle_array.hpp: rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/shell_interfaces/msg/obstacle_array.hpp
+
+rosidl_generator_cpp/shell_interfaces/msg/detail/obstacle_array__builder.hpp: rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/shell_interfaces/msg/detail/obstacle_array__builder.hpp
+
+rosidl_generator_cpp/shell_interfaces/msg/detail/obstacle_array__struct.hpp: rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/shell_interfaces/msg/detail/obstacle_array__struct.hpp
+
+rosidl_generator_cpp/shell_interfaces/msg/detail/obstacle_array__traits.hpp: rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/shell_interfaces/msg/detail/obstacle_array__traits.hpp
+
+rosidl_generator_cpp/shell_interfaces/msg/detail/obstacle_array__type_support.hpp: rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/shell_interfaces/msg/detail/obstacle_array__type_support.hpp
+
 shell_interfaces__cpp: CMakeFiles/shell_interfaces__cpp
+shell_interfaces__cpp: rosidl_generator_cpp/shell_interfaces/msg/boundary.hpp
+shell_interfaces__cpp: rosidl_generator_cpp/shell_interfaces/msg/detail/boundary__builder.hpp
+shell_interfaces__cpp: rosidl_generator_cpp/shell_interfaces/msg/detail/boundary__struct.hpp
+shell_interfaces__cpp: rosidl_generator_cpp/shell_interfaces/msg/detail/boundary__traits.hpp
+shell_interfaces__cpp: rosidl_generator_cpp/shell_interfaces/msg/detail/boundary__type_support.hpp
+shell_interfaces__cpp: rosidl_generator_cpp/shell_interfaces/msg/detail/obstacle__builder.hpp
+shell_interfaces__cpp: rosidl_generator_cpp/shell_interfaces/msg/detail/obstacle__struct.hpp
+shell_interfaces__cpp: rosidl_generator_cpp/shell_interfaces/msg/detail/obstacle__traits.hpp
+shell_interfaces__cpp: rosidl_generator_cpp/shell_interfaces/msg/detail/obstacle__type_support.hpp
+shell_interfaces__cpp: rosidl_generator_cpp/shell_interfaces/msg/detail/obstacle_array__builder.hpp
+shell_interfaces__cpp: rosidl_generator_cpp/shell_interfaces/msg/detail/obstacle_array__struct.hpp
+shell_interfaces__cpp: rosidl_generator_cpp/shell_interfaces/msg/detail/obstacle_array__traits.hpp
+shell_interfaces__cpp: rosidl_generator_cpp/shell_interfaces/msg/detail/obstacle_array__type_support.hpp
 shell_interfaces__cpp: rosidl_generator_cpp/shell_interfaces/msg/detail/trajectory__builder.hpp
 shell_interfaces__cpp: rosidl_generator_cpp/shell_interfaces/msg/detail/trajectory__struct.hpp
 shell_interfaces__cpp: rosidl_generator_cpp/shell_interfaces/msg/detail/trajectory__traits.hpp
@@ -134,6 +274,8 @@ shell_interfaces__cpp: rosidl_generator_cpp/shell_interfaces/msg/detail/trajecto
 shell_interfaces__cpp: rosidl_generator_cpp/shell_interfaces/msg/detail/trajectory_point__struct.hpp
 shell_interfaces__cpp: rosidl_generator_cpp/shell_interfaces/msg/detail/trajectory_point__traits.hpp
 shell_interfaces__cpp: rosidl_generator_cpp/shell_interfaces/msg/detail/trajectory_point__type_support.hpp
+shell_interfaces__cpp: rosidl_generator_cpp/shell_interfaces/msg/obstacle.hpp
+shell_interfaces__cpp: rosidl_generator_cpp/shell_interfaces/msg/obstacle_array.hpp
 shell_interfaces__cpp: rosidl_generator_cpp/shell_interfaces/msg/trajectory.hpp
 shell_interfaces__cpp: rosidl_generator_cpp/shell_interfaces/msg/trajectory_point.hpp
 shell_interfaces__cpp: CMakeFiles/shell_interfaces__cpp.dir/build.make

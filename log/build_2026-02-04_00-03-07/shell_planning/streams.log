@@ -1,0 +1,27 @@
+[1.201s] Invoking command in '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/build/shell_planning': PYTHONPATH=/home/esraamustafa/path_planning/Path_Planning_Shell_AI/build/shell_planning/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_planning/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/esraamustafa/path_planning/Path_Planning_Shell_AI/build/shell_planning/build --no-deps symlink_data
+[1.468s] running develop
+[1.605s] running egg_info
+[1.606s] creating shell_planning.egg-info
+[1.606s] writing shell_planning.egg-info/PKG-INFO
+[1.607s] writing dependency_links to shell_planning.egg-info/dependency_links.txt
+[1.607s] writing entry points to shell_planning.egg-info/entry_points.txt
+[1.608s] writing requirements to shell_planning.egg-info/requires.txt
+[1.608s] writing top-level names to shell_planning.egg-info/top_level.txt
+[1.608s] writing manifest file 'shell_planning.egg-info/SOURCES.txt'
+[1.610s] reading manifest file 'shell_planning.egg-info/SOURCES.txt'
+[1.610s] writing manifest file 'shell_planning.egg-info/SOURCES.txt'
+[1.612s] running build_ext
+[1.612s] Creating /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_planning/lib/python3.10/site-packages/shell-planning.egg-link (link to .)
+[1.613s] Installing global_planner script to /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_planning/lib/shell_planning
+[1.614s] Installing local_planner script to /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_planning/lib/shell_planning
+[1.614s] 
+[1.614s] Installed /home/esraamustafa/path_planning/Path_Planning_Shell_AI/build/shell_planning
+[1.614s] running symlink_data
+[1.615s] creating /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_planning/share/ament_index
+[1.615s] creating /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_planning/share/ament_index/resource_index
+[1.615s] creating /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_planning/share/ament_index/resource_index/packages
+[1.615s] symbolically linking /home/esraamustafa/path_planning/Path_Planning_Shell_AI/build/shell_planning/resource/shell_planning -> /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_planning/share/ament_index/resource_index/packages
+[1.616s] symbolically linking /home/esraamustafa/path_planning/Path_Planning_Shell_AI/build/shell_planning/package.xml -> /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_planning/share/shell_planning
+[1.616s] creating /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_planning/share/shell_planning/launch
+[1.616s] symbolically linking /home/esraamustafa/path_planning/Path_Planning_Shell_AI/build/shell_planning/launch/simulation.launch.py -> /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_planning/share/shell_planning/launch
+[1.655s] Invoked command in '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/build/shell_planning' returned '0': PYTHONPATH=/home/esraamustafa/path_planning/Path_Planning_Shell_AI/build/shell_planning/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_planning/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/esraamustafa/path_planning/Path_Planning_Shell_AI/build/shell_planning/build --no-deps symlink_data

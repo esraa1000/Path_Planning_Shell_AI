@@ -1,0 +1,17 @@
+[3.704s] Invoking command in '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/build/shell_visualization': PYTHONPATH=/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/build/shell_visualization/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/install/shell_visualization/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/build/shell_visualization/build --no-deps symlink_data
+[4.624s] running develop
+[5.159s] running egg_info
+[5.159s] writing shell_visualization.egg-info/PKG-INFO
+[5.160s] writing dependency_links to shell_visualization.egg-info/dependency_links.txt
+[5.160s] writing entry points to shell_visualization.egg-info/entry_points.txt
+[5.160s] writing requirements to shell_visualization.egg-info/requires.txt
+[5.161s] writing top-level names to shell_visualization.egg-info/top_level.txt
+[5.171s] reading manifest file 'shell_visualization.egg-info/SOURCES.txt'
+[5.173s] writing manifest file 'shell_visualization.egg-info/SOURCES.txt'
+[5.178s] running build_ext
+[5.180s] Creating /home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/install/shell_visualization/lib/python3.10/site-packages/shell-visualization.egg-link (link to .)
+[5.181s] Installing planner_visualizer script to /home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/install/shell_visualization/lib/shell_visualization
+[5.181s] 
+[5.181s] Installed /home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/build/shell_visualization
+[5.181s] running symlink_data
+[5.262s] Invoked command in '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/build/shell_visualization' returned '0': PYTHONPATH=/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/build/shell_visualization/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/install/shell_visualization/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/build/shell_visualization/build --no-deps symlink_data

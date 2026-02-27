@@ -27,11 +27,11 @@ def generate_launch_description():
             name='fake_control'
         ),
 
-        # 4. Global Planner (The Brain) - output='screen' shows logs
+        # 4. local Planner (The Brain) - output='screen' shows logs
         Node(
             package='shell_planning',
-            executable='global_planner',
-            name='global_planner',
+            executable='local_planner',
+            name='local_planner',
             output='screen' 
         ),
 
