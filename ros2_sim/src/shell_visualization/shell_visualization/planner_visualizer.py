@@ -1,5 +1,6 @@
 import rclpy
 from rclpy.node import Node
+from rclpy.qos import QoSProfile, DurabilityPolicy
 
 from geometry_msgs.msg import Polygon, Point, Point32
 from visualization_msgs.msg import Marker, MarkerArray
@@ -27,11 +28,12 @@ class PlannerVisualizer(Node):
             10
         )
 
+        path_qos = QoSProfile(depth=1, durability=DurabilityPolicy.TRANSIENT_LOCAL)
         self.create_subscription(
             Trajectory,
             '/planned_path',
             self.path_cb,
-            10
+            path_qos
         )
 
         # ------------------ Publisher ------------------

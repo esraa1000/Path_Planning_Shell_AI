@@ -1,5 +1,6 @@
 import rclpy
 from rclpy.node import Node
+from rclpy.qos import QoSProfile, DurabilityPolicy
 
 import math
 import heapq
@@ -117,12 +118,36 @@ def hybrid_astar(start, goal, track_poly, obstacles):
 
 def build_trajectory(path):
     traj = Trajectory()
-    for i, (x, y, theta) in enumerate(path):
+    if not path:
+        return traj
+
+    # Interpolate path to have better density for local planner
+    interpolated_path = []
+    max_dist = 0.25
+
+    for i in range(len(path) - 1):
+        p1 = path[i]
+        p2 = path[i+1]
+        dist = math.hypot(p2[0] - p1[0], p2[1] - p1[1])
+        interpolated_path.append(p1)
+
+        if dist > max_dist:
+            num_segments = math.ceil(dist / max_dist)
+            for j in range(1, num_segments):
+                ratio = j / num_segments
+                nx = p1[0] + (p2[0] - p1[0]) * ratio
+                ny = p1[1] + (p2[1] - p1[1]) * ratio
+                ntheta = p1[2] + math.atan2(math.sin(p2[2] - p1[2]), math.cos(p2[2] - p1[2])) * ratio
+                interpolated_path.append((nx, ny, ntheta))
+
+    interpolated_path.append(path[-1])
+
+    for i, (x, y, theta) in enumerate(interpolated_path):
         p = TrajectoryPoint()
         p.x = float(x)
         p.y = float(y)
         p.theta = float(theta)
-        p.v = VEHICLE_SPEED if i < len(path) - 1 else 0.0
+        p.v = VEHICLE_SPEED if i < len(interpolated_path) - 1 else 0.0
         traj.points.append(p)
     return traj
 
@@ -142,7 +167,8 @@ class GlobalPlanner(Node):
         self.create_subscription(Bool, '/start_signal', self.start_cb, 10)
 
         # Publishers
-        self.path_pub = self.create_publisher(Trajectory, '/planned_path', 10)
+        path_qos = QoSProfile(depth=1, durability=DurabilityPolicy.TRANSIENT_LOCAL)
+        self.path_pub = self.create_publisher(Trajectory, '/planned_path', path_qos)
         self.heartbeat_pub = self.create_publisher(UInt64, '/planner_heartbeat', 10)
 
         self.create_timer(1.0, self.publish_heartbeat)

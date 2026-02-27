@@ -35,6 +35,14 @@ def generate_launch_description():
             output='screen' 
         ),
 
+        # 4.5 Local Planner
+        Node(
+            package='shell_planning',
+            executable='local_planner',
+            name='local_planner',
+            output='screen'
+        ),
+
         # 5. Planner Visualizer (Markers for RViz)
         Node(
             package='shell_visualization',
