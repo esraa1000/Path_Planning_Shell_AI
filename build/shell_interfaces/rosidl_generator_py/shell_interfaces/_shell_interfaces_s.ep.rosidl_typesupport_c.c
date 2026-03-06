@@ -24,6 +24,145 @@ static struct PyModuleDef shell_interfaces__module = {
 #include "rosidl_runtime_c/message_type_support_struct.h"
 #include "rosidl_runtime_c/service_type_support_struct.h"
 #include "rosidl_runtime_c/action_type_support_struct.h"
+#include "shell_interfaces/msg/detail/trajectory__type_support.h"
+#include "shell_interfaces/msg/detail/trajectory__struct.h"
+#include "shell_interfaces/msg/detail/trajectory__functions.h"
+
+static void * shell_interfaces__msg__trajectory__create_ros_message(void)
+{
+  return shell_interfaces__msg__Trajectory__create();
+}
+
+static void shell_interfaces__msg__trajectory__destroy_ros_message(void * raw_ros_message)
+{
+  shell_interfaces__msg__Trajectory * ros_message = (shell_interfaces__msg__Trajectory *)raw_ros_message;
+  shell_interfaces__msg__Trajectory__destroy(ros_message);
+}
+
+ROSIDL_GENERATOR_C_IMPORT
+bool shell_interfaces__msg__trajectory__convert_from_py(PyObject * _pymsg, void * ros_message);
+ROSIDL_GENERATOR_C_IMPORT
+PyObject * shell_interfaces__msg__trajectory__convert_to_py(void * raw_ros_message);
+
+
+ROSIDL_GENERATOR_C_IMPORT
+const rosidl_message_type_support_t *
+ROSIDL_GET_MSG_TYPE_SUPPORT(shell_interfaces, msg, Trajectory);
+
+int8_t
+_register_msg_type__msg__trajectory(PyObject * pymodule)
+{
+  int8_t err;
+
+  PyObject * pyobject_create_ros_message = NULL;
+  pyobject_create_ros_message = PyCapsule_New(
+    (void *)&shell_interfaces__msg__trajectory__create_ros_message,
+    NULL, NULL);
+  if (!pyobject_create_ros_message) {
+    // previously added objects will be removed when the module is destroyed
+    return -1;
+  }
+  err = PyModule_AddObject(
+    pymodule,
+    "create_ros_message_msg__msg__trajectory",
+    pyobject_create_ros_message);
+  if (err) {
+    // the created capsule needs to be decremented
+    Py_XDECREF(pyobject_create_ros_message);
+    // previously added objects will be removed when the module is destroyed
+    return err;
+  }
+
+  PyObject * pyobject_destroy_ros_message = NULL;
+  pyobject_destroy_ros_message = PyCapsule_New(
+    (void *)&shell_interfaces__msg__trajectory__destroy_ros_message,
+    NULL, NULL);
+  if (!pyobject_destroy_ros_message) {
+    // previously added objects will be removed when the module is destroyed
+    return -1;
+  }
+  err = PyModule_AddObject(
+    pymodule,
+    "destroy_ros_message_msg__msg__trajectory",
+    pyobject_destroy_ros_message);
+  if (err) {
+    // the created capsule needs to be decremented
+    Py_XDECREF(pyobject_destroy_ros_message);
+    // previously added objects will be removed when the module is destroyed
+    return err;
+  }
+
+  PyObject * pyobject_convert_from_py = NULL;
+  pyobject_convert_from_py = PyCapsule_New(
+    (void *)&shell_interfaces__msg__trajectory__convert_from_py,
+    NULL, NULL);
+  if (!pyobject_convert_from_py) {
+    // previously added objects will be removed when the module is destroyed
+    return -1;
+  }
+  err = PyModule_AddObject(
+    pymodule,
+    "convert_from_py_msg__msg__trajectory",
+    pyobject_convert_from_py);
+  if (err) {
+    // the created capsule needs to be decremented
+    Py_XDECREF(pyobject_convert_from_py);
+    // previously added objects will be removed when the module is destroyed
+    return err;
+  }
+
+  PyObject * pyobject_convert_to_py = NULL;
+  pyobject_convert_to_py = PyCapsule_New(
+    (void *)&shell_interfaces__msg__trajectory__convert_to_py,
+    NULL, NULL);
+  if (!pyobject_convert_to_py) {
+    // previously added objects will be removed when the module is destroyed
+    return -1;
+  }
+  err = PyModule_AddObject(
+    pymodule,
+    "convert_to_py_msg__msg__trajectory",
+    pyobject_convert_to_py);
+  if (err) {
+    // the created capsule needs to be decremented
+    Py_XDECREF(pyobject_convert_to_py);
+    // previously added objects will be removed when the module is destroyed
+    return err;
+  }
+
+  PyObject * pyobject_type_support = NULL;
+  pyobject_type_support = PyCapsule_New(
+    (void *)ROSIDL_GET_MSG_TYPE_SUPPORT(shell_interfaces, msg, Trajectory),
+    NULL, NULL);
+  if (!pyobject_type_support) {
+    // previously added objects will be removed when the module is destroyed
+    return -1;
+  }
+  err = PyModule_AddObject(
+    pymodule,
+    "type_support_msg__msg__trajectory",
+    pyobject_type_support);
+  if (err) {
+    // the created capsule needs to be decremented
+    Py_XDECREF(pyobject_type_support);
+    // previously added objects will be removed when the module is destroyed
+    return err;
+  }
+  return 0;
+}
+
+// already included above
+// #include <stdbool.h>
+// already included above
+// #include <stdint.h>
+// already included above
+// #include "rosidl_runtime_c/visibility_control.h"
+// already included above
+// #include "rosidl_runtime_c/message_type_support_struct.h"
+// already included above
+// #include "rosidl_runtime_c/service_type_support_struct.h"
+// already included above
+// #include "rosidl_runtime_c/action_type_support_struct.h"
 #include "shell_interfaces/msg/detail/trajectory_point__type_support.h"
 #include "shell_interfaces/msg/detail/trajectory_point__struct.h"
 #include "shell_interfaces/msg/detail/trajectory_point__functions.h"
@@ -163,39 +302,39 @@ _register_msg_type__msg__trajectory_point(PyObject * pymodule)
 // #include "rosidl_runtime_c/service_type_support_struct.h"
 // already included above
 // #include "rosidl_runtime_c/action_type_support_struct.h"
-#include "shell_interfaces/msg/detail/trajectory__type_support.h"
-#include "shell_interfaces/msg/detail/trajectory__struct.h"
-#include "shell_interfaces/msg/detail/trajectory__functions.h"
+#include "shell_interfaces/msg/detail/boundary__type_support.h"
+#include "shell_interfaces/msg/detail/boundary__struct.h"
+#include "shell_interfaces/msg/detail/boundary__functions.h"
 
-static void * shell_interfaces__msg__trajectory__create_ros_message(void)
+static void * shell_interfaces__msg__boundary__create_ros_message(void)
 {
-  return shell_interfaces__msg__Trajectory__create();
+  return shell_interfaces__msg__Boundary__create();
 }
 
-static void shell_interfaces__msg__trajectory__destroy_ros_message(void * raw_ros_message)
+static void shell_interfaces__msg__boundary__destroy_ros_message(void * raw_ros_message)
 {
-  shell_interfaces__msg__Trajectory * ros_message = (shell_interfaces__msg__Trajectory *)raw_ros_message;
-  shell_interfaces__msg__Trajectory__destroy(ros_message);
+  shell_interfaces__msg__Boundary * ros_message = (shell_interfaces__msg__Boundary *)raw_ros_message;
+  shell_interfaces__msg__Boundary__destroy(ros_message);
 }
 
 ROSIDL_GENERATOR_C_IMPORT
-bool shell_interfaces__msg__trajectory__convert_from_py(PyObject * _pymsg, void * ros_message);
+bool shell_interfaces__msg__boundary__convert_from_py(PyObject * _pymsg, void * ros_message);
 ROSIDL_GENERATOR_C_IMPORT
-PyObject * shell_interfaces__msg__trajectory__convert_to_py(void * raw_ros_message);
+PyObject * shell_interfaces__msg__boundary__convert_to_py(void * raw_ros_message);
 
 
 ROSIDL_GENERATOR_C_IMPORT
 const rosidl_message_type_support_t *
-ROSIDL_GET_MSG_TYPE_SUPPORT(shell_interfaces, msg, Trajectory);
+ROSIDL_GET_MSG_TYPE_SUPPORT(shell_interfaces, msg, Boundary);
 
 int8_t
-_register_msg_type__msg__trajectory(PyObject * pymodule)
+_register_msg_type__msg__boundary(PyObject * pymodule)
 {
   int8_t err;
 
   PyObject * pyobject_create_ros_message = NULL;
   pyobject_create_ros_message = PyCapsule_New(
-    (void *)&shell_interfaces__msg__trajectory__create_ros_message,
+    (void *)&shell_interfaces__msg__boundary__create_ros_message,
     NULL, NULL);
   if (!pyobject_create_ros_message) {
     // previously added objects will be removed when the module is destroyed
@@ -203,7 +342,7 @@ _register_msg_type__msg__trajectory(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "create_ros_message_msg__msg__trajectory",
+    "create_ros_message_msg__msg__boundary",
     pyobject_create_ros_message);
   if (err) {
     // the created capsule needs to be decremented
@@ -214,7 +353,7 @@ _register_msg_type__msg__trajectory(PyObject * pymodule)
 
   PyObject * pyobject_destroy_ros_message = NULL;
   pyobject_destroy_ros_message = PyCapsule_New(
-    (void *)&shell_interfaces__msg__trajectory__destroy_ros_message,
+    (void *)&shell_interfaces__msg__boundary__destroy_ros_message,
     NULL, NULL);
   if (!pyobject_destroy_ros_message) {
     // previously added objects will be removed when the module is destroyed
@@ -222,7 +361,7 @@ _register_msg_type__msg__trajectory(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "destroy_ros_message_msg__msg__trajectory",
+    "destroy_ros_message_msg__msg__boundary",
     pyobject_destroy_ros_message);
   if (err) {
     // the created capsule needs to be decremented
@@ -233,7 +372,7 @@ _register_msg_type__msg__trajectory(PyObject * pymodule)
 
   PyObject * pyobject_convert_from_py = NULL;
   pyobject_convert_from_py = PyCapsule_New(
-    (void *)&shell_interfaces__msg__trajectory__convert_from_py,
+    (void *)&shell_interfaces__msg__boundary__convert_from_py,
     NULL, NULL);
   if (!pyobject_convert_from_py) {
     // previously added objects will be removed when the module is destroyed
@@ -241,7 +380,7 @@ _register_msg_type__msg__trajectory(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "convert_from_py_msg__msg__trajectory",
+    "convert_from_py_msg__msg__boundary",
     pyobject_convert_from_py);
   if (err) {
     // the created capsule needs to be decremented
@@ -252,7 +391,7 @@ _register_msg_type__msg__trajectory(PyObject * pymodule)
 
   PyObject * pyobject_convert_to_py = NULL;
   pyobject_convert_to_py = PyCapsule_New(
-    (void *)&shell_interfaces__msg__trajectory__convert_to_py,
+    (void *)&shell_interfaces__msg__boundary__convert_to_py,
     NULL, NULL);
   if (!pyobject_convert_to_py) {
     // previously added objects will be removed when the module is destroyed
@@ -260,7 +399,7 @@ _register_msg_type__msg__trajectory(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "convert_to_py_msg__msg__trajectory",
+    "convert_to_py_msg__msg__boundary",
     pyobject_convert_to_py);
   if (err) {
     // the created capsule needs to be decremented
@@ -271,7 +410,7 @@ _register_msg_type__msg__trajectory(PyObject * pymodule)
 
   PyObject * pyobject_type_support = NULL;
   pyobject_type_support = PyCapsule_New(
-    (void *)ROSIDL_GET_MSG_TYPE_SUPPORT(shell_interfaces, msg, Trajectory),
+    (void *)ROSIDL_GET_MSG_TYPE_SUPPORT(shell_interfaces, msg, Boundary),
     NULL, NULL);
   if (!pyobject_type_support) {
     // previously added objects will be removed when the module is destroyed
@@ -279,7 +418,285 @@ _register_msg_type__msg__trajectory(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "type_support_msg__msg__trajectory",
+    "type_support_msg__msg__boundary",
+    pyobject_type_support);
+  if (err) {
+    // the created capsule needs to be decremented
+    Py_XDECREF(pyobject_type_support);
+    // previously added objects will be removed when the module is destroyed
+    return err;
+  }
+  return 0;
+}
+
+// already included above
+// #include <stdbool.h>
+// already included above
+// #include <stdint.h>
+// already included above
+// #include "rosidl_runtime_c/visibility_control.h"
+// already included above
+// #include "rosidl_runtime_c/message_type_support_struct.h"
+// already included above
+// #include "rosidl_runtime_c/service_type_support_struct.h"
+// already included above
+// #include "rosidl_runtime_c/action_type_support_struct.h"
+#include "shell_interfaces/msg/detail/obstacle__type_support.h"
+#include "shell_interfaces/msg/detail/obstacle__struct.h"
+#include "shell_interfaces/msg/detail/obstacle__functions.h"
+
+static void * shell_interfaces__msg__obstacle__create_ros_message(void)
+{
+  return shell_interfaces__msg__Obstacle__create();
+}
+
+static void shell_interfaces__msg__obstacle__destroy_ros_message(void * raw_ros_message)
+{
+  shell_interfaces__msg__Obstacle * ros_message = (shell_interfaces__msg__Obstacle *)raw_ros_message;
+  shell_interfaces__msg__Obstacle__destroy(ros_message);
+}
+
+ROSIDL_GENERATOR_C_IMPORT
+bool shell_interfaces__msg__obstacle__convert_from_py(PyObject * _pymsg, void * ros_message);
+ROSIDL_GENERATOR_C_IMPORT
+PyObject * shell_interfaces__msg__obstacle__convert_to_py(void * raw_ros_message);
+
+
+ROSIDL_GENERATOR_C_IMPORT
+const rosidl_message_type_support_t *
+ROSIDL_GET_MSG_TYPE_SUPPORT(shell_interfaces, msg, Obstacle);
+
+int8_t
+_register_msg_type__msg__obstacle(PyObject * pymodule)
+{
+  int8_t err;
+
+  PyObject * pyobject_create_ros_message = NULL;
+  pyobject_create_ros_message = PyCapsule_New(
+    (void *)&shell_interfaces__msg__obstacle__create_ros_message,
+    NULL, NULL);
+  if (!pyobject_create_ros_message) {
+    // previously added objects will be removed when the module is destroyed
+    return -1;
+  }
+  err = PyModule_AddObject(
+    pymodule,
+    "create_ros_message_msg__msg__obstacle",
+    pyobject_create_ros_message);
+  if (err) {
+    // the created capsule needs to be decremented
+    Py_XDECREF(pyobject_create_ros_message);
+    // previously added objects will be removed when the module is destroyed
+    return err;
+  }
+
+  PyObject * pyobject_destroy_ros_message = NULL;
+  pyobject_destroy_ros_message = PyCapsule_New(
+    (void *)&shell_interfaces__msg__obstacle__destroy_ros_message,
+    NULL, NULL);
+  if (!pyobject_destroy_ros_message) {
+    // previously added objects will be removed when the module is destroyed
+    return -1;
+  }
+  err = PyModule_AddObject(
+    pymodule,
+    "destroy_ros_message_msg__msg__obstacle",
+    pyobject_destroy_ros_message);
+  if (err) {
+    // the created capsule needs to be decremented
+    Py_XDECREF(pyobject_destroy_ros_message);
+    // previously added objects will be removed when the module is destroyed
+    return err;
+  }
+
+  PyObject * pyobject_convert_from_py = NULL;
+  pyobject_convert_from_py = PyCapsule_New(
+    (void *)&shell_interfaces__msg__obstacle__convert_from_py,
+    NULL, NULL);
+  if (!pyobject_convert_from_py) {
+    // previously added objects will be removed when the module is destroyed
+    return -1;
+  }
+  err = PyModule_AddObject(
+    pymodule,
+    "convert_from_py_msg__msg__obstacle",
+    pyobject_convert_from_py);
+  if (err) {
+    // the created capsule needs to be decremented
+    Py_XDECREF(pyobject_convert_from_py);
+    // previously added objects will be removed when the module is destroyed
+    return err;
+  }
+
+  PyObject * pyobject_convert_to_py = NULL;
+  pyobject_convert_to_py = PyCapsule_New(
+    (void *)&shell_interfaces__msg__obstacle__convert_to_py,
+    NULL, NULL);
+  if (!pyobject_convert_to_py) {
+    // previously added objects will be removed when the module is destroyed
+    return -1;
+  }
+  err = PyModule_AddObject(
+    pymodule,
+    "convert_to_py_msg__msg__obstacle",
+    pyobject_convert_to_py);
+  if (err) {
+    // the created capsule needs to be decremented
+    Py_XDECREF(pyobject_convert_to_py);
+    // previously added objects will be removed when the module is destroyed
+    return err;
+  }
+
+  PyObject * pyobject_type_support = NULL;
+  pyobject_type_support = PyCapsule_New(
+    (void *)ROSIDL_GET_MSG_TYPE_SUPPORT(shell_interfaces, msg, Obstacle),
+    NULL, NULL);
+  if (!pyobject_type_support) {
+    // previously added objects will be removed when the module is destroyed
+    return -1;
+  }
+  err = PyModule_AddObject(
+    pymodule,
+    "type_support_msg__msg__obstacle",
+    pyobject_type_support);
+  if (err) {
+    // the created capsule needs to be decremented
+    Py_XDECREF(pyobject_type_support);
+    // previously added objects will be removed when the module is destroyed
+    return err;
+  }
+  return 0;
+}
+
+// already included above
+// #include <stdbool.h>
+// already included above
+// #include <stdint.h>
+// already included above
+// #include "rosidl_runtime_c/visibility_control.h"
+// already included above
+// #include "rosidl_runtime_c/message_type_support_struct.h"
+// already included above
+// #include "rosidl_runtime_c/service_type_support_struct.h"
+// already included above
+// #include "rosidl_runtime_c/action_type_support_struct.h"
+#include "shell_interfaces/msg/detail/obstacle_array__type_support.h"
+#include "shell_interfaces/msg/detail/obstacle_array__struct.h"
+#include "shell_interfaces/msg/detail/obstacle_array__functions.h"
+
+static void * shell_interfaces__msg__obstacle_array__create_ros_message(void)
+{
+  return shell_interfaces__msg__ObstacleArray__create();
+}
+
+static void shell_interfaces__msg__obstacle_array__destroy_ros_message(void * raw_ros_message)
+{
+  shell_interfaces__msg__ObstacleArray * ros_message = (shell_interfaces__msg__ObstacleArray *)raw_ros_message;
+  shell_interfaces__msg__ObstacleArray__destroy(ros_message);
+}
+
+ROSIDL_GENERATOR_C_IMPORT
+bool shell_interfaces__msg__obstacle_array__convert_from_py(PyObject * _pymsg, void * ros_message);
+ROSIDL_GENERATOR_C_IMPORT
+PyObject * shell_interfaces__msg__obstacle_array__convert_to_py(void * raw_ros_message);
+
+
+ROSIDL_GENERATOR_C_IMPORT
+const rosidl_message_type_support_t *
+ROSIDL_GET_MSG_TYPE_SUPPORT(shell_interfaces, msg, ObstacleArray);
+
+int8_t
+_register_msg_type__msg__obstacle_array(PyObject * pymodule)
+{
+  int8_t err;
+
+  PyObject * pyobject_create_ros_message = NULL;
+  pyobject_create_ros_message = PyCapsule_New(
+    (void *)&shell_interfaces__msg__obstacle_array__create_ros_message,
+    NULL, NULL);
+  if (!pyobject_create_ros_message) {
+    // previously added objects will be removed when the module is destroyed
+    return -1;
+  }
+  err = PyModule_AddObject(
+    pymodule,
+    "create_ros_message_msg__msg__obstacle_array",
+    pyobject_create_ros_message);
+  if (err) {
+    // the created capsule needs to be decremented
+    Py_XDECREF(pyobject_create_ros_message);
+    // previously added objects will be removed when the module is destroyed
+    return err;
+  }
+
+  PyObject * pyobject_destroy_ros_message = NULL;
+  pyobject_destroy_ros_message = PyCapsule_New(
+    (void *)&shell_interfaces__msg__obstacle_array__destroy_ros_message,
+    NULL, NULL);
+  if (!pyobject_destroy_ros_message) {
+    // previously added objects will be removed when the module is destroyed
+    return -1;
+  }
+  err = PyModule_AddObject(
+    pymodule,
+    "destroy_ros_message_msg__msg__obstacle_array",
+    pyobject_destroy_ros_message);
+  if (err) {
+    // the created capsule needs to be decremented
+    Py_XDECREF(pyobject_destroy_ros_message);
+    // previously added objects will be removed when the module is destroyed
+    return err;
+  }
+
+  PyObject * pyobject_convert_from_py = NULL;
+  pyobject_convert_from_py = PyCapsule_New(
+    (void *)&shell_interfaces__msg__obstacle_array__convert_from_py,
+    NULL, NULL);
+  if (!pyobject_convert_from_py) {
+    // previously added objects will be removed when the module is destroyed
+    return -1;
+  }
+  err = PyModule_AddObject(
+    pymodule,
+    "convert_from_py_msg__msg__obstacle_array",
+    pyobject_convert_from_py);
+  if (err) {
+    // the created capsule needs to be decremented
+    Py_XDECREF(pyobject_convert_from_py);
+    // previously added objects will be removed when the module is destroyed
+    return err;
+  }
+
+  PyObject * pyobject_convert_to_py = NULL;
+  pyobject_convert_to_py = PyCapsule_New(
+    (void *)&shell_interfaces__msg__obstacle_array__convert_to_py,
+    NULL, NULL);
+  if (!pyobject_convert_to_py) {
+    // previously added objects will be removed when the module is destroyed
+    return -1;
+  }
+  err = PyModule_AddObject(
+    pymodule,
+    "convert_to_py_msg__msg__obstacle_array",
+    pyobject_convert_to_py);
+  if (err) {
+    // the created capsule needs to be decremented
+    Py_XDECREF(pyobject_convert_to_py);
+    // previously added objects will be removed when the module is destroyed
+    return err;
+  }
+
+  PyObject * pyobject_type_support = NULL;
+  pyobject_type_support = PyCapsule_New(
+    (void *)ROSIDL_GET_MSG_TYPE_SUPPORT(shell_interfaces, msg, ObstacleArray),
+    NULL, NULL);
+  if (!pyobject_type_support) {
+    // previously added objects will be removed when the module is destroyed
+    return -1;
+  }
+  err = PyModule_AddObject(
+    pymodule,
+    "type_support_msg__msg__obstacle_array",
     pyobject_type_support);
   if (err) {
     // the created capsule needs to be decremented
@@ -300,13 +717,31 @@ PyInit_shell_interfaces_s__rosidl_typesupport_c(void)
   }
   int8_t err;
 
+  err = _register_msg_type__msg__trajectory(pymodule);
+  if (err) {
+    Py_XDECREF(pymodule);
+    return NULL;
+  }
+
   err = _register_msg_type__msg__trajectory_point(pymodule);
   if (err) {
     Py_XDECREF(pymodule);
     return NULL;
   }
 
-  err = _register_msg_type__msg__trajectory(pymodule);
+  err = _register_msg_type__msg__boundary(pymodule);
+  if (err) {
+    Py_XDECREF(pymodule);
+    return NULL;
+  }
+
+  err = _register_msg_type__msg__obstacle(pymodule);
+  if (err) {
+    Py_XDECREF(pymodule);
+    return NULL;
+  }
+
+  err = _register_msg_type__msg__obstacle_array(pymodule);
   if (err) {
     Py_XDECREF(pymodule);
     return NULL;

@@ -1,2 +1,5 @@
-/home/esraamustafa/path_planning/Path_Planning_Shell_AI/build/shell_interfaces/rosidl_adapter/shell_interfaces:msg/TrajectoryPoint.idl
 /home/esraamustafa/path_planning/Path_Planning_Shell_AI/build/shell_interfaces/rosidl_adapter/shell_interfaces:msg/Trajectory.idl
+/home/esraamustafa/path_planning/Path_Planning_Shell_AI/build/shell_interfaces/rosidl_adapter/shell_interfaces:msg/TrajectoryPoint.idl
+/home/esraamustafa/path_planning/Path_Planning_Shell_AI/build/shell_interfaces/rosidl_adapter/shell_interfaces:msg/Boundary.idl
+/home/esraamustafa/path_planning/Path_Planning_Shell_AI/build/shell_interfaces/rosidl_adapter/shell_interfaces:msg/Obstacle.idl
+/home/esraamustafa/path_planning/Path_Planning_Shell_AI/build/shell_interfaces/rosidl_adapter/shell_interfaces:msg/ObstacleArray.idl

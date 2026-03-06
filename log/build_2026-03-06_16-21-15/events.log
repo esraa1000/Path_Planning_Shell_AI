@@ -1,0 +1,613 @@
+[0.000000] (-) TimerEvent: {}
+[0.000317] (shell_interfaces) JobQueued: {'identifier': 'shell_interfaces', 'dependencies': OrderedDict()}
+[0.000360] (shell_planning) JobQueued: {'identifier': 'shell_planning', 'dependencies': OrderedDict()}
+[0.000390] (shell_test_nodes) JobQueued: {'identifier': 'shell_test_nodes', 'dependencies': OrderedDict([('shell_interfaces', '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces')])}
+[0.000405] (shell_visualization) JobQueued: {'identifier': 'shell_visualization', 'dependencies': OrderedDict([('shell_interfaces', '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces')])}
+[0.000416] (shell_interfaces) JobStarted: {'identifier': 'shell_interfaces'}
+[0.012871] (shell_planning) JobStarted: {'identifier': 'shell_planning'}
+[0.024506] (shell_interfaces) JobProgress: {'identifier': 'shell_interfaces', 'progress': 'cmake'}
+[0.028064] (shell_interfaces) Command: {'cmd': ['/usr/bin/cmake', '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/src/shell_interfaces', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces'], 'cwd': '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/build/shell_interfaces', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'esraamustafa'), ('GIT_ASKPASS', '/home/esraamustafa/.vscode-server/bin/072586267e68ece9a47aa43f8c108e0dcbf44622/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/esraamustafa'), ('TERM_PROGRAM_VERSION', '1.109.5'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-0e11376b-c5d2-4550-9fb3-3b587a2c3a04.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/esraamustafa/.vscode-server/bin/072586267e68ece9a47aa43f8c108e0dcbf44622/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/esraamustafa/.vscode-server/bin/072586267e68ece9a47aa43f8c108e0dcbf44622/node'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/esraamustafa/.vscode-server/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'esraamustafa'), ('NAME', 'Esraa'), ('WSL_INTEROP', '/run/WSL/493_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/esraamustafa/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/esraamustafa/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/esraamustafa/.vscode-server/bin/072586267e68ece9a47aa43f8c108e0dcbf44622/bin/remote-cli:/home/esraamustafa/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Users/esraa/AppData/Local/Programs/Python/Python312/Scripts/:/mnt/c/Users/esraa/AppData/Local/Programs/Python/Python312/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/nodejs/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/msys64/mingw64/bin:/mnt/c/Program Files/GitHub CLI/:/mnt/c/Program Files/MATLAB/R2024b/bin:/mnt/c/Program Files (x86)/Microsoft SQL Server/160/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/160/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/160/DTS/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/CMake/bin:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/xampp/php/php.exe:/mnt/c/Users/esraa/AppData/Local/Programs/Python/Python314/Scripts/:/mnt/c/Users/esraa/AppData/Local/Programs/Python/Python314/:/mnt/c/Users/esraa/AppData/Local/Programs/Python/Launcher/:/mnt/c/Users/esraa/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/esraa/AppData/Local/Programs/Microsoft_VS_Code/bin:/mnt/c/Users/esraa/AppData/Local/Microsoft/WinGet/Packages/Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe:/mnt/c/Users/esraa/AppData/Roaming/npm:/mnt/c/Users/esraa/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/esraa/.dotnet/tools:/mnt/d/IntelliJ IDEA 2024.2.3/bin:/mnt/c/Program Files/JetBrains/IntelliJ IDEA Community Edition 2024.2.3/bin:/mnt/c/Program Files/MongoDB/Server/8.2/bin:/mnt/c/Users/esraa/AppData/Local/Programs/mongosh/:/snap/bin:/home/esraamustafa/.vscode-server/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/scripts/noConfigScripts'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/esraamustafa/.vscode-server/extensions/ms-python.debugpy-2025.18.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-9aa057c463a7ace4.txt'), ('LANG', 'C.UTF-8'), ('PYTHONSTARTUP', '/home/esraamustafa/.vscode-server/data/User/workspaceStorage/9188cf032e28f409f831a5c4cd4238d1/ms-python.python/pythonrc.py'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-7233589553.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/build/shell_interfaces'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', 'VSCODE_WSL_EXT_LOCATION/up:VSCODE_SERVER_TAR/up'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.098971] (-) TimerEvent: {}
+[0.199383] (-) TimerEvent: {}
+[0.299632] (-) TimerEvent: {}
+[0.400029] (-) TimerEvent: {}
+[0.500438] (-) TimerEvent: {}
+[0.600843] (-) TimerEvent: {}
+[0.670065] (shell_interfaces) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.701050] (-) TimerEvent: {}
+[0.784488] (shell_planning) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/build/shell_planning/build', '--no-deps', 'symlink_data'], 'cwd': '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/build/shell_planning', 'env': {'PYTHON_BASIC_REPL': '1', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'esraamustafa', 'GIT_ASKPASS': '/home/esraamustafa/.vscode-server/bin/072586267e68ece9a47aa43f8c108e0dcbf44622/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'MOTD_SHOWN': 'update-motd', 'HOME': '/home/esraamustafa', 'TERM_PROGRAM_VERSION': '1.109.5', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-0e11376b-c5d2-4550-9fb3-3b587a2c3a04.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/esraamustafa/.vscode-server/bin/072586267e68ece9a47aa43f8c108e0dcbf44622/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/esraamustafa/.vscode-server/bin/072586267e68ece9a47aa43f8c108e0dcbf44622/node', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'BUNDLED_DEBUGPY_PATH': '/home/esraamustafa/.vscode-server/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/libs/debugpy', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'WSL_DISTRO_NAME': 'Ubuntu-22.04', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'esraamustafa', 'NAME': 'Esraa', 'WSL_INTEROP': '/run/WSL/493_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/esraamustafa/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/esraamustafa/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/esraamustafa/.vscode-server/bin/072586267e68ece9a47aa43f8c108e0dcbf44622/bin/remote-cli:/home/esraamustafa/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Users/esraa/AppData/Local/Programs/Python/Python312/Scripts/:/mnt/c/Users/esraa/AppData/Local/Programs/Python/Python312/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/nodejs/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/msys64/mingw64/bin:/mnt/c/Program Files/GitHub CLI/:/mnt/c/Program Files/MATLAB/R2024b/bin:/mnt/c/Program Files (x86)/Microsoft SQL Server/160/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/160/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/160/DTS/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/CMake/bin:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/xampp/php/php.exe:/mnt/c/Users/esraa/AppData/Local/Programs/Python/Python314/Scripts/:/mnt/c/Users/esraa/AppData/Local/Programs/Python/Python314/:/mnt/c/Users/esraa/AppData/Local/Programs/Python/Launcher/:/mnt/c/Users/esraa/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/esraa/AppData/Local/Programs/Microsoft_VS_Code/bin:/mnt/c/Users/esraa/AppData/Local/Microsoft/WinGet/Packages/Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe:/mnt/c/Users/esraa/AppData/Roaming/npm:/mnt/c/Users/esraa/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/esraa/.dotnet/tools:/mnt/d/IntelliJ IDEA 2024.2.3/bin:/mnt/c/Program Files/JetBrains/IntelliJ IDEA Community Edition 2024.2.3/bin:/mnt/c/Program Files/MongoDB/Server/8.2/bin:/mnt/c/Users/esraa/AppData/Local/Programs/mongosh/:/snap/bin:/home/esraamustafa/.vscode-server/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/scripts/noConfigScripts', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/esraamustafa/.vscode-server/extensions/ms-python.debugpy-2025.18.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-9aa057c463a7ace4.txt', 'LANG': 'C.UTF-8', 'PYTHONSTARTUP': '/home/esraamustafa/.vscode-server/data/User/workspaceStorage/9188cf032e28f409f831a5c4cd4238d1/ms-python.python/pythonrc.py', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-7233589553.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/build/shell_planning', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/build/shell_planning/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_planning/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'WSLENV': 'VSCODE_WSL_EXT_LOCATION/up:VSCODE_SERVER_TAR/up'}, 'shell': False}
+[0.801184] (-) TimerEvent: {}
+[0.901502] (-) TimerEvent: {}
+[0.982759] (shell_planning) StdoutLine: {'line': b'running develop\n'}
+[1.001606] (-) TimerEvent: {}
+[1.092560] (shell_planning) StdoutLine: {'line': b'running egg_info\n'}
+[1.092763] (shell_planning) StdoutLine: {'line': b'creating shell_planning.egg-info\n'}
+[1.093023] (shell_planning) StdoutLine: {'line': b'writing shell_planning.egg-info/PKG-INFO\n'}
+[1.093288] (shell_planning) StdoutLine: {'line': b'writing dependency_links to shell_planning.egg-info/dependency_links.txt\n'}
+[1.093682] (shell_planning) StdoutLine: {'line': b'writing entry points to shell_planning.egg-info/entry_points.txt\n'}
+[1.093822] (shell_planning) StdoutLine: {'line': b'writing requirements to shell_planning.egg-info/requires.txt\n'}
+[1.093962] (shell_planning) StdoutLine: {'line': b'writing top-level names to shell_planning.egg-info/top_level.txt\n'}
+[1.093997] (shell_planning) StdoutLine: {'line': b"writing manifest file 'shell_planning.egg-info/SOURCES.txt'\n"}
+[1.095090] (shell_planning) StdoutLine: {'line': b"reading manifest file 'shell_planning.egg-info/SOURCES.txt'\n"}
+[1.095489] (shell_planning) StdoutLine: {'line': b"writing manifest file 'shell_planning.egg-info/SOURCES.txt'\n"}
+[1.096413] (shell_planning) StdoutLine: {'line': b'running build_ext\n'}
+[1.096673] (shell_planning) StdoutLine: {'line': b'Creating /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_planning/lib/python3.10/site-packages/shell-planning.egg-link (link to .)\n'}
+[1.097105] (shell_planning) StdoutLine: {'line': b'Installing global_planner script to /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_planning/lib/shell_planning\n'}
+[1.097576] (shell_planning) StdoutLine: {'line': b'Installing local_planner script to /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_planning/lib/shell_planning\n'}
+[1.097976] (shell_planning) StdoutLine: {'line': b'\n'}
+[1.098036] (shell_planning) StdoutLine: {'line': b'Installed /home/esraamustafa/path_planning/Path_Planning_Shell_AI/build/shell_planning\n'}
+[1.098068] (shell_planning) StdoutLine: {'line': b'running symlink_data\n'}
+[1.098121] (shell_planning) StdoutLine: {'line': b'creating /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_planning/share/ament_index\n'}
+[1.098311] (shell_planning) StdoutLine: {'line': b'creating /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_planning/share/ament_index/resource_index\n'}
+[1.098506] (shell_planning) StdoutLine: {'line': b'creating /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_planning/share/ament_index/resource_index/packages\n'}
+[1.098621] (shell_planning) StdoutLine: {'line': b'symbolically linking /home/esraamustafa/path_planning/Path_Planning_Shell_AI/build/shell_planning/resource/shell_planning -> /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_planning/share/ament_index/resource_index/packages\n'}
+[1.098875] (shell_planning) StdoutLine: {'line': b'symbolically linking /home/esraamustafa/path_planning/Path_Planning_Shell_AI/build/shell_planning/package.xml -> /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_planning/share/shell_planning\n'}
+[1.099081] (shell_planning) StdoutLine: {'line': b'creating /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_planning/share/shell_planning/launch\n'}
+[1.099374] (shell_planning) StdoutLine: {'line': b'symbolically linking /home/esraamustafa/path_planning/Path_Planning_Shell_AI/build/shell_planning/launch/simulation.launch.py -> /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_planning/share/shell_planning/launch\n'}
+[1.101715] (-) TimerEvent: {}
+[1.130705] (shell_planning) CommandEnded: {'returncode': 0}
+[1.149862] (shell_planning) JobEnded: {'identifier': 'shell_planning', 'rc': 0}
+[1.201824] (-) TimerEvent: {}
+[1.302056] (-) TimerEvent: {}
+[1.402405] (-) TimerEvent: {}
+[1.502797] (-) TimerEvent: {}
+[1.603311] (-) TimerEvent: {}
+[1.703740] (-) TimerEvent: {}
+[1.804174] (-) TimerEvent: {}
+[1.904452] (-) TimerEvent: {}
+[2.004939] (-) TimerEvent: {}
+[2.105431] (-) TimerEvent: {}
+[2.205808] (-) TimerEvent: {}
+[2.284565] (shell_interfaces) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[2.306076] (-) TimerEvent: {}
+[2.406649] (-) TimerEvent: {}
+[2.507247] (-) TimerEvent: {}
+[2.607927] (-) TimerEvent: {}
+[2.708432] (-) TimerEvent: {}
+[2.808773] (-) TimerEvent: {}
+[2.909135] (-) TimerEvent: {}
+[3.009420] (-) TimerEvent: {}
+[3.109814] (-) TimerEvent: {}
+[3.210123] (-) TimerEvent: {}
+[3.310541] (-) TimerEvent: {}
+[3.411134] (-) TimerEvent: {}
+[3.512021] (-) TimerEvent: {}
+[3.612431] (-) TimerEvent: {}
+[3.712925] (-) TimerEvent: {}
+[3.813254] (-) TimerEvent: {}
+[3.832979] (shell_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[3.913453] (-) TimerEvent: {}
+[4.014011] (-) TimerEvent: {}
+[4.114588] (-) TimerEvent: {}
+[4.214860] (-) TimerEvent: {}
+[4.315188] (-) TimerEvent: {}
+[4.325056] (shell_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[4.331990] (shell_interfaces) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[4.332889] (shell_interfaces) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[4.334335] (shell_interfaces) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[4.339286] (shell_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[4.415345] (-) TimerEvent: {}
+[4.515708] (-) TimerEvent: {}
+[4.615964] (-) TimerEvent: {}
+[4.716448] (-) TimerEvent: {}
+[4.816777] (-) TimerEvent: {}
+[4.850424] (shell_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[4.855878] (shell_interfaces) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[4.856078] (shell_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[4.856410] (shell_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[4.879554] (shell_interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[4.916951] (-) TimerEvent: {}
+[4.995126] (shell_interfaces) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[5.017061] (-) TimerEvent: {}
+[5.054753] (shell_interfaces) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[5.089920] (shell_interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[5.099589] (shell_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[5.114832] (shell_interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[5.117179] (-) TimerEvent: {}
+[5.217451] (-) TimerEvent: {}
+[5.318014] (-) TimerEvent: {}
+[5.418557] (-) TimerEvent: {}
+[5.519005] (-) TimerEvent: {}
+[5.619382] (-) TimerEvent: {}
+[5.719750] (-) TimerEvent: {}
+[5.820458] (-) TimerEvent: {}
+[5.920810] (-) TimerEvent: {}
+[5.921104] (shell_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[5.971614] (shell_interfaces) StdoutLine: {'line': b'-- Found std_msgs: 4.9.0 (/opt/ros/humble/share/std_msgs/cmake)\n'}
+[6.015054] (shell_interfaces) StdoutLine: {'line': b'-- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[6.021037] (-) TimerEvent: {}
+[6.121246] (-) TimerEvent: {}
+[6.221541] (-) TimerEvent: {}
+[6.302203] (shell_interfaces) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[6.321714] (-) TimerEvent: {}
+[6.422125] (-) TimerEvent: {}
+[6.522456] (-) TimerEvent: {}
+[6.526840] (shell_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[6.622543] (-) TimerEvent: {}
+[6.722916] (-) TimerEvent: {}
+[6.772303] (shell_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[6.823074] (-) TimerEvent: {}
+[6.923482] (-) TimerEvent: {}
+[7.023922] (-) TimerEvent: {}
+[7.124418] (-) TimerEvent: {}
+[7.224820] (-) TimerEvent: {}
+[7.325353] (-) TimerEvent: {}
+[7.375437] (shell_interfaces) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[7.379602] (shell_interfaces) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[7.425522] (-) TimerEvent: {}
+[7.525923] (-) TimerEvent: {}
+[7.626263] (-) TimerEvent: {}
+[7.726709] (-) TimerEvent: {}
+[7.827113] (-) TimerEvent: {}
+[7.927579] (-) TimerEvent: {}
+[8.028011] (-) TimerEvent: {}
+[8.128497] (-) TimerEvent: {}
+[8.228948] (-) TimerEvent: {}
+[8.329529] (-) TimerEvent: {}
+[8.430122] (-) TimerEvent: {}
+[8.530503] (-) TimerEvent: {}
+[8.631047] (-) TimerEvent: {}
+[8.731946] (-) TimerEvent: {}
+[8.810905] (shell_interfaces) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[8.811124] (shell_interfaces) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[8.811182] (shell_interfaces) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[8.811227] (shell_interfaces) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[8.829300] (shell_interfaces) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[8.832190] (-) TimerEvent: {}
+[8.932486] (-) TimerEvent: {}
+[9.032927] (-) TimerEvent: {}
+[9.132626] (shell_interfaces) StdoutLine: {'line': b'-- Configuring done\n'}
+[9.133146] (-) TimerEvent: {}
+[9.181768] (shell_interfaces) StdoutLine: {'line': b'-- Generating done\n'}
+[9.196029] (shell_interfaces) StdoutLine: {'line': b'-- Build files have been written to: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/build/shell_interfaces\n'}
+[9.205258] (shell_interfaces) CommandEnded: {'returncode': 0}
+[9.205810] (shell_interfaces) JobProgress: {'identifier': 'shell_interfaces', 'progress': 'build'}
+[9.205872] (shell_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/build/shell_interfaces', '--', '-j12', '-l12'], 'cwd': '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/build/shell_interfaces', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'esraamustafa'), ('GIT_ASKPASS', '/home/esraamustafa/.vscode-server/bin/072586267e68ece9a47aa43f8c108e0dcbf44622/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/esraamustafa'), ('TERM_PROGRAM_VERSION', '1.109.5'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-0e11376b-c5d2-4550-9fb3-3b587a2c3a04.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/esraamustafa/.vscode-server/bin/072586267e68ece9a47aa43f8c108e0dcbf44622/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/esraamustafa/.vscode-server/bin/072586267e68ece9a47aa43f8c108e0dcbf44622/node'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/esraamustafa/.vscode-server/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'esraamustafa'), ('NAME', 'Esraa'), ('WSL_INTEROP', '/run/WSL/493_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/esraamustafa/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/esraamustafa/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/esraamustafa/.vscode-server/bin/072586267e68ece9a47aa43f8c108e0dcbf44622/bin/remote-cli:/home/esraamustafa/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Users/esraa/AppData/Local/Programs/Python/Python312/Scripts/:/mnt/c/Users/esraa/AppData/Local/Programs/Python/Python312/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/nodejs/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/msys64/mingw64/bin:/mnt/c/Program Files/GitHub CLI/:/mnt/c/Program Files/MATLAB/R2024b/bin:/mnt/c/Program Files (x86)/Microsoft SQL Server/160/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/160/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/160/DTS/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/CMake/bin:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/xampp/php/php.exe:/mnt/c/Users/esraa/AppData/Local/Programs/Python/Python314/Scripts/:/mnt/c/Users/esraa/AppData/Local/Programs/Python/Python314/:/mnt/c/Users/esraa/AppData/Local/Programs/Python/Launcher/:/mnt/c/Users/esraa/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/esraa/AppData/Local/Programs/Microsoft_VS_Code/bin:/mnt/c/Users/esraa/AppData/Local/Microsoft/WinGet/Packages/Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe:/mnt/c/Users/esraa/AppData/Roaming/npm:/mnt/c/Users/esraa/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/esraa/.dotnet/tools:/mnt/d/IntelliJ IDEA 2024.2.3/bin:/mnt/c/Program Files/JetBrains/IntelliJ IDEA Community Edition 2024.2.3/bin:/mnt/c/Program Files/MongoDB/Server/8.2/bin:/mnt/c/Users/esraa/AppData/Local/Programs/mongosh/:/snap/bin:/home/esraamustafa/.vscode-server/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/scripts/noConfigScripts'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/esraamustafa/.vscode-server/extensions/ms-python.debugpy-2025.18.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-9aa057c463a7ace4.txt'), ('LANG', 'C.UTF-8'), ('PYTHONSTARTUP', '/home/esraamustafa/.vscode-server/data/User/workspaceStorage/9188cf032e28f409f831a5c4cd4238d1/ms-python.python/pythonrc.py'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-7233589553.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/build/shell_interfaces'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', 'VSCODE_WSL_EXT_LOCATION/up:VSCODE_SERVER_TAR/up'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[9.233387] (-) TimerEvent: {}
+[9.244556] (shell_interfaces) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[9.251779] (shell_interfaces) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[9.261463] (shell_interfaces) StdoutLine: {'line': b'[  3%] Built target ament_cmake_python_symlink_shell_interfaces\n'}
+[9.333543] (-) TimerEvent: {}
+[9.433910] (-) TimerEvent: {}
+[9.513796] (shell_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[9.514551] (shell_interfaces) StdoutLine: {'line': b'creating shell_interfaces.egg-info\n'}
+[9.514999] (shell_interfaces) StdoutLine: {'line': b'writing shell_interfaces.egg-info/PKG-INFO\n'}
+[9.515486] (shell_interfaces) StdoutLine: {'line': b'writing dependency_links to shell_interfaces.egg-info/dependency_links.txt\n'}
+[9.515610] (shell_interfaces) StdoutLine: {'line': b'writing top-level names to shell_interfaces.egg-info/top_level.txt\n'}
+[9.515902] (shell_interfaces) StdoutLine: {'line': b"writing manifest file 'shell_interfaces.egg-info/SOURCES.txt'\n"}
+[9.517962] (shell_interfaces) StdoutLine: {'line': b"reading manifest file 'shell_interfaces.egg-info/SOURCES.txt'\n"}
+[9.518576] (shell_interfaces) StdoutLine: {'line': b"writing manifest file 'shell_interfaces.egg-info/SOURCES.txt'\n"}
+[9.534117] (-) TimerEvent: {}
+[9.551023] (shell_interfaces) StdoutLine: {'line': b'[  3%] Built target ament_cmake_python_build_shell_interfaces_egg\n'}
+[9.634303] (-) TimerEvent: {}
+[9.734272] (shell_interfaces) StdoutLine: {'line': b'[  3%] Built target shell_interfaces__cpp\n'}
+[9.734634] (-) TimerEvent: {}
+[9.754335] (shell_interfaces) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[9.754604] (shell_interfaces) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[9.769722] (shell_interfaces) StdoutLine: {'line': b'[  7%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[9.797516] (shell_interfaces) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/shell_interfaces__rosidl_generator_c.dir/rosidl_generator_c/shell_interfaces/msg/detail/boundary__functions.c.o\x1b[0m\n'}
+[9.797749] (shell_interfaces) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/shell_interfaces__rosidl_generator_c.dir/rosidl_generator_c/shell_interfaces/msg/detail/trajectory_point__functions.c.o\x1b[0m\n'}
+[9.799384] (shell_interfaces) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/shell_interfaces__rosidl_generator_c.dir/rosidl_generator_c/shell_interfaces/msg/detail/trajectory__functions.c.o\x1b[0m\n'}
+[9.801946] (shell_interfaces) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/shell_interfaces__rosidl_generator_c.dir/rosidl_generator_c/shell_interfaces/msg/detail/obstacle_array__functions.c.o\x1b[0m\n'}
+[9.802273] (shell_interfaces) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding C object CMakeFiles/shell_interfaces__rosidl_generator_c.dir/rosidl_generator_c/shell_interfaces/msg/detail/obstacle__functions.c.o\x1b[0m\n'}
+[9.834813] (-) TimerEvent: {}
+[9.936005] (-) TimerEvent: {}
+[9.974791] (shell_interfaces) StdoutLine: {'line': b'[ 17%] \x1b[32m\x1b[1mLinking C shared library libshell_interfaces__rosidl_generator_c.so\x1b[0m\n'}
+[10.036134] (-) TimerEvent: {}
+[10.136635] (-) TimerEvent: {}
+[10.237269] (-) TimerEvent: {}
+[10.302917] (shell_interfaces) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding CXX object CMakeFiles/shell_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/shell_interfaces/msg/obstacle__type_support.cpp.o\x1b[0m\n'}
+[10.306725] (shell_interfaces) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/shell_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/shell_interfaces/msg/boundary__type_support.cpp.o\x1b[0m\n'}
+[10.308443] (shell_interfaces) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/shell_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/shell_interfaces/msg/trajectory__type_support.cpp.o\x1b[0m\n'}
+[10.314031] (shell_interfaces) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/shell_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/shell_interfaces/msg/trajectory_point__type_support.cpp.o\x1b[0m\n'}
+[10.314452] (shell_interfaces) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/shell_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/shell_interfaces/msg/obstacle_array__type_support.cpp.o\x1b[0m\n'}
+[10.337550] (-) TimerEvent: {}
+[10.426441] (shell_interfaces) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/shell_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/shell_interfaces/msg/detail/trajectory__type_support.cpp.o\x1b[0m\n'}
+[10.431977] (shell_interfaces) StdoutLine: {'line': b'[ 26%] Built target shell_interfaces__rosidl_generator_c\n'}
+[10.437740] (-) TimerEvent: {}
+[10.443231] (shell_interfaces) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/shell_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/shell_interfaces/msg/detail/trajectory_point__type_support.cpp.o\x1b[0m\n'}
+[10.449169] (shell_interfaces) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/shell_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/shell_interfaces/msg/detail/boundary__type_support.cpp.o\x1b[0m\n'}
+[10.478511] (shell_interfaces) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/shell_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/shell_interfaces/msg/detail/obstacle__type_support.cpp.o\x1b[0m\n'}
+[10.481890] (shell_interfaces) StdoutLine: {'line': b'[ 33%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[10.488165] (shell_interfaces) StdoutLine: {'line': b'[ 34%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[10.526522] (shell_interfaces) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/shell_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/shell_interfaces/msg/detail/dds_fastrtps/trajectory__type_support.cpp.o\x1b[0m\n'}
+[10.539461] (-) TimerEvent: {}
+[10.639951] (-) TimerEvent: {}
+[10.740551] (-) TimerEvent: {}
+[10.855464] (-) TimerEvent: {}
+[10.955977] (-) TimerEvent: {}
+[11.067515] (-) TimerEvent: {}
+[11.173404] (-) TimerEvent: {}
+[11.284038] (-) TimerEvent: {}
+[11.387464] (-) TimerEvent: {}
+[11.487902] (-) TimerEvent: {}
+[11.588415] (-) TimerEvent: {}
+[11.688821] (-) TimerEvent: {}
+[11.789194] (-) TimerEvent: {}
+[11.895429] (-) TimerEvent: {}
+[11.997583] (-) TimerEvent: {}
+[12.097956] (-) TimerEvent: {}
+[12.147910] (shell_interfaces) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/shell_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/shell_interfaces/msg/detail/obstacle_array__type_support.cpp.o\x1b[0m\n'}
+[12.148366] (shell_interfaces) StdoutLine: {'line': b'[ 39%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[12.149703] (shell_interfaces) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/shell_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/shell_interfaces/msg/detail/dds_fastrtps/trajectory_point__type_support.cpp.o\x1b[0m\n'}
+[12.175824] (shell_interfaces) StdoutLine: {'line': b'[ 42%] \x1b[32m\x1b[1mLinking CXX shared library libshell_interfaces__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[12.199561] (-) TimerEvent: {}
+[12.208485] (shell_interfaces) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/shell_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/shell_interfaces/msg/detail/dds_fastrtps/boundary__type_support.cpp.o\x1b[0m\n'}
+[12.230284] (shell_interfaces) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/shell_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/shell_interfaces/msg/detail/trajectory__type_support_c.cpp.o\x1b[0m\n'}
+[12.301796] (-) TimerEvent: {}
+[12.322904] (shell_interfaces) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding C object CMakeFiles/shell_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/shell_interfaces/msg/detail/trajectory__type_support.c.o\x1b[0m\n'}
+[12.398742] (shell_interfaces) StdoutLine: {'line': b'[ 49%] \x1b[32mBuilding C object CMakeFiles/shell_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/shell_interfaces/msg/detail/trajectory_point__type_support.c.o\x1b[0m\n'}
+[12.401904] (-) TimerEvent: {}
+[12.433178] (shell_interfaces) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding C object CMakeFiles/shell_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/shell_interfaces/msg/detail/boundary__type_support.c.o\x1b[0m\n'}
+[12.445675] (shell_interfaces) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/shell_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/shell_interfaces/msg/detail/trajectory_point__type_support_c.cpp.o\x1b[0m\n'}
+[12.476616] (shell_interfaces) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding C object CMakeFiles/shell_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/shell_interfaces/msg/detail/obstacle__type_support.c.o\x1b[0m\n'}
+[12.505944] (-) TimerEvent: {}
+[12.513165] (shell_interfaces) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding C object CMakeFiles/shell_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/shell_interfaces/msg/detail/obstacle_array__type_support.c.o\x1b[0m\n'}
+[12.538004] (shell_interfaces) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/shell_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/shell_interfaces/msg/detail/boundary__type_support_c.cpp.o\x1b[0m\n'}
+[12.539679] (shell_interfaces) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/shell_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/shell_interfaces/msg/detail/obstacle__type_support_c.cpp.o\x1b[0m\n'}
+[12.543376] (shell_interfaces) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/shell_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/shell_interfaces/msg/detail/obstacle_array__type_support_c.cpp.o\x1b[0m\n'}
+[12.551650] (shell_interfaces) StdoutLine: {'line': b'[ 60%] Built target shell_interfaces__rosidl_typesupport_cpp\n'}
+[12.568919] (shell_interfaces) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/shell_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/shell_interfaces/msg/detail/dds_fastrtps/obstacle__type_support.cpp.o\x1b[0m\n'}
+[12.585216] (shell_interfaces) StdoutLine: {'line': b'[ 63%] \x1b[32m\x1b[1mLinking C shared library libshell_interfaces__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[12.606019] (-) TimerEvent: {}
+[12.634610] (shell_interfaces) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding CXX object CMakeFiles/shell_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/shell_interfaces/msg/detail/dds_fastrtps/obstacle_array__type_support.cpp.o\x1b[0m\n'}
+[12.706122] (-) TimerEvent: {}
+[12.811649] (-) TimerEvent: {}
+[12.837185] (shell_interfaces) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/shell_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/shell_interfaces/msg/trajectory__type_support.cpp.o\x1b[0m\n'}
+[12.897204] (shell_interfaces) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/shell_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/shell_interfaces/msg/trajectory_point__type_support.cpp.o\x1b[0m\n'}
+[12.909611] (shell_interfaces) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/shell_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/shell_interfaces/msg/boundary__type_support.cpp.o\x1b[0m\n'}
+[12.911837] (-) TimerEvent: {}
+[12.942194] (shell_interfaces) StdoutLine: {'line': b'[ 69%] Built target shell_interfaces__rosidl_typesupport_introspection_c\n'}
+[12.951489] (shell_interfaces) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/shell_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/shell_interfaces/msg/obstacle__type_support.cpp.o\x1b[0m\n'}
+[12.959550] (shell_interfaces) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/shell_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/shell_interfaces/msg/obstacle_array__type_support.cpp.o\x1b[0m\n'}
+[13.003254] (shell_interfaces) StdoutLine: {'line': b'[ 74%] \x1b[32m\x1b[1mLinking CXX shared library libshell_interfaces__rosidl_typesupport_c.so\x1b[0m\n'}
+[13.011947] (-) TimerEvent: {}
+[13.112656] (-) TimerEvent: {}
+[13.156829] (shell_interfaces) StdoutLine: {'line': b'[ 76%] \x1b[32m\x1b[1mLinking CXX shared library libshell_interfaces__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[13.212873] (-) TimerEvent: {}
+[13.297959] (shell_interfaces) StdoutLine: {'line': b'[ 77%] \x1b[32m\x1b[1mLinking CXX shared library libshell_interfaces__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[13.313203] (-) TimerEvent: {}
+[13.413885] (-) TimerEvent: {}
+[13.431356] (shell_interfaces) StdoutLine: {'line': b'[ 77%] Built target shell_interfaces__rosidl_typesupport_c\n'}
+[13.514032] (-) TimerEvent: {}
+[13.599895] (shell_interfaces) StdoutLine: {'line': b'[ 79%] \x1b[32m\x1b[1mLinking CXX shared library libshell_interfaces__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[13.614455] (-) TimerEvent: {}
+[13.715655] (-) TimerEvent: {}
+[13.816470] (-) TimerEvent: {}
+[13.879038] (shell_interfaces) StdoutLine: {'line': b'[ 79%] Built target shell_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[13.916746] (-) TimerEvent: {}
+[13.934013] (shell_interfaces) StdoutLine: {'line': b'[ 79%] Built target shell_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[14.016837] (-) TimerEvent: {}
+[14.117429] (-) TimerEvent: {}
+[14.218425] (-) TimerEvent: {}
+[14.304370] (shell_interfaces) StdoutLine: {'line': b'[ 79%] Built target shell_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[14.318728] (-) TimerEvent: {}
+[14.335202] (shell_interfaces) StdoutLine: {'line': b'[ 79%] Built target shell_interfaces\n'}
+[14.376765] (shell_interfaces) StdoutLine: {'line': b'[ 80%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[14.418815] (-) TimerEvent: {}
+[14.519509] (-) TimerEvent: {}
+[14.620274] (-) TimerEvent: {}
+[14.720950] (-) TimerEvent: {}
+[14.821406] (-) TimerEvent: {}
+[14.921870] (-) TimerEvent: {}
+[15.022626] (-) TimerEvent: {}
+[15.123302] (-) TimerEvent: {}
+[15.182062] (shell_interfaces) StdoutLine: {'line': b'[ 80%] Built target shell_interfaces__py\n'}
+[15.214149] (shell_interfaces) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/shell_interfaces__rosidl_generator_py.dir/rosidl_generator_py/shell_interfaces/msg/_boundary_s.c.o\x1b[0m\n'}
+[15.215978] (shell_interfaces) StdoutLine: {'line': b'[ 84%] \x1b[32mBuilding C object CMakeFiles/shell_interfaces__rosidl_generator_py.dir/rosidl_generator_py/shell_interfaces/msg/_trajectory_point_s.c.o\x1b[0m\n'}
+[15.217024] (shell_interfaces) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/shell_interfaces__rosidl_generator_py.dir/rosidl_generator_py/shell_interfaces/msg/_obstacle_s.c.o\x1b[0m\n'}
+[15.217832] (shell_interfaces) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/shell_interfaces__rosidl_generator_py.dir/rosidl_generator_py/shell_interfaces/msg/_trajectory_s.c.o\x1b[0m\n'}
+[15.223553] (-) TimerEvent: {}
+[15.227899] (shell_interfaces) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/shell_interfaces__rosidl_generator_py.dir/rosidl_generator_py/shell_interfaces/msg/_obstacle_array_s.c.o\x1b[0m\n'}
+[15.323787] (-) TimerEvent: {}
+[15.424743] (-) TimerEvent: {}
+[15.479827] (shell_interfaces) StdoutLine: {'line': b'[ 90%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/shell_interfaces/libshell_interfaces__rosidl_generator_py.so\x1b[0m\n'}
+[15.524951] (-) TimerEvent: {}
+[15.625602] (-) TimerEvent: {}
+[15.726040] (-) TimerEvent: {}
+[15.826680] (-) TimerEvent: {}
+[15.927367] (-) TimerEvent: {}
+[16.006763] (shell_interfaces) StdoutLine: {'line': b'[ 90%] Built target shell_interfaces__rosidl_generator_py\n'}
+[16.027538] (-) TimerEvent: {}
+[16.036317] (shell_interfaces) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/shell_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/shell_interfaces/_shell_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[16.043718] (shell_interfaces) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/shell_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/shell_interfaces/_shell_interfaces_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[16.045971] (shell_interfaces) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/shell_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/shell_interfaces/_shell_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[16.127788] (-) TimerEvent: {}
+[16.199728] (shell_interfaces) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/shell_interfaces/shell_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[16.200849] (shell_interfaces) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/shell_interfaces/shell_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[16.228118] (-) TimerEvent: {}
+[16.232974] (shell_interfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/shell_interfaces/shell_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[16.328516] (-) TimerEvent: {}
+[16.429249] (-) TimerEvent: {}
+[16.524305] (shell_interfaces) StdoutLine: {'line': b'[100%] Built target shell_interfaces__rosidl_typesupport_c__pyext\n'}
+[16.529436] (-) TimerEvent: {}
+[16.530459] (shell_interfaces) StdoutLine: {'line': b'[100%] Built target shell_interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[16.629732] (-) TimerEvent: {}
+[16.633669] (shell_interfaces) StdoutLine: {'line': b'[100%] Built target shell_interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[16.653321] (shell_interfaces) CommandEnded: {'returncode': 0}
+[16.656642] (shell_interfaces) JobProgress: {'identifier': 'shell_interfaces', 'progress': 'install'}
+[16.672429] (shell_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/build/shell_interfaces'], 'cwd': '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/build/shell_interfaces', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'esraamustafa'), ('GIT_ASKPASS', '/home/esraamustafa/.vscode-server/bin/072586267e68ece9a47aa43f8c108e0dcbf44622/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/esraamustafa'), ('TERM_PROGRAM_VERSION', '1.109.5'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-0e11376b-c5d2-4550-9fb3-3b587a2c3a04.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/esraamustafa/.vscode-server/bin/072586267e68ece9a47aa43f8c108e0dcbf44622/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/esraamustafa/.vscode-server/bin/072586267e68ece9a47aa43f8c108e0dcbf44622/node'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/esraamustafa/.vscode-server/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'esraamustafa'), ('NAME', 'Esraa'), ('WSL_INTEROP', '/run/WSL/493_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/esraamustafa/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/esraamustafa/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/esraamustafa/.vscode-server/bin/072586267e68ece9a47aa43f8c108e0dcbf44622/bin/remote-cli:/home/esraamustafa/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Users/esraa/AppData/Local/Programs/Python/Python312/Scripts/:/mnt/c/Users/esraa/AppData/Local/Programs/Python/Python312/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/nodejs/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/msys64/mingw64/bin:/mnt/c/Program Files/GitHub CLI/:/mnt/c/Program Files/MATLAB/R2024b/bin:/mnt/c/Program Files (x86)/Microsoft SQL Server/160/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/160/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/160/DTS/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/CMake/bin:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/xampp/php/php.exe:/mnt/c/Users/esraa/AppData/Local/Programs/Python/Python314/Scripts/:/mnt/c/Users/esraa/AppData/Local/Programs/Python/Python314/:/mnt/c/Users/esraa/AppData/Local/Programs/Python/Launcher/:/mnt/c/Users/esraa/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/esraa/AppData/Local/Programs/Microsoft_VS_Code/bin:/mnt/c/Users/esraa/AppData/Local/Microsoft/WinGet/Packages/Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe:/mnt/c/Users/esraa/AppData/Roaming/npm:/mnt/c/Users/esraa/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/esraa/.dotnet/tools:/mnt/d/IntelliJ IDEA 2024.2.3/bin:/mnt/c/Program Files/JetBrains/IntelliJ IDEA Community Edition 2024.2.3/bin:/mnt/c/Program Files/MongoDB/Server/8.2/bin:/mnt/c/Users/esraa/AppData/Local/Programs/mongosh/:/snap/bin:/home/esraamustafa/.vscode-server/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/scripts/noConfigScripts'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/esraamustafa/.vscode-server/extensions/ms-python.debugpy-2025.18.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-9aa057c463a7ace4.txt'), ('LANG', 'C.UTF-8'), ('PYTHONSTARTUP', '/home/esraamustafa/.vscode-server/data/User/workspaceStorage/9188cf032e28f409f831a5c4cd4238d1/ms-python.python/pythonrc.py'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-7233589553.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/build/shell_interfaces'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', 'VSCODE_WSL_EXT_LOCATION/up:VSCODE_SERVER_TAR/up'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[16.686853] (shell_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[16.688694] (shell_interfaces) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[16.690492] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/share/ament_index/resource_index/rosidl_interfaces/shell_interfaces\n'}
+[16.708889] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/include/shell_interfaces/shell_interfaces/msg/boundary.h\n'}
+[16.719795] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/include/shell_interfaces/shell_interfaces/msg/detail/boundary__functions.h\n'}
+[16.729960] (-) TimerEvent: {}
+[16.732878] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/include/shell_interfaces/shell_interfaces/msg/detail/boundary__struct.h\n'}
+[16.747141] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/include/shell_interfaces/shell_interfaces/msg/detail/boundary__type_support.h\n'}
+[16.774952] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/include/shell_interfaces/shell_interfaces/msg/detail/obstacle__functions.h\n'}
+[16.789070] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/include/shell_interfaces/shell_interfaces/msg/detail/obstacle__struct.h\n'}
+[16.799125] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/include/shell_interfaces/shell_interfaces/msg/detail/obstacle__type_support.h\n'}
+[16.812879] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/include/shell_interfaces/shell_interfaces/msg/detail/obstacle_array__functions.h\n'}
+[16.823797] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/include/shell_interfaces/shell_interfaces/msg/detail/obstacle_array__struct.h\n'}
+[16.830143] (-) TimerEvent: {}
+[16.834578] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/include/shell_interfaces/shell_interfaces/msg/detail/obstacle_array__type_support.h\n'}
+[16.847607] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/include/shell_interfaces/shell_interfaces/msg/detail/trajectory__functions.h\n'}
+[16.869020] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/include/shell_interfaces/shell_interfaces/msg/detail/trajectory__struct.h\n'}
+[16.889861] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/include/shell_interfaces/shell_interfaces/msg/detail/trajectory__type_support.h\n'}
+[16.906011] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/include/shell_interfaces/shell_interfaces/msg/detail/trajectory_point__functions.h\n'}
+[16.918010] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/include/shell_interfaces/shell_interfaces/msg/detail/trajectory_point__struct.h\n'}
+[16.930518] (-) TimerEvent: {}
+[16.938752] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/include/shell_interfaces/shell_interfaces/msg/detail/trajectory_point__type_support.h\n'}
+[16.952317] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/include/shell_interfaces/shell_interfaces/msg/obstacle.h\n'}
+[16.975218] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/include/shell_interfaces/shell_interfaces/msg/obstacle_array.h\n'}
+[16.993959] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/include/shell_interfaces/shell_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[17.011606] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/include/shell_interfaces/shell_interfaces/msg/trajectory.h\n'}
+[17.026384] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/include/shell_interfaces/shell_interfaces/msg/trajectory_point.h\n'}
+[17.030726] (-) TimerEvent: {}
+[17.040612] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/share/shell_interfaces/environment/library_path.sh\n'}
+[17.060413] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/share/shell_interfaces/environment/library_path.dsv\n'}
+[17.083108] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/include/shell_interfaces/shell_interfaces/msg/detail/boundary__rosidl_typesupport_fastrtps_c.h\n'}
+[17.094929] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/include/shell_interfaces/shell_interfaces/msg/detail/obstacle__rosidl_typesupport_fastrtps_c.h\n'}
+[17.105611] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/include/shell_interfaces/shell_interfaces/msg/detail/obstacle_array__rosidl_typesupport_fastrtps_c.h\n'}
+[17.117288] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/include/shell_interfaces/shell_interfaces/msg/detail/trajectory__rosidl_typesupport_fastrtps_c.h\n'}
+[17.127674] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/include/shell_interfaces/shell_interfaces/msg/detail/trajectory_point__rosidl_typesupport_fastrtps_c.h\n'}
+[17.130816] (-) TimerEvent: {}
+[17.140139] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/include/shell_interfaces/shell_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[17.159936] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/include/shell_interfaces/shell_interfaces/msg/detail/boundary__rosidl_typesupport_introspection_c.h\n'}
+[17.173744] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/include/shell_interfaces/shell_interfaces/msg/detail/obstacle__rosidl_typesupport_introspection_c.h\n'}
+[17.185650] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/include/shell_interfaces/shell_interfaces/msg/detail/obstacle_array__rosidl_typesupport_introspection_c.h\n'}
+[17.196945] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/include/shell_interfaces/shell_interfaces/msg/detail/trajectory__rosidl_typesupport_introspection_c.h\n'}
+[17.216020] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/include/shell_interfaces/shell_interfaces/msg/detail/trajectory_point__rosidl_typesupport_introspection_c.h\n'}
+[17.228609] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/include/shell_interfaces/shell_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[17.230992] (-) TimerEvent: {}
+[17.240221] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/include/shell_interfaces/shell_interfaces/msg/boundary.hpp\n'}
+[17.251560] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/include/shell_interfaces/shell_interfaces/msg/detail/boundary__builder.hpp\n'}
+[17.269277] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/include/shell_interfaces/shell_interfaces/msg/detail/boundary__struct.hpp\n'}
+[17.291032] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/include/shell_interfaces/shell_interfaces/msg/detail/boundary__traits.hpp\n'}
+[17.310677] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/include/shell_interfaces/shell_interfaces/msg/detail/boundary__type_support.hpp\n'}
+[17.323593] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/include/shell_interfaces/shell_interfaces/msg/detail/obstacle__builder.hpp\n'}
+[17.331519] (-) TimerEvent: {}
+[17.337501] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/include/shell_interfaces/shell_interfaces/msg/detail/obstacle__struct.hpp\n'}
+[17.349320] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/include/shell_interfaces/shell_interfaces/msg/detail/obstacle__traits.hpp\n'}
+[17.366943] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/include/shell_interfaces/shell_interfaces/msg/detail/obstacle__type_support.hpp\n'}
+[17.380077] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/include/shell_interfaces/shell_interfaces/msg/detail/obstacle_array__builder.hpp\n'}
+[17.391017] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/include/shell_interfaces/shell_interfaces/msg/detail/obstacle_array__struct.hpp\n'}
+[17.401450] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/include/shell_interfaces/shell_interfaces/msg/detail/obstacle_array__traits.hpp\n'}
+[17.413012] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/include/shell_interfaces/shell_interfaces/msg/detail/obstacle_array__type_support.hpp\n'}
+[17.423680] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/include/shell_interfaces/shell_interfaces/msg/detail/trajectory__builder.hpp\n'}
+[17.431563] (-) TimerEvent: {}
+[17.434279] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/include/shell_interfaces/shell_interfaces/msg/detail/trajectory__struct.hpp\n'}
+[17.445885] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/include/shell_interfaces/shell_interfaces/msg/detail/trajectory__traits.hpp\n'}
+[17.457987] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/include/shell_interfaces/shell_interfaces/msg/detail/trajectory__type_support.hpp\n'}
+[17.472584] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/include/shell_interfaces/shell_interfaces/msg/detail/trajectory_point__builder.hpp\n'}
+[17.489517] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/include/shell_interfaces/shell_interfaces/msg/detail/trajectory_point__struct.hpp\n'}
+[17.504441] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/include/shell_interfaces/shell_interfaces/msg/detail/trajectory_point__traits.hpp\n'}
+[17.515718] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/include/shell_interfaces/shell_interfaces/msg/detail/trajectory_point__type_support.hpp\n'}
+[17.527213] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/include/shell_interfaces/shell_interfaces/msg/obstacle.hpp\n'}
+[17.531881] (-) TimerEvent: {}
+[17.538428] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/include/shell_interfaces/shell_interfaces/msg/obstacle_array.hpp\n'}
+[17.559116] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/include/shell_interfaces/shell_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[17.577639] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/include/shell_interfaces/shell_interfaces/msg/trajectory.hpp\n'}
+[17.592115] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/include/shell_interfaces/shell_interfaces/msg/trajectory_point.hpp\n'}
+[17.604931] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/include/shell_interfaces/shell_interfaces/msg/detail/boundary__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[17.620350] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/include/shell_interfaces/shell_interfaces/msg/detail/obstacle__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[17.632159] (-) TimerEvent: {}
+[17.634308] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/include/shell_interfaces/shell_interfaces/msg/detail/obstacle_array__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[17.648450] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/include/shell_interfaces/shell_interfaces/msg/detail/trajectory__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[17.664297] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/include/shell_interfaces/shell_interfaces/msg/detail/trajectory_point__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[17.678122] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/include/shell_interfaces/shell_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[17.693572] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/include/shell_interfaces/shell_interfaces/msg/detail/boundary__rosidl_typesupport_introspection_cpp.hpp\n'}
+[17.704400] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/include/shell_interfaces/shell_interfaces/msg/detail/obstacle__rosidl_typesupport_introspection_cpp.hpp\n'}
+[17.717120] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/include/shell_interfaces/shell_interfaces/msg/detail/obstacle_array__rosidl_typesupport_introspection_cpp.hpp\n'}
+[17.731666] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/include/shell_interfaces/shell_interfaces/msg/detail/trajectory__rosidl_typesupport_introspection_cpp.hpp\n'}
+[17.732373] (-) TimerEvent: {}
+[17.742237] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/include/shell_interfaces/shell_interfaces/msg/detail/trajectory_point__rosidl_typesupport_introspection_cpp.hpp\n'}
+[17.755765] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/share/shell_interfaces/environment/pythonpath.sh\n'}
+[17.768362] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/share/shell_interfaces/environment/pythonpath.dsv\n'}
+[17.781484] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/local/lib/python3.10/dist-packages/shell_interfaces-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[17.794907] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/local/lib/python3.10/dist-packages/shell_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[17.809952] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/local/lib/python3.10/dist-packages/shell_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[17.821410] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/local/lib/python3.10/dist-packages/shell_interfaces-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[17.832665] (-) TimerEvent: {}
+[17.833542] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/local/lib/python3.10/dist-packages/shell_interfaces/__init__.py\n'}
+[17.844484] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/local/lib/python3.10/dist-packages/shell_interfaces/_shell_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[17.856007] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/local/lib/python3.10/dist-packages/shell_interfaces/_shell_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[17.868514] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/local/lib/python3.10/dist-packages/shell_interfaces/_shell_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[17.879589] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/local/lib/python3.10/dist-packages/shell_interfaces/libshell_interfaces__rosidl_generator_py.so\n'}
+[17.892085] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/local/lib/python3.10/dist-packages/shell_interfaces/msg/__init__.py\n'}
+[17.905124] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/local/lib/python3.10/dist-packages/shell_interfaces/msg/_boundary.py\n'}
+[17.919138] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/local/lib/python3.10/dist-packages/shell_interfaces/msg/_boundary_s.c\n'}
+[17.932917] (-) TimerEvent: {}
+[17.936671] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/local/lib/python3.10/dist-packages/shell_interfaces/msg/_obstacle.py\n'}
+[17.956717] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/local/lib/python3.10/dist-packages/shell_interfaces/msg/_obstacle_array.py\n'}
+[17.971724] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/local/lib/python3.10/dist-packages/shell_interfaces/msg/_obstacle_array_s.c\n'}
+[17.985599] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/local/lib/python3.10/dist-packages/shell_interfaces/msg/_obstacle_s.c\n'}
+[17.995843] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/local/lib/python3.10/dist-packages/shell_interfaces/msg/_trajectory.py\n'}
+[18.005203] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/local/lib/python3.10/dist-packages/shell_interfaces/msg/_trajectory_point.py\n'}
+[18.016659] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/local/lib/python3.10/dist-packages/shell_interfaces/msg/_trajectory_point_s.c\n'}
+[18.027597] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/local/lib/python3.10/dist-packages/shell_interfaces/msg/_trajectory_s.c\n'}
+[18.033027] (-) TimerEvent: {}
+[18.037264] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/local/lib/python3.10/dist-packages/shell_interfaces/shell_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[18.047685] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/local/lib/python3.10/dist-packages/shell_interfaces/shell_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[18.064842] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/local/lib/python3.10/dist-packages/shell_interfaces/shell_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[18.087722] (shell_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/local/lib/python3.10/dist-packages/shell_interfaces/shell_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[18.088808] (shell_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/local/lib/python3.10/dist-packages/shell_interfaces/shell_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[18.089570] (shell_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/local/lib/python3.10/dist-packages/shell_interfaces/shell_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[18.090651] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/share/shell_interfaces/msg/Trajectory.idl\n'}
+[18.102738] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/share/shell_interfaces/msg/TrajectoryPoint.idl\n'}
+[18.114699] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/share/shell_interfaces/msg/Boundary.idl\n'}
+[18.123375] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/share/shell_interfaces/msg/Obstacle.idl\n'}
+[18.133238] (-) TimerEvent: {}
+[18.133863] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/share/shell_interfaces/msg/ObstacleArray.idl\n'}
+[18.142889] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/share/shell_interfaces/msg/Trajectory.msg\n'}
+[18.157639] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/share/shell_interfaces/msg/TrajectoryPoint.msg\n'}
+[18.176207] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/share/shell_interfaces/msg/Boundary.msg\n'}
+[18.191085] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/share/shell_interfaces/msg/Obstacle.msg\n'}
+[18.204681] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/share/shell_interfaces/msg/ObstacleArray.msg\n'}
+[18.216273] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/share/ament_index/resource_index/package_run_dependencies/shell_interfaces\n'}
+[18.228974] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/share/ament_index/resource_index/parent_prefix_path/shell_interfaces\n'}
+[18.233396] (-) TimerEvent: {}
+[18.240195] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/share/shell_interfaces/environment/ament_prefix_path.sh\n'}
+[18.253028] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/share/shell_interfaces/environment/ament_prefix_path.dsv\n'}
+[18.278885] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/share/shell_interfaces/environment/path.sh\n'}
+[18.293244] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/share/shell_interfaces/environment/path.dsv\n'}
+[18.306006] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/share/shell_interfaces/local_setup.bash\n'}
+[18.319079] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/share/shell_interfaces/local_setup.sh\n'}
+[18.329654] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/share/shell_interfaces/local_setup.zsh\n'}
+[18.333647] (-) TimerEvent: {}
+[18.341639] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/share/shell_interfaces/local_setup.dsv\n'}
+[18.355528] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/share/shell_interfaces/package.dsv\n'}
+[18.369726] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/share/ament_index/resource_index/packages/shell_interfaces\n'}
+[18.382067] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/share/shell_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[18.392598] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/share/shell_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[18.407201] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/share/shell_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[18.417567] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/share/shell_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[18.429760] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/share/shell_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[18.433760] (-) TimerEvent: {}
+[18.442759] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/share/shell_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[18.459776] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/share/shell_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[18.474873] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/share/shell_interfaces/cmake/shell_interfacesConfig.cmake\n'}
+[18.488230] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/share/shell_interfaces/cmake/shell_interfacesConfig-version.cmake\n'}
+[18.503058] (shell_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/share/shell_interfaces/package.xml\n'}
+[18.516497] (shell_interfaces) StdoutLine: {'line': b'-- Installing: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/lib/libshell_interfaces__rosidl_generator_c.so\n'}
+[18.517758] (shell_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/lib/libshell_interfaces__rosidl_generator_c.so" to ""\n'}
+[18.518344] (shell_interfaces) StdoutLine: {'line': b'-- Installing: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/lib/libshell_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[18.519099] (shell_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/lib/libshell_interfaces__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[18.519366] (shell_interfaces) StdoutLine: {'line': b'-- Installing: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/lib/libshell_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[18.519594] (shell_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/lib/libshell_interfaces__rosidl_typesupport_introspection_c.so" to ""\n'}
+[18.519770] (shell_interfaces) StdoutLine: {'line': b'-- Installing: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/lib/libshell_interfaces__rosidl_typesupport_c.so\n'}
+[18.520662] (shell_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/lib/libshell_interfaces__rosidl_typesupport_c.so" to ""\n'}
+[18.520908] (shell_interfaces) StdoutLine: {'line': b'-- Installing: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/lib/libshell_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[18.521479] (shell_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/lib/libshell_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[18.522390] (shell_interfaces) StdoutLine: {'line': b'-- Installing: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/lib/libshell_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[18.522577] (shell_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/lib/libshell_interfaces__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[18.522683] (shell_interfaces) StdoutLine: {'line': b'-- Installing: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/lib/libshell_interfaces__rosidl_typesupport_cpp.so\n'}
+[18.522776] (shell_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/lib/libshell_interfaces__rosidl_typesupport_cpp.so" to ""\n'}
+[18.534121] (-) TimerEvent: {}
+[18.595211] (shell_interfaces) StdoutLine: {'line': b"Listing '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/local/lib/python3.10/dist-packages/shell_interfaces'...\n"}
+[18.595736] (shell_interfaces) StdoutLine: {'line': b"Compiling '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/local/lib/python3.10/dist-packages/shell_interfaces/__init__.py'...\n"}
+[18.595966] (shell_interfaces) StdoutLine: {'line': b"Listing '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/local/lib/python3.10/dist-packages/shell_interfaces/msg'...\n"}
+[18.596162] (shell_interfaces) StdoutLine: {'line': b"Compiling '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/local/lib/python3.10/dist-packages/shell_interfaces/msg/__init__.py'...\n"}
+[18.596352] (shell_interfaces) StdoutLine: {'line': b"Compiling '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/local/lib/python3.10/dist-packages/shell_interfaces/msg/_boundary.py'...\n"}
+[18.596539] (shell_interfaces) StdoutLine: {'line': b"Compiling '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/local/lib/python3.10/dist-packages/shell_interfaces/msg/_obstacle.py'...\n"}
+[18.596831] (shell_interfaces) StdoutLine: {'line': b"Compiling '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/local/lib/python3.10/dist-packages/shell_interfaces/msg/_obstacle_array.py'...\n"}
+[18.596930] (shell_interfaces) StdoutLine: {'line': b"Compiling '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/local/lib/python3.10/dist-packages/shell_interfaces/msg/_trajectory.py'...\n"}
+[18.596977] (shell_interfaces) StdoutLine: {'line': b"Compiling '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/local/lib/python3.10/dist-packages/shell_interfaces/msg/_trajectory_point.py'...\n"}
+[18.602045] (shell_interfaces) StdoutLine: {'line': b'-- Installing: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/lib/libshell_interfaces__rosidl_generator_py.so\n'}
+[18.603206] (shell_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/lib/libshell_interfaces__rosidl_generator_py.so" to ""\n'}
+[18.603463] (shell_interfaces) StdoutLine: {'line': b'-- Installing: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/share/shell_interfaces/cmake/export_shell_interfaces__rosidl_generator_cExport.cmake\n'}
+[18.603568] (shell_interfaces) StdoutLine: {'line': b'-- Installing: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/share/shell_interfaces/cmake/export_shell_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[18.604015] (shell_interfaces) StdoutLine: {'line': b'-- Installing: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/share/shell_interfaces/cmake/export_shell_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[18.604116] (shell_interfaces) StdoutLine: {'line': b'-- Installing: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/share/shell_interfaces/cmake/export_shell_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[18.604166] (shell_interfaces) StdoutLine: {'line': b'-- Installing: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/share/shell_interfaces/cmake/shell_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[18.604209] (shell_interfaces) StdoutLine: {'line': b'-- Installing: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/share/shell_interfaces/cmake/shell_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[18.604251] (shell_interfaces) StdoutLine: {'line': b'-- Installing: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/share/shell_interfaces/cmake/shell_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[18.604293] (shell_interfaces) StdoutLine: {'line': b'-- Installing: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/share/shell_interfaces/cmake/shell_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[18.604332] (shell_interfaces) StdoutLine: {'line': b'-- Installing: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/share/shell_interfaces/cmake/export_shell_interfaces__rosidl_generator_cppExport.cmake\n'}
+[18.604795] (shell_interfaces) StdoutLine: {'line': b'-- Installing: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/share/shell_interfaces/cmake/export_shell_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[18.604912] (shell_interfaces) StdoutLine: {'line': b'-- Installing: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/share/shell_interfaces/cmake/export_shell_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[18.604999] (shell_interfaces) StdoutLine: {'line': b'-- Installing: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/share/shell_interfaces/cmake/shell_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[18.605414] (shell_interfaces) StdoutLine: {'line': b'-- Installing: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/share/shell_interfaces/cmake/shell_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[18.606033] (shell_interfaces) StdoutLine: {'line': b'-- Installing: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/share/shell_interfaces/cmake/shell_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[18.606126] (shell_interfaces) StdoutLine: {'line': b'-- Installing: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/share/shell_interfaces/cmake/shell_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[18.606172] (shell_interfaces) StdoutLine: {'line': b'-- Installing: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/share/shell_interfaces/cmake/export_shell_interfaces__rosidl_generator_pyExport.cmake\n'}
+[18.606216] (shell_interfaces) StdoutLine: {'line': b'-- Installing: /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/share/shell_interfaces/cmake/export_shell_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[18.609848] (shell_interfaces) CommandEnded: {'returncode': 0}
+[18.634537] (-) TimerEvent: {}
+[18.636202] (shell_interfaces) JobEnded: {'identifier': 'shell_interfaces', 'rc': 0}
+[18.639067] (shell_test_nodes) JobStarted: {'identifier': 'shell_test_nodes'}
+[18.650346] (shell_visualization) JobStarted: {'identifier': 'shell_visualization'}
+[18.734672] (-) TimerEvent: {}
+[18.835445] (-) TimerEvent: {}
+[18.936388] (-) TimerEvent: {}
+[19.037117] (-) TimerEvent: {}
+[19.137729] (-) TimerEvent: {}
+[19.238094] (-) TimerEvent: {}
+[19.338548] (-) TimerEvent: {}
+[19.439494] (-) TimerEvent: {}
+[19.540158] (-) TimerEvent: {}
+[19.640713] (-) TimerEvent: {}
+[19.741728] (-) TimerEvent: {}
+[19.842183] (-) TimerEvent: {}
+[19.942752] (-) TimerEvent: {}
+[20.043428] (-) TimerEvent: {}
+[20.144253] (-) TimerEvent: {}
+[20.245269] (-) TimerEvent: {}
+[20.346084] (-) TimerEvent: {}
+[20.446909] (-) TimerEvent: {}
+[20.522050] (shell_test_nodes) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/build/shell_test_nodes/build', '--no-deps'], 'cwd': '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/build/shell_test_nodes', 'env': {'PYTHON_BASIC_REPL': '1', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'esraamustafa', 'GIT_ASKPASS': '/home/esraamustafa/.vscode-server/bin/072586267e68ece9a47aa43f8c108e0dcbf44622/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'MOTD_SHOWN': 'update-motd', 'HOME': '/home/esraamustafa', 'TERM_PROGRAM_VERSION': '1.109.5', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-0e11376b-c5d2-4550-9fb3-3b587a2c3a04.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/esraamustafa/.vscode-server/bin/072586267e68ece9a47aa43f8c108e0dcbf44622/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/esraamustafa/.vscode-server/bin/072586267e68ece9a47aa43f8c108e0dcbf44622/node', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'BUNDLED_DEBUGPY_PATH': '/home/esraamustafa/.vscode-server/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/libs/debugpy', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'WSL_DISTRO_NAME': 'Ubuntu-22.04', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'esraamustafa', 'NAME': 'Esraa', 'WSL_INTEROP': '/run/WSL/493_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/esraamustafa/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/esraamustafa/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/esraamustafa/.vscode-server/bin/072586267e68ece9a47aa43f8c108e0dcbf44622/bin/remote-cli:/home/esraamustafa/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Users/esraa/AppData/Local/Programs/Python/Python312/Scripts/:/mnt/c/Users/esraa/AppData/Local/Programs/Python/Python312/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/nodejs/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/msys64/mingw64/bin:/mnt/c/Program Files/GitHub CLI/:/mnt/c/Program Files/MATLAB/R2024b/bin:/mnt/c/Program Files (x86)/Microsoft SQL Server/160/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/160/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/160/DTS/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/CMake/bin:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/xampp/php/php.exe:/mnt/c/Users/esraa/AppData/Local/Programs/Python/Python314/Scripts/:/mnt/c/Users/esraa/AppData/Local/Programs/Python/Python314/:/mnt/c/Users/esraa/AppData/Local/Programs/Python/Launcher/:/mnt/c/Users/esraa/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/esraa/AppData/Local/Programs/Microsoft_VS_Code/bin:/mnt/c/Users/esraa/AppData/Local/Microsoft/WinGet/Packages/Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe:/mnt/c/Users/esraa/AppData/Roaming/npm:/mnt/c/Users/esraa/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/esraa/.dotnet/tools:/mnt/d/IntelliJ IDEA 2024.2.3/bin:/mnt/c/Program Files/JetBrains/IntelliJ IDEA Community Edition 2024.2.3/bin:/mnt/c/Program Files/MongoDB/Server/8.2/bin:/mnt/c/Users/esraa/AppData/Local/Programs/mongosh/:/snap/bin:/home/esraamustafa/.vscode-server/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/scripts/noConfigScripts', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/esraamustafa/.vscode-server/extensions/ms-python.debugpy-2025.18.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-9aa057c463a7ace4.txt', 'LANG': 'C.UTF-8', 'PYTHONSTARTUP': '/home/esraamustafa/.vscode-server/data/User/workspaceStorage/9188cf032e28f409f831a5c4cd4238d1/ms-python.python/pythonrc.py', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-7233589553.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces:/opt/ros/humble', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/build/shell_test_nodes', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/build/shell_test_nodes/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_test_nodes/lib/python3.10/site-packages:/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'WSLENV': 'VSCODE_WSL_EXT_LOCATION/up:VSCODE_SERVER_TAR/up', 'CMAKE_PREFIX_PATH': '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces'}, 'shell': False}
+[20.547259] (-) TimerEvent: {}
+[20.648221] (-) TimerEvent: {}
+[20.749179] (-) TimerEvent: {}
+[20.849972] (-) TimerEvent: {}
+[20.950665] (-) TimerEvent: {}
+[21.044193] (shell_test_nodes) StdoutLine: {'line': b'running develop\n'}
+[21.050941] (-) TimerEvent: {}
+[21.081725] (shell_visualization) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/build/shell_visualization/build', '--no-deps', 'symlink_data'], 'cwd': '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/build/shell_visualization', 'env': {'PYTHON_BASIC_REPL': '1', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'esraamustafa', 'GIT_ASKPASS': '/home/esraamustafa/.vscode-server/bin/072586267e68ece9a47aa43f8c108e0dcbf44622/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'MOTD_SHOWN': 'update-motd', 'HOME': '/home/esraamustafa', 'TERM_PROGRAM_VERSION': '1.109.5', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-0e11376b-c5d2-4550-9fb3-3b587a2c3a04.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/esraamustafa/.vscode-server/bin/072586267e68ece9a47aa43f8c108e0dcbf44622/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/esraamustafa/.vscode-server/bin/072586267e68ece9a47aa43f8c108e0dcbf44622/node', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'BUNDLED_DEBUGPY_PATH': '/home/esraamustafa/.vscode-server/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/libs/debugpy', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'WSL_DISTRO_NAME': 'Ubuntu-22.04', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'esraamustafa', 'NAME': 'Esraa', 'WSL_INTEROP': '/run/WSL/493_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/esraamustafa/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/esraamustafa/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/esraamustafa/.vscode-server/bin/072586267e68ece9a47aa43f8c108e0dcbf44622/bin/remote-cli:/home/esraamustafa/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Users/esraa/AppData/Local/Programs/Python/Python312/Scripts/:/mnt/c/Users/esraa/AppData/Local/Programs/Python/Python312/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/nodejs/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/msys64/mingw64/bin:/mnt/c/Program Files/GitHub CLI/:/mnt/c/Program Files/MATLAB/R2024b/bin:/mnt/c/Program Files (x86)/Microsoft SQL Server/160/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/160/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/160/DTS/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/CMake/bin:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/xampp/php/php.exe:/mnt/c/Users/esraa/AppData/Local/Programs/Python/Python314/Scripts/:/mnt/c/Users/esraa/AppData/Local/Programs/Python/Python314/:/mnt/c/Users/esraa/AppData/Local/Programs/Python/Launcher/:/mnt/c/Users/esraa/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/esraa/AppData/Local/Programs/Microsoft_VS_Code/bin:/mnt/c/Users/esraa/AppData/Local/Microsoft/WinGet/Packages/Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe:/mnt/c/Users/esraa/AppData/Roaming/npm:/mnt/c/Users/esraa/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/esraa/.dotnet/tools:/mnt/d/IntelliJ IDEA 2024.2.3/bin:/mnt/c/Program Files/JetBrains/IntelliJ IDEA Community Edition 2024.2.3/bin:/mnt/c/Program Files/MongoDB/Server/8.2/bin:/mnt/c/Users/esraa/AppData/Local/Programs/mongosh/:/snap/bin:/home/esraamustafa/.vscode-server/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/scripts/noConfigScripts', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/esraamustafa/.vscode-server/extensions/ms-python.debugpy-2025.18.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-9aa057c463a7ace4.txt', 'LANG': 'C.UTF-8', 'PYTHONSTARTUP': '/home/esraamustafa/.vscode-server/data/User/workspaceStorage/9188cf032e28f409f831a5c4cd4238d1/ms-python.python/pythonrc.py', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-7233589553.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces:/opt/ros/humble', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/build/shell_visualization', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/build/shell_visualization/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_visualization/lib/python3.10/site-packages:/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'WSLENV': 'VSCODE_WSL_EXT_LOCATION/up:VSCODE_SERVER_TAR/up', 'CMAKE_PREFIX_PATH': '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces'}, 'shell': False}
+[21.151180] (-) TimerEvent: {}
+[21.251915] (-) TimerEvent: {}
+[21.308848] (shell_test_nodes) StdoutLine: {'line': b'running egg_info\n'}
+[21.309171] (shell_test_nodes) StdoutLine: {'line': b'creating shell_test_nodes.egg-info\n'}
+[21.309672] (shell_test_nodes) StdoutLine: {'line': b'writing shell_test_nodes.egg-info/PKG-INFO\n'}
+[21.310599] (shell_test_nodes) StdoutLine: {'line': b'writing dependency_links to shell_test_nodes.egg-info/dependency_links.txt\n'}
+[21.311131] (shell_test_nodes) StdoutLine: {'line': b'writing entry points to shell_test_nodes.egg-info/entry_points.txt\n'}
+[21.312368] (shell_test_nodes) StdoutLine: {'line': b'writing requirements to shell_test_nodes.egg-info/requires.txt\n'}
+[21.312910] (shell_test_nodes) StdoutLine: {'line': b'writing top-level names to shell_test_nodes.egg-info/top_level.txt\n'}
+[21.313187] (shell_test_nodes) StdoutLine: {'line': b"writing manifest file 'shell_test_nodes.egg-info/SOURCES.txt'\n"}
+[21.318837] (shell_test_nodes) StdoutLine: {'line': b"reading manifest file 'shell_test_nodes.egg-info/SOURCES.txt'\n"}
+[21.321472] (shell_test_nodes) StdoutLine: {'line': b"writing manifest file 'shell_test_nodes.egg-info/SOURCES.txt'\n"}
+[21.325433] (shell_test_nodes) StdoutLine: {'line': b'running build_ext\n'}
+[21.325875] (shell_test_nodes) StdoutLine: {'line': b'Creating /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_test_nodes/lib/python3.10/site-packages/shell-test-nodes.egg-link (link to .)\n'}
+[21.327368] (shell_test_nodes) StdoutLine: {'line': b'Installing fake_control script to /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_test_nodes/lib/shell_test_nodes\n'}
+[21.329330] (shell_test_nodes) StdoutLine: {'line': b'Installing fake_localization script to /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_test_nodes/lib/shell_test_nodes\n'}
+[21.330422] (shell_test_nodes) StdoutLine: {'line': b'Installing fake_perception script to /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_test_nodes/lib/shell_test_nodes\n'}
+[21.333087] (shell_test_nodes) StdoutLine: {'line': b'Installing fake_supervisor script to /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_test_nodes/lib/shell_test_nodes\n'}
+[21.334048] (shell_test_nodes) StdoutLine: {'line': b'\n'}
+[21.334833] (shell_test_nodes) StdoutLine: {'line': b'Installed /home/esraamustafa/path_planning/Path_Planning_Shell_AI/build/shell_test_nodes\n'}
+[21.352128] (-) TimerEvent: {}
+[21.448965] (shell_test_nodes) CommandEnded: {'returncode': 0}
+[21.452348] (-) TimerEvent: {}
+[21.472123] (shell_test_nodes) JobEnded: {'identifier': 'shell_test_nodes', 'rc': 0}
+[21.552610] (-) TimerEvent: {}
+[21.653591] (-) TimerEvent: {}
+[21.675558] (shell_visualization) StdoutLine: {'line': b'running develop\n'}
+[21.753833] (-) TimerEvent: {}
+[21.854568] (-) TimerEvent: {}
+[21.955406] (-) TimerEvent: {}
+[22.056196] (-) TimerEvent: {}
+[22.117720] (shell_visualization) StdoutLine: {'line': b'running egg_info\n'}
+[22.118589] (shell_visualization) StdoutLine: {'line': b'creating shell_visualization.egg-info\n'}
+[22.119526] (shell_visualization) StdoutLine: {'line': b'writing shell_visualization.egg-info/PKG-INFO\n'}
+[22.119784] (shell_visualization) StdoutLine: {'line': b'writing dependency_links to shell_visualization.egg-info/dependency_links.txt\n'}
+[22.119965] (shell_visualization) StdoutLine: {'line': b'writing entry points to shell_visualization.egg-info/entry_points.txt\n'}
+[22.120129] (shell_visualization) StdoutLine: {'line': b'writing requirements to shell_visualization.egg-info/requires.txt\n'}
+[22.120310] (shell_visualization) StdoutLine: {'line': b'writing top-level names to shell_visualization.egg-info/top_level.txt\n'}
+[22.120566] (shell_visualization) StdoutLine: {'line': b"writing manifest file 'shell_visualization.egg-info/SOURCES.txt'\n"}
+[22.121692] (shell_visualization) StdoutLine: {'line': b"reading manifest file 'shell_visualization.egg-info/SOURCES.txt'\n"}
+[22.122418] (shell_visualization) StdoutLine: {'line': b"writing manifest file 'shell_visualization.egg-info/SOURCES.txt'\n"}
+[22.124360] (shell_visualization) StdoutLine: {'line': b'running build_ext\n'}
+[22.125596] (shell_visualization) StdoutLine: {'line': b'Creating /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_visualization/lib/python3.10/site-packages/shell-visualization.egg-link (link to .)\n'}
+[22.126242] (shell_visualization) StdoutLine: {'line': b'Installing planner_visualizer script to /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_visualization/lib/shell_visualization\n'}
+[22.127105] (shell_visualization) StdoutLine: {'line': b'\n'}
+[22.127561] (shell_visualization) StdoutLine: {'line': b'Installed /home/esraamustafa/path_planning/Path_Planning_Shell_AI/build/shell_visualization\n'}
+[22.128308] (shell_visualization) StdoutLine: {'line': b'running symlink_data\n'}
+[22.128541] (shell_visualization) StdoutLine: {'line': b'creating /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_visualization/share/ament_index\n'}
+[22.129208] (shell_visualization) StdoutLine: {'line': b'creating /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_visualization/share/ament_index/resource_index\n'}
+[22.129537] (shell_visualization) StdoutLine: {'line': b'creating /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_visualization/share/ament_index/resource_index/packages\n'}
+[22.130070] (shell_visualization) StdoutLine: {'line': b'symbolically linking /home/esraamustafa/path_planning/Path_Planning_Shell_AI/build/shell_visualization/resource/shell_visualization -> /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_visualization/share/ament_index/resource_index/packages\n'}
+[22.130681] (shell_visualization) StdoutLine: {'line': b'symbolically linking /home/esraamustafa/path_planning/Path_Planning_Shell_AI/build/shell_visualization/package.xml -> /home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_visualization/share/shell_visualization\n'}
+[22.156414] (-) TimerEvent: {}
+[22.209934] (shell_visualization) CommandEnded: {'returncode': 0}
+[22.246705] (shell_visualization) JobEnded: {'identifier': 'shell_visualization', 'rc': 0}
+[22.250986] (-) EventReactorShutdown: {}

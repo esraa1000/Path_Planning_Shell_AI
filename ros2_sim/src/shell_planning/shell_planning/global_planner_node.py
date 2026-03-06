@@ -1,51 +1,45 @@
 import rclpy
 from rclpy.node import Node
-
 import math
 import heapq
-from shapely.geometry import Point, Polygon
+import numpy as np
+from shapely.geometry import Point, Polygon, LineString
 
+# ROS Messages
 from std_msgs.msg import Bool, UInt64
-# We need Path and PoseStamped for RViz visualization
 from nav_msgs.msg import Odometry, Path
-from geometry_msgs.msg import PoseStamped, Quaternion
+from geometry_msgs.msg import PoseStamped, Quaternion, Point as RosPoint
+from visualization_msgs.msg import Marker, MarkerArray
 
-# Custom interfaces for the controller
-from shell_interfaces.msg import Trajectory, TrajectoryPoint, Boundary, ObstacleArray
+# Shell Interfaces
+try:
+    from shell_interfaces.msg import Trajectory, TrajectoryPoint, Boundary, ObstacleArray
+    SHELL_MSGS = True
+except ImportError:
+    SHELL_MSGS = False
 
-# ==============================
-# PARAMETERS
-# ==============================
-XY_GRID_RESOLUTION = 0.5
-THETA_GRID_RESOLUTION = math.radians(10)
-DT = 0.15
-VEHICLE_SPEED = 15.0
-WHEELBASE = 2.5
-STEERING_ANGLES = [-0.5, -0.35, -0.2, 0.0, 0.2, 0.35, 0.5]
-CAR_RADIUS = 0.7
-SAFETY_MARGIN = 0.2
+# ==========================================
+# 1. CONFIGURATION (MATCHING YOUR NOTEBOOK)
+# ==========================================
+XY_GRID_RESOLUTION = 0.5               
+THETA_GRID_RESOLUTION = math.radians(15)
+DT = 0.3                                
+VEHICLE_SPEED = 4.0                    # Increased slightly for simulation
+WHEELBASE = 2.5                         
+STEERING_ANGLES = [-0.6, -0.3, 0, +0.3, +0.6]
+CAR_RADIUS = 1.0     
+SAFETY_MARGIN = 0.5                    # Reduced slightly to fit in narrow tracks
 
-# ==============================
-# HELPER FUNCTIONS
-# ==============================
-def euler_from_quaternion(x, y, z, w):
-    t0 = +2.0 * (w * x + y * z)
-    t1 = +1.0 - 2.0 * (x * x + y * y)
-    roll_x = math.atan2(t0, t1)
-    t2 = +2.0 * (w * y - z * x)
-    t2 = +1.0 if t2 > +1.0 else t2
-    t2 = -1.0 if t2 < -1.0 else t2
-    pitch_y = math.asin(t2)
-    t3 = +2.0 * (w * z + x * y)
-    t4 = +1.0 - 2.0 * (y * y + z * z)
-    yaw_z = math.atan2(t3, t4)
-    return roll_x, pitch_y, yaw_z
+# ==========================================
+# 2. HELPER FUNCTIONS
+# ==========================================
+def euler_from_quaternion(q):
+    t0 = +2.0 * (q.w * q.z + q.x * q.y)
+    t1 = +1.0 - 2.0 * (q.y * q.y + q.z * q.z)
+    return math.atan2(t0, t1)
 
 def quaternion_from_euler(yaw):
-    """Convert yaw (theta) to quaternion so RViz can show the arrow direction"""
     q = Quaternion()
-    q.x = 0.0
-    q.y = 0.0
     q.z = math.sin(yaw / 2.0)
     q.w = math.cos(yaw / 2.0)
     return q
@@ -54,7 +48,7 @@ def state_key(x, y, theta):
     return (
         round(x / XY_GRID_RESOLUTION),
         round(y / XY_GRID_RESOLUTION),
-        round(theta / THETA_GRID_RESOLUTION),
+        round(theta / THETA_GRID_RESOLUTION)
     )
 
 def simulate_motion(x, y, theta, steer):
@@ -65,37 +59,42 @@ def simulate_motion(x, y, theta, steer):
     return x_new, y_new, theta_new
 
 def heuristic(x, y, goal):
-    gx, gy = goal
-    return 1.2 * math.hypot(gx - x, gy - y)
+    # 1.2 weighting to favor goal direction (from your notebook)
+    return 1.2 * math.hypot(goal[0] - x, goal[1] - y)
 
 def is_near_obstacle(x, y, obstacles):
     safe_r = CAR_RADIUS + SAFETY_MARGIN
+    if not obstacles: return False
     for ox, oy in obstacles:
         if math.hypot(ox - x, oy - y) < safe_r:
             return True
     return False
 
+# ==========================================
+# 3. ALGORITHM CLASSES & FUNCTIONS
+# ==========================================
 class HybridNode:
     def __init__(self, x, y, theta, g, h, parent=None):
-        self.x = x
-        self.y = y
-        self.theta = theta
-        self.g = g
-        self.h = h
-        self.f = g + h
+        self.x = x; self.y = y; self.theta = theta
+        self.g = g; self.h = h; self.f = g + h
         self.parent = parent
-    def __lt__(self, other):
-        return self.f < other.f
+    def __lt__(self, other): return self.f < other.f
 
 def hybrid_astar(start, goal, track_poly, obstacles):
     start_node = HybridNode(start[0], start[1], start[2], 0.0, heuristic(start[0], start[1], goal))
     open_list = [start_node]
     closed = set()
+    
+    # Limit iterations to prevent freezing
+    max_iter = 50000 
+    iter_count = 0
 
-    while open_list:
+    while open_list and iter_count < max_iter:
+        iter_count += 1
         current = heapq.heappop(open_list)
 
-        if math.hypot(current.x - goal[0], current.y - goal[1]) < 2.0:
+        # Goal reached check
+        if math.hypot(current.x - goal[0], current.y - goal[1]) < 3.0:
             path = []
             node = current
             while node:
@@ -104,155 +103,190 @@ def hybrid_astar(start, goal, track_poly, obstacles):
             return path[::-1]
 
         key = state_key(current.x, current.y, current.theta)
-        if key in closed:
-            continue
+        if key in closed: continue
         closed.add(key)
 
         for steer in STEERING_ANGLES:
             nx, ny, ntheta = simulate_motion(current.x, current.y, current.theta, steer)
-            
-            # Check if point is inside polygon
-            if not track_poly.contains(Point(nx, ny)):
-                continue
-            if is_near_obstacle(nx, ny, obstacles):
-                continue
-            
-            nkey = state_key(nx, ny, ntheta)
-            if nkey in closed:
-                continue
 
-            g = current.g + 1.0
-            h = heuristic(nx, ny, goal)
-            heapq.heappush(open_list, HybridNode(nx, ny, ntheta, g, h, current))
+            # 1. Track Boundary Check (Using Shapely directly like Notebook)
+            if not track_poly.contains(Point(nx, ny)): continue
+            
+            # 2. Obstacle Check
+            if is_near_obstacle(nx, ny, obstacles): continue
+
+            nkey = state_key(nx, ny, ntheta)
+            if nkey in closed: continue
+
+            # Cost calculation
+            g_new = current.g + 1.0 + abs(steer)*0.1 # Slight penalty for steering
+            h_new = heuristic(nx, ny, goal)
+            heapq.heappush(open_list, HybridNode(nx, ny, ntheta, g_new, h_new, current))
 
     return []
 
-def build_trajectory(path):
-    traj = Trajectory()
-    for i, (x, y, theta) in enumerate(path):
-        p = TrajectoryPoint()
-        p.x = float(x)
-        p.y = float(y)
-        p.theta = float(theta)
-        p.v = VEHICLE_SPEED if i < len(path) - 1 else 0.0
-        traj.points.append(p)
-    return traj
+def smooth_path(raw_path, track_poly, obstacles):
+    """
+    Your Notebook's Smoothing Function
+    Removes zig-zags by checking if a straight line exists between points
+    """
+    if len(raw_path) < 3: return raw_path
 
-# ==============================
-# GLOBAL PLANNER NODE
-# ==============================
+    smoothed = [raw_path[0]]
+    
+    # Iterate from start to end
+    i = 0
+    while i < len(raw_path) - 1:
+        current = raw_path[i]
+        # Look ahead as far as possible
+        best_next_idx = i + 1
+        
+        for j in range(len(raw_path) - 1, i + 1, -1):
+            target = raw_path[j]
+            
+            # Simple line check
+            line = LineString([(current[0], current[1]), (target[0], target[1])])
+            
+            # 1. Check if line stays inside track
+            if not track_poly.contains(line): continue
+            
+            # 2. Check if line hits obstacles
+            hit_obs = False
+            for ox, oy in obstacles:
+                if line.distance(Point(ox, oy)) < (CAR_RADIUS + SAFETY_MARGIN):
+                    hit_obs = True; break
+            if hit_obs: continue
+            
+            # If safe, this is our shortcut
+            best_next_idx = j
+            break
+        
+        smoothed.append(raw_path[best_next_idx])
+        i = best_next_idx
+
+    return smoothed
+
+# ==========================================
+# 4. GLOBAL PLANNER NODE
+# ==========================================
 class GlobalPlanner(Node):
     def __init__(self):
         super().__init__('global_planner')
-
-        self.create_subscription(Boundary, '/left_boundary', self.left_bound_cb, 10)
-        self.create_subscription(Boundary, '/right_boundary', self.right_bound_cb, 10)
+        
+        self.create_subscription(Boundary, '/left_boundary', self.left_cb, 10)
+        self.create_subscription(Boundary, '/right_boundary', self.right_cb, 10)
         self.create_subscription(ObstacleArray, '/obstacles', self.obs_cb, 10)
         self.create_subscription(Odometry, '/odom', self.odom_cb, 10)
         self.create_subscription(Bool, '/start_signal', self.start_cb, 10)
 
-        # 1. Custom Trajectory for Control (Keep this!)
-        self.path_pub = self.create_publisher(Trajectory, '/planned_path', 10)
-        
-        # 2. Standard Path for RViz (Use this in RViz!)
         self.viz_pub = self.create_publisher(Path, '/viz_path', 10)
+        self.debug_pub = self.create_publisher(MarkerArray, '/planner_debug', 10)
 
-        self.heartbeat_pub = self.create_publisher(UInt64, '/planner_heartbeat', 10)
-        self.create_timer(1.0, self.publish_heartbeat)
+        if SHELL_MSGS:
+            self.traj_pub = self.create_publisher(Trajectory, '/planned_path', 10)
 
-        self.started = False
         self.left_pts = []
         self.right_pts = []
-        self.track_poly = None
         self.obstacles = []
-        self.start_pose = None
-        self.goal = (140.0, 35.0) 
+        self.pose = None
+        self.track_poly = None
+        
+        self.create_timer(1.0, self.planning_loop)
+        self.get_logger().info("Global Planner (Notebook Logic + Smoothing) Ready.")
 
-        self.get_logger().info("Global Planner Initialized")
-
-    def left_bound_cb(self, msg):
-        self.left_pts = [(p.x, p.y) for p in msg.points]
-        self.try_construct_track()
-
-    def right_bound_cb(self, msg):
-        self.right_pts = [(p.x, p.y) for p in msg.points]
-        self.try_construct_track()
-
-    def try_construct_track(self):
-        if self.left_pts and self.right_pts:
-            combined_pts = self.left_pts + self.right_pts[::-1] + [self.left_pts[0]]
-            try:
-                self.track_poly = Polygon(combined_pts)
-                if not self.track_poly.is_valid:
-                    self.track_poly = self.track_poly.buffer(0)
-            except Exception as e:
-                self.get_logger().error(f"Polygon Error: {e}")
-
-    def obs_cb(self, msg):
-        self.obstacles = [(obs.center.x, obs.center.y) for obs in msg.obstacles]
-
+    def left_cb(self, msg): self.left_pts = [(p.x, p.y) for p in msg.points]
+    def right_cb(self, msg): self.right_pts = [(p.x, p.y) for p in msg.points]
+    def obs_cb(self, msg): self.obstacles = [(o.center.x, o.center.y) for o in msg.obstacles]
+    
     def odom_cb(self, msg):
-        x = msg.pose.pose.position.x
-        y = msg.pose.pose.position.y
-        oq = msg.pose.pose.orientation
-        _, _, theta = euler_from_quaternion(oq.x, oq.y, oq.z, oq.w)
-        self.start_pose = (x, y, theta)
+        p = msg.pose.pose.position
+        theta = euler_from_quaternion(msg.pose.pose.orientation)
+        self.pose = (p.x, p.y, theta)
 
     def start_cb(self, msg):
-        self.started = msg.data
-        if self.started:
-            self.plan()
+        if msg.data: self.plan()
+
+    def planning_loop(self):
+        # Auto-construct track if data is available
+        if self.left_pts and self.right_pts:
+            pts = self.left_pts + self.right_pts[::-1]
+            try:
+                self.track_poly = Polygon(pts)
+                if not self.track_poly.is_valid: self.track_poly = self.track_poly.buffer(0)
+            except: pass
+            
+            # If we have pose, try to plan
+            if self.pose: self.plan()
+
+    def get_goal(self):
+        # Calculate Centerline Goal
+        if not self.left_pts or not self.right_pts: return None
+        n = min(len(self.left_pts), len(self.right_pts))
+        # Pick 90% down the track
+        idx = int(n * 0.9)
+        lx, ly = self.left_pts[idx]
+        rx, ry = self.right_pts[idx]
+        return ((lx+rx)/2.0, (ly+ry)/2.0)
 
     def plan(self):
-        missing = []
-        if not self.left_pts: missing.append("Left Boundary")
-        if not self.right_pts: missing.append("Right Boundary")
-        if self.start_pose is None: missing.append("/odom")
+        if not self.track_poly or not self.pose: return
 
-        if missing:
-            self.get_logger().warn(f"Waiting for inputs: {', '.join(missing)}")
+        goal = self.get_goal()
+        if not goal: return
+
+        # Debug Visuals
+        self.publish_debug(goal)
+
+        # 1. Run Hybrid A* (Raw)
+        raw_path = hybrid_astar(self.pose, goal, self.track_poly, self.obstacles)
+        
+        if not raw_path:
+            self.get_logger().warn("Hybrid A* Failed (Raw).")
             return
 
-        self.get_logger().info(f"Planning from {self.start_pose} to {self.goal}")
+        # 2. Run Smoothing (Fixes the mess!)
+        final_path = smooth_path(raw_path, self.track_poly, self.obstacles)
         
-        if self.track_poly and not self.track_poly.contains(Point(self.start_pose[0], self.start_pose[1])):
-             self.get_logger().warn("Start pose is OUTSIDE the track boundary! (Planning anyway)")
-
-        path = hybrid_astar(self.start_pose, self.goal, self.track_poly, self.obstacles)
+        self.get_logger().info(f"Path Found! Raw: {len(raw_path)} -> Smoothed: {len(final_path)}")
         
-        if not path:
-            self.get_logger().error("Hybrid A* failed to find a path.")
-            return
+        self.publish_path(final_path)
 
-        # --- 1. Publish Control Trajectory ---
-        traj = build_trajectory(path)
-        self.path_pub.publish(traj)
+    def publish_path(self, path):
+        ros_path = Path()
+        ros_path.header.frame_id = "map"
+        ros_path.header.stamp = self.get_clock().now().to_msg()
         
-        # --- 2. Publish Visualization Path (For RViz) ---
-        self.publish_viz_path(traj)
+        traj = Trajectory() if SHELL_MSGS else None
 
-        self.get_logger().info(f"Published trajectory with {len(traj.points)} points")
-
-    def publish_viz_path(self, traj):
-        viz_msg = Path()
-        viz_msg.header.frame_id = "map"
-        viz_msg.header.stamp = self.get_clock().now().to_msg()
-
-        for tp in traj.points:
+        for i, (x, y, theta) in enumerate(path):
+            # ROS Path
             pose = PoseStamped()
-            pose.header = viz_msg.header
-            pose.pose.position.x = tp.x
-            pose.pose.position.y = tp.y
-            pose.pose.position.z = 0.0
-            pose.pose.orientation = quaternion_from_euler(tp.theta)
-            viz_msg.poses.append(pose)
+            pose.header = ros_path.header
+            pose.pose.position.x = float(x)
+            pose.pose.position.y = float(y)
+            pose.pose.orientation = quaternion_from_euler(theta)
+            ros_path.poses.append(pose)
 
-        self.viz_pub.publish(viz_msg)
+            # Shell Trajectory
+            if traj:
+                p = TrajectoryPoint()
+                p.x, p.y, p.theta = float(x), float(y), float(theta)
+                # Set velocity (Slow down at end)
+                p.v = 0.0 if i == len(path)-1 else 10.0 
+                traj.points.append(p)
 
-    def publish_heartbeat(self):
-        msg = UInt64()
-        msg.data = self.get_clock().now().nanoseconds
-        self.heartbeat_pub.publish(msg)
+        self.viz_pub.publish(ros_path)
+        if traj: self.traj_pub.publish(traj)
+
+    def publish_debug(self, goal):
+        ma = MarkerArray()
+        m = Marker()
+        m.header.frame_id = "map"; m.id = 0; m.type = Marker.SPHERE; m.action = Marker.ADD
+        m.scale.x = 2.0; m.scale.y = 2.0; m.scale.z = 2.0
+        m.color.a = 1.0; m.color.r = 1.0; m.color.g = 0.0; m.color.b = 1.0 # Purple Goal
+        m.pose.position.x = goal[0]; m.pose.position.y = goal[1]
+        ma.markers.append(m)
+        self.debug_pub.publish(ma)
 
 def main():
     rclpy.init()

@@ -1,0 +1,339 @@
+[0.693s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.693s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=12, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7869d4cf7520>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7869d4cf7010>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7869d4cf7010>>)
+[1.179s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.179s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.179s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.179s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.179s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.179s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.179s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/esraamustafa/path_planning/Path_Planning_Shell_AI'
+[1.179s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.179s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.179s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.179s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.179s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.179s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.179s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.179s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.179s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.199s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.199s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.199s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.199s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.199s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.200s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.200s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.200s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.200s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.200s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.200s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.200s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.200s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.200s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.200s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_sim) by extensions ['ignore', 'ignore_ament_install']
+[1.200s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_sim) by extension 'ignore'
+[1.200s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_sim) by extension 'ignore_ament_install'
+[1.200s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_sim) by extensions ['colcon_pkg']
+[1.200s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_sim) by extension 'colcon_pkg'
+[1.200s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_sim) by extensions ['colcon_meta']
+[1.200s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_sim) by extension 'colcon_meta'
+[1.200s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_sim) by extensions ['ros']
+[1.200s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_sim) by extension 'ros'
+[1.200s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_sim) by extensions ['cmake', 'python']
+[1.200s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_sim) by extension 'cmake'
+[1.200s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_sim) by extension 'python'
+[1.200s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_sim) by extensions ['python_setup_py']
+[1.200s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_sim) by extension 'python_setup_py'
+[1.201s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_sim/build) by extensions ['ignore', 'ignore_ament_install']
+[1.201s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_sim/build) by extension 'ignore'
+[1.201s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_sim/build) ignored
+[1.202s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_sim/install) by extensions ['ignore', 'ignore_ament_install']
+[1.202s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_sim/install) by extension 'ignore'
+[1.202s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_sim/install) ignored
+[1.202s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_sim/log) by extensions ['ignore', 'ignore_ament_install']
+[1.202s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_sim/log) by extension 'ignore'
+[1.202s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_sim/log) ignored
+[1.203s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_sim/src) by extensions ['ignore', 'ignore_ament_install']
+[1.203s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_sim/src) by extension 'ignore'
+[1.203s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_sim/src) by extension 'ignore_ament_install'
+[1.203s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_sim/src) by extensions ['colcon_pkg']
+[1.203s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_sim/src) by extension 'colcon_pkg'
+[1.203s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_sim/src) by extensions ['colcon_meta']
+[1.203s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_sim/src) by extension 'colcon_meta'
+[1.203s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_sim/src) by extensions ['ros']
+[1.203s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_sim/src) by extension 'ros'
+[1.203s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_sim/src) by extensions ['cmake', 'python']
+[1.203s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_sim/src) by extension 'cmake'
+[1.203s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_sim/src) by extension 'python'
+[1.203s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_sim/src) by extensions ['python_setup_py']
+[1.203s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_sim/src) by extension 'python_setup_py'
+[1.203s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_sim/src/shell_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[1.204s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_sim/src/shell_interfaces) by extension 'ignore'
+[1.204s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_sim/src/shell_interfaces) by extension 'ignore_ament_install'
+[1.204s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_sim/src/shell_interfaces) by extensions ['colcon_pkg']
+[1.204s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_sim/src/shell_interfaces) by extension 'colcon_pkg'
+[1.204s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_sim/src/shell_interfaces) by extensions ['colcon_meta']
+[1.204s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_sim/src/shell_interfaces) by extension 'colcon_meta'
+[1.204s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_sim/src/shell_interfaces) by extensions ['ros']
+[1.204s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_sim/src/shell_interfaces) by extension 'ros'
+[1.210s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_sim/src/shell_interfaces' with type 'ros.ament_cmake' and name 'shell_interfaces'
+[1.210s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_sim/src/shell_planning) by extensions ['ignore', 'ignore_ament_install']
+[1.210s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_sim/src/shell_planning) by extension 'ignore'
+[1.211s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_sim/src/shell_planning) by extension 'ignore_ament_install'
+[1.211s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_sim/src/shell_planning) by extensions ['colcon_pkg']
+[1.211s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_sim/src/shell_planning) by extension 'colcon_pkg'
+[1.211s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_sim/src/shell_planning) by extensions ['colcon_meta']
+[1.211s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_sim/src/shell_planning) by extension 'colcon_meta'
+[1.211s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_sim/src/shell_planning) by extensions ['ros']
+[1.211s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_sim/src/shell_planning) by extension 'ros'
+[1.212s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_sim/src/shell_planning' with type 'ros.ament_python' and name 'shell_planning'
+[1.212s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_sim/src/shell_test_nodes) by extensions ['ignore', 'ignore_ament_install']
+[1.212s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_sim/src/shell_test_nodes) by extension 'ignore'
+[1.212s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_sim/src/shell_test_nodes) by extension 'ignore_ament_install'
+[1.212s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_sim/src/shell_test_nodes) by extensions ['colcon_pkg']
+[1.212s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_sim/src/shell_test_nodes) by extension 'colcon_pkg'
+[1.212s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_sim/src/shell_test_nodes) by extensions ['colcon_meta']
+[1.212s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_sim/src/shell_test_nodes) by extension 'colcon_meta'
+[1.212s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_sim/src/shell_test_nodes) by extensions ['ros']
+[1.212s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_sim/src/shell_test_nodes) by extension 'ros'
+[1.213s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_sim/src/shell_test_nodes' with type 'ros.ament_python' and name 'shell_test_nodes'
+[1.213s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_sim/src/shell_visualization) by extensions ['ignore', 'ignore_ament_install']
+[1.213s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_sim/src/shell_visualization) by extension 'ignore'
+[1.213s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_sim/src/shell_visualization) by extension 'ignore_ament_install'
+[1.213s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_sim/src/shell_visualization) by extensions ['colcon_pkg']
+[1.213s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_sim/src/shell_visualization) by extension 'colcon_pkg'
+[1.213s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_sim/src/shell_visualization) by extensions ['colcon_meta']
+[1.213s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_sim/src/shell_visualization) by extension 'colcon_meta'
+[1.213s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_sim/src/shell_visualization) by extensions ['ros']
+[1.214s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_sim/src/shell_visualization) by extension 'ros'
+[1.216s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_sim/src/shell_visualization' with type 'ros.ament_python' and name 'shell_visualization'
+[1.216s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.216s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.216s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.216s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.216s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.269s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.269s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.275s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 271 installed packages in /opt/ros/humble
+[1.276s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.383s] Level 5:colcon.colcon_core.verb:set package 'shell_interfaces' build argument 'cmake_args' from command line to 'None'
+[1.384s] Level 5:colcon.colcon_core.verb:set package 'shell_interfaces' build argument 'cmake_target' from command line to 'None'
+[1.384s] Level 5:colcon.colcon_core.verb:set package 'shell_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.384s] Level 5:colcon.colcon_core.verb:set package 'shell_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[1.384s] Level 5:colcon.colcon_core.verb:set package 'shell_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[1.384s] Level 5:colcon.colcon_core.verb:set package 'shell_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[1.384s] Level 5:colcon.colcon_core.verb:set package 'shell_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[1.384s] Level 5:colcon.colcon_core.verb:set package 'shell_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[1.384s] Level 5:colcon.colcon_core.verb:set package 'shell_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.384s] DEBUG:colcon.colcon_core.verb:Building package 'shell_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/build/shell_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces', 'merge_install': False, 'path': '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/src/shell_interfaces', 'symlink_install': True, 'test_result_base': None}
+[1.384s] Level 5:colcon.colcon_core.verb:set package 'shell_planning' build argument 'cmake_args' from command line to 'None'
+[1.384s] Level 5:colcon.colcon_core.verb:set package 'shell_planning' build argument 'cmake_target' from command line to 'None'
+[1.384s] Level 5:colcon.colcon_core.verb:set package 'shell_planning' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.384s] Level 5:colcon.colcon_core.verb:set package 'shell_planning' build argument 'cmake_clean_cache' from command line to 'False'
+[1.384s] Level 5:colcon.colcon_core.verb:set package 'shell_planning' build argument 'cmake_clean_first' from command line to 'False'
+[1.384s] Level 5:colcon.colcon_core.verb:set package 'shell_planning' build argument 'cmake_force_configure' from command line to 'False'
+[1.384s] Level 5:colcon.colcon_core.verb:set package 'shell_planning' build argument 'ament_cmake_args' from command line to 'None'
+[1.384s] Level 5:colcon.colcon_core.verb:set package 'shell_planning' build argument 'catkin_cmake_args' from command line to 'None'
+[1.384s] Level 5:colcon.colcon_core.verb:set package 'shell_planning' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.384s] DEBUG:colcon.colcon_core.verb:Building package 'shell_planning' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/build/shell_planning', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_planning', 'merge_install': False, 'path': '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/src/shell_planning', 'symlink_install': True, 'test_result_base': None}
+[1.385s] Level 5:colcon.colcon_core.verb:set package 'shell_test_nodes' build argument 'cmake_args' from command line to 'None'
+[1.385s] Level 5:colcon.colcon_core.verb:set package 'shell_test_nodes' build argument 'cmake_target' from command line to 'None'
+[1.385s] Level 5:colcon.colcon_core.verb:set package 'shell_test_nodes' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.385s] Level 5:colcon.colcon_core.verb:set package 'shell_test_nodes' build argument 'cmake_clean_cache' from command line to 'False'
+[1.385s] Level 5:colcon.colcon_core.verb:set package 'shell_test_nodes' build argument 'cmake_clean_first' from command line to 'False'
+[1.385s] Level 5:colcon.colcon_core.verb:set package 'shell_test_nodes' build argument 'cmake_force_configure' from command line to 'False'
+[1.385s] Level 5:colcon.colcon_core.verb:set package 'shell_test_nodes' build argument 'ament_cmake_args' from command line to 'None'
+[1.385s] Level 5:colcon.colcon_core.verb:set package 'shell_test_nodes' build argument 'catkin_cmake_args' from command line to 'None'
+[1.385s] Level 5:colcon.colcon_core.verb:set package 'shell_test_nodes' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.385s] DEBUG:colcon.colcon_core.verb:Building package 'shell_test_nodes' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/build/shell_test_nodes', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_test_nodes', 'merge_install': False, 'path': '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/src/shell_test_nodes', 'symlink_install': True, 'test_result_base': None}
+[1.385s] Level 5:colcon.colcon_core.verb:set package 'shell_visualization' build argument 'cmake_args' from command line to 'None'
+[1.385s] Level 5:colcon.colcon_core.verb:set package 'shell_visualization' build argument 'cmake_target' from command line to 'None'
+[1.385s] Level 5:colcon.colcon_core.verb:set package 'shell_visualization' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.385s] Level 5:colcon.colcon_core.verb:set package 'shell_visualization' build argument 'cmake_clean_cache' from command line to 'False'
+[1.385s] Level 5:colcon.colcon_core.verb:set package 'shell_visualization' build argument 'cmake_clean_first' from command line to 'False'
+[1.385s] Level 5:colcon.colcon_core.verb:set package 'shell_visualization' build argument 'cmake_force_configure' from command line to 'False'
+[1.385s] Level 5:colcon.colcon_core.verb:set package 'shell_visualization' build argument 'ament_cmake_args' from command line to 'None'
+[1.385s] Level 5:colcon.colcon_core.verb:set package 'shell_visualization' build argument 'catkin_cmake_args' from command line to 'None'
+[1.385s] Level 5:colcon.colcon_core.verb:set package 'shell_visualization' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.385s] DEBUG:colcon.colcon_core.verb:Building package 'shell_visualization' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/build/shell_visualization', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_visualization', 'merge_install': False, 'path': '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/src/shell_visualization', 'symlink_install': True, 'test_result_base': None}
+[1.385s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.386s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.386s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/src/shell_interfaces' with build type 'ament_cmake'
+[1.387s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/src/shell_interfaces'
+[1.393s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.393s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.393s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.399s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/src/shell_planning' with build type 'ament_python'
+[1.399s] Level 1:colcon.colcon_core.shell:create_environment_hook('shell_planning', 'ament_prefix_path')
+[1.399s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_planning/share/shell_planning/hook/ament_prefix_path.ps1'
+[1.403s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_planning/share/shell_planning/hook/ament_prefix_path.dsv'
+[1.405s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_planning/share/shell_planning/hook/ament_prefix_path.sh'
+[1.406s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.406s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.433s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/build/shell_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/src/shell_interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces
+[1.717s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/src/shell_planning'
+[1.718s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.718s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.173s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/build/shell_planning': PYTHONPATH=/home/esraamustafa/path_planning/Path_Planning_Shell_AI/build/shell_planning/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_planning/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/esraamustafa/path_planning/Path_Planning_Shell_AI/build/shell_planning/build --no-deps symlink_data
+[2.517s] Level 1:colcon.colcon_core.shell:create_environment_hook('shell_planning', 'pythonpath_develop')
+[2.517s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/build/shell_planning/share/shell_planning/hook/pythonpath_develop.ps1'
+[2.518s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/build/shell_planning' returned '0': PYTHONPATH=/home/esraamustafa/path_planning/Path_Planning_Shell_AI/build/shell_planning/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_planning/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/esraamustafa/path_planning/Path_Planning_Shell_AI/build/shell_planning/build --no-deps symlink_data
+[2.519s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/build/shell_planning/share/shell_planning/hook/pythonpath_develop.dsv'
+[2.519s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/build/shell_planning/share/shell_planning/hook/pythonpath_develop.sh'
+[2.527s] Level 1:colcon.colcon_core.environment:checking '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_planning' for CMake module files
+[2.527s] Level 1:colcon.colcon_core.environment:checking '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_planning' for CMake config files
+[2.528s] Level 1:colcon.colcon_core.environment:checking '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_planning/lib'
+[2.528s] Level 1:colcon.colcon_core.environment:checking '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_planning/bin'
+[2.528s] Level 1:colcon.colcon_core.environment:checking '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_planning/lib/pkgconfig/shell_planning.pc'
+[2.528s] Level 1:colcon.colcon_core.environment:checking '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_planning/lib/python3.10/site-packages'
+[2.528s] Level 1:colcon.colcon_core.shell:create_environment_hook('shell_planning', 'pythonpath')
+[2.528s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_planning/share/shell_planning/hook/pythonpath.ps1'
+[2.529s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_planning/share/shell_planning/hook/pythonpath.dsv'
+[2.529s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_planning/share/shell_planning/hook/pythonpath.sh'
+[2.529s] Level 1:colcon.colcon_core.environment:checking '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_planning/bin'
+[2.529s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(shell_planning)
+[2.530s] INFO:colcon.colcon_core.shell:Creating package script '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_planning/share/shell_planning/package.ps1'
+[2.531s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_planning/share/shell_planning/package.dsv'
+[2.532s] INFO:colcon.colcon_core.shell:Creating package script '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_planning/share/shell_planning/package.sh'
+[2.533s] INFO:colcon.colcon_core.shell:Creating package script '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_planning/share/shell_planning/package.bash'
+[2.535s] INFO:colcon.colcon_core.shell:Creating package script '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_planning/share/shell_planning/package.zsh'
+[2.536s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_planning/share/colcon-core/packages/shell_planning)
+[10.593s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/build/shell_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/src/shell_interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces
+[10.593s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/build/shell_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/esraamustafa/path_planning/Path_Planning_Shell_AI/build/shell_interfaces -- -j12 -l12
+[20.987s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/build/shell_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/esraamustafa/path_planning/Path_Planning_Shell_AI/build/shell_interfaces -- -j12 -l12
+[21.005s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/build/shell_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/esraamustafa/path_planning/Path_Planning_Shell_AI/build/shell_interfaces
+[22.941s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(shell_interfaces)
+[22.942s] Level 1:colcon.colcon_core.environment:checking '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces' for CMake module files
+[22.942s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/build/shell_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/esraamustafa/path_planning/Path_Planning_Shell_AI/build/shell_interfaces
+[22.944s] Level 1:colcon.colcon_core.environment:checking '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces' for CMake config files
+[22.945s] Level 1:colcon.colcon_core.shell:create_environment_hook('shell_interfaces', 'cmake_prefix_path')
+[22.945s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/share/shell_interfaces/hook/cmake_prefix_path.ps1'
+[22.946s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/share/shell_interfaces/hook/cmake_prefix_path.dsv'
+[22.947s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/share/shell_interfaces/hook/cmake_prefix_path.sh'
+[22.947s] Level 1:colcon.colcon_core.environment:checking '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/lib'
+[22.948s] Level 1:colcon.colcon_core.shell:create_environment_hook('shell_interfaces', 'ld_library_path_lib')
+[22.948s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/share/shell_interfaces/hook/ld_library_path_lib.ps1'
+[22.949s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/share/shell_interfaces/hook/ld_library_path_lib.dsv'
+[22.949s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/share/shell_interfaces/hook/ld_library_path_lib.sh'
+[22.949s] Level 1:colcon.colcon_core.environment:checking '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/bin'
+[22.949s] Level 1:colcon.colcon_core.environment:checking '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/lib/pkgconfig/shell_interfaces.pc'
+[22.950s] Level 1:colcon.colcon_core.environment:checking '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/lib/python3.10/site-packages'
+[22.951s] Level 1:colcon.colcon_core.environment:checking '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/bin'
+[22.951s] INFO:colcon.colcon_core.shell:Creating package script '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/share/shell_interfaces/package.ps1'
+[22.952s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/share/shell_interfaces/package.dsv'
+[22.952s] INFO:colcon.colcon_core.shell:Creating package script '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/share/shell_interfaces/package.sh'
+[22.953s] INFO:colcon.colcon_core.shell:Creating package script '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/share/shell_interfaces/package.bash'
+[22.953s] INFO:colcon.colcon_core.shell:Creating package script '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/share/shell_interfaces/package.zsh'
+[22.953s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/share/colcon-core/packages/shell_interfaces)
+[22.956s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(shell_interfaces)
+[22.956s] Level 1:colcon.colcon_core.environment:checking '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces' for CMake module files
+[22.957s] Level 1:colcon.colcon_core.environment:checking '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces' for CMake config files
+[22.958s] Level 1:colcon.colcon_core.shell:create_environment_hook('shell_interfaces', 'cmake_prefix_path')
+[22.958s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/share/shell_interfaces/hook/cmake_prefix_path.ps1'
+[22.959s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/share/shell_interfaces/hook/cmake_prefix_path.dsv'
+[22.959s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/share/shell_interfaces/hook/cmake_prefix_path.sh'
+[22.960s] Level 1:colcon.colcon_core.environment:checking '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/lib'
+[22.960s] Level 1:colcon.colcon_core.shell:create_environment_hook('shell_interfaces', 'ld_library_path_lib')
+[22.961s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/share/shell_interfaces/hook/ld_library_path_lib.ps1'
+[22.962s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/share/shell_interfaces/hook/ld_library_path_lib.dsv'
+[22.962s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/share/shell_interfaces/hook/ld_library_path_lib.sh'
+[22.963s] Level 1:colcon.colcon_core.environment:checking '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/bin'
+[22.963s] Level 1:colcon.colcon_core.environment:checking '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/lib/pkgconfig/shell_interfaces.pc'
+[22.963s] Level 1:colcon.colcon_core.environment:checking '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/lib/python3.10/site-packages'
+[22.964s] Level 1:colcon.colcon_core.environment:checking '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/bin'
+[22.964s] INFO:colcon.colcon_core.shell:Creating package script '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/share/shell_interfaces/package.ps1'
+[22.965s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/share/shell_interfaces/package.dsv'
+[22.965s] INFO:colcon.colcon_core.shell:Creating package script '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/share/shell_interfaces/package.sh'
+[22.966s] INFO:colcon.colcon_core.shell:Creating package script '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/share/shell_interfaces/package.bash'
+[22.966s] INFO:colcon.colcon_core.shell:Creating package script '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/share/shell_interfaces/package.zsh'
+[22.967s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/share/colcon-core/packages/shell_interfaces)
+[22.968s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/src/shell_test_nodes' with build type 'ament_python'
+[22.969s] Level 1:colcon.colcon_core.shell:create_environment_hook('shell_test_nodes', 'ament_prefix_path')
+[22.970s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_test_nodes/share/shell_test_nodes/hook/ament_prefix_path.ps1'
+[22.974s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_test_nodes/share/shell_test_nodes/hook/ament_prefix_path.dsv'
+[22.977s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_test_nodes/share/shell_test_nodes/hook/ament_prefix_path.sh'
+[22.978s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[22.978s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[22.982s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/src/shell_visualization' with build type 'ament_python'
+[22.984s] Level 1:colcon.colcon_core.shell:create_environment_hook('shell_visualization', 'ament_prefix_path')
+[22.984s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_visualization/share/shell_visualization/hook/ament_prefix_path.ps1'
+[22.986s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_visualization/share/shell_visualization/hook/ament_prefix_path.dsv'
+[22.987s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_visualization/share/shell_visualization/hook/ament_prefix_path.sh'
+[22.987s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[22.987s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[23.648s] WARNING:colcon.colcon_ros.task.ament_python.build:Package 'shell_test_nodes' doesn't explicitly install a marker in the package index (colcon-ros currently does it implicitly but that fallback will be removed in the future)
+[23.649s] WARNING:colcon.colcon_ros.task.ament_python.build:Package 'shell_test_nodes' doesn't explicitly install the 'package.xml' file (colcon-ros currently does it implicitly but that fallback will be removed in the future)
+[23.650s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/src/shell_test_nodes'
+[23.650s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[23.650s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[24.061s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/src/shell_visualization'
+[24.062s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[24.062s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[24.858s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/build/shell_test_nodes': AMENT_PREFIX_PATH=/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces LD_LIBRARY_PATH=/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/esraamustafa/path_planning/Path_Planning_Shell_AI/build/shell_test_nodes/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_test_nodes/lib/python3.10/site-packages:/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/esraamustafa/path_planning/Path_Planning_Shell_AI/build/shell_test_nodes/build --no-deps
+[25.419s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/build/shell_visualization': AMENT_PREFIX_PATH=/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces LD_LIBRARY_PATH=/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/esraamustafa/path_planning/Path_Planning_Shell_AI/build/shell_visualization/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_visualization/lib/python3.10/site-packages:/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/esraamustafa/path_planning/Path_Planning_Shell_AI/build/shell_visualization/build --no-deps symlink_data
+[25.779s] Level 1:colcon.colcon_core.shell:create_environment_hook('shell_test_nodes', 'pythonpath_develop')
+[25.780s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/build/shell_test_nodes/share/shell_test_nodes/hook/pythonpath_develop.ps1'
+[25.782s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/build/shell_test_nodes' returned '0': AMENT_PREFIX_PATH=/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces LD_LIBRARY_PATH=/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/esraamustafa/path_planning/Path_Planning_Shell_AI/build/shell_test_nodes/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_test_nodes/lib/python3.10/site-packages:/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/esraamustafa/path_planning/Path_Planning_Shell_AI/build/shell_test_nodes/build --no-deps
+[25.785s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/build/shell_test_nodes/share/shell_test_nodes/hook/pythonpath_develop.dsv'
+[25.787s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/build/shell_test_nodes/share/shell_test_nodes/hook/pythonpath_develop.sh'
+[25.788s] Level 1:colcon.colcon_core.environment:checking '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_test_nodes' for CMake module files
+[25.789s] Level 1:colcon.colcon_core.environment:checking '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_test_nodes' for CMake config files
+[25.790s] Level 1:colcon.colcon_core.environment:checking '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_test_nodes/lib'
+[25.790s] Level 1:colcon.colcon_core.environment:checking '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_test_nodes/bin'
+[25.790s] Level 1:colcon.colcon_core.environment:checking '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_test_nodes/lib/pkgconfig/shell_test_nodes.pc'
+[25.790s] Level 1:colcon.colcon_core.environment:checking '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_test_nodes/lib/python3.10/site-packages'
+[25.790s] Level 1:colcon.colcon_core.shell:create_environment_hook('shell_test_nodes', 'pythonpath')
+[25.790s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_test_nodes/share/shell_test_nodes/hook/pythonpath.ps1'
+[25.791s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_test_nodes/share/shell_test_nodes/hook/pythonpath.dsv'
+[25.791s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_test_nodes/share/shell_test_nodes/hook/pythonpath.sh'
+[25.792s] Level 1:colcon.colcon_core.environment:checking '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_test_nodes/bin'
+[25.792s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(shell_test_nodes)
+[25.793s] INFO:colcon.colcon_core.shell:Creating package script '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_test_nodes/share/shell_test_nodes/package.ps1'
+[25.793s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_test_nodes/share/shell_test_nodes/package.dsv'
+[25.797s] INFO:colcon.colcon_core.shell:Creating package script '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_test_nodes/share/shell_test_nodes/package.sh'
+[25.799s] INFO:colcon.colcon_core.shell:Creating package script '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_test_nodes/share/shell_test_nodes/package.bash'
+[25.800s] INFO:colcon.colcon_core.shell:Creating package script '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_test_nodes/share/shell_test_nodes/package.zsh'
+[25.802s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_test_nodes/share/colcon-core/packages/shell_test_nodes)
+[26.541s] Level 1:colcon.colcon_core.shell:create_environment_hook('shell_visualization', 'pythonpath_develop')
+[26.542s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/build/shell_visualization/share/shell_visualization/hook/pythonpath_develop.ps1'
+[26.543s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/build/shell_visualization' returned '0': AMENT_PREFIX_PATH=/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces LD_LIBRARY_PATH=/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/esraamustafa/path_planning/Path_Planning_Shell_AI/build/shell_visualization/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_visualization/lib/python3.10/site-packages:/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/esraamustafa/path_planning/Path_Planning_Shell_AI/build/shell_visualization/build --no-deps symlink_data
+[26.547s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/build/shell_visualization/share/shell_visualization/hook/pythonpath_develop.dsv'
+[26.548s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/build/shell_visualization/share/shell_visualization/hook/pythonpath_develop.sh'
+[26.550s] Level 1:colcon.colcon_core.environment:checking '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_visualization' for CMake module files
+[26.551s] Level 1:colcon.colcon_core.environment:checking '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_visualization' for CMake config files
+[26.562s] Level 1:colcon.colcon_core.environment:checking '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_visualization/lib'
+[26.562s] Level 1:colcon.colcon_core.environment:checking '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_visualization/bin'
+[26.562s] Level 1:colcon.colcon_core.environment:checking '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_visualization/lib/pkgconfig/shell_visualization.pc'
+[26.563s] Level 1:colcon.colcon_core.environment:checking '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_visualization/lib/python3.10/site-packages'
+[26.563s] Level 1:colcon.colcon_core.shell:create_environment_hook('shell_visualization', 'pythonpath')
+[26.564s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_visualization/share/shell_visualization/hook/pythonpath.ps1'
+[26.566s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_visualization/share/shell_visualization/hook/pythonpath.dsv'
+[26.567s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_visualization/share/shell_visualization/hook/pythonpath.sh'
+[26.573s] Level 1:colcon.colcon_core.environment:checking '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_visualization/bin'
+[26.573s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(shell_visualization)
+[26.574s] INFO:colcon.colcon_core.shell:Creating package script '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_visualization/share/shell_visualization/package.ps1'
+[26.575s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_visualization/share/shell_visualization/package.dsv'
+[26.575s] INFO:colcon.colcon_core.shell:Creating package script '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_visualization/share/shell_visualization/package.sh'
+[26.576s] INFO:colcon.colcon_core.shell:Creating package script '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_visualization/share/shell_visualization/package.bash'
+[26.577s] INFO:colcon.colcon_core.shell:Creating package script '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_visualization/share/shell_visualization/package.zsh'
+[26.578s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/shell_visualization/share/colcon-core/packages/shell_visualization)
+[26.579s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[26.582s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[26.582s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[26.583s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[26.694s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[26.694s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[26.694s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[26.694s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[26.695s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.FileNotFound: Failed to connect to socket /run/user/1000/bus: No such file or directory
+[26.695s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[26.696s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/local_setup.ps1'
+[26.698s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/_local_setup_util_ps1.py'
+[26.701s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/setup.ps1'
+[26.703s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/local_setup.sh'
+[26.705s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/_local_setup_util_sh.py'
+[26.705s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/setup.sh'
+[26.707s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/local_setup.bash'
+[26.708s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/setup.bash'
+[26.710s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/local_setup.zsh'
+[26.713s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/install/setup.zsh'

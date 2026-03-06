@@ -1,4 +1,10 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/shell_interfaces__rosidl_generator_py.dir/rosidl_generator_py/shell_interfaces/msg/_boundary_s.c.o"
+  "CMakeFiles/shell_interfaces__rosidl_generator_py.dir/rosidl_generator_py/shell_interfaces/msg/_boundary_s.c.o.d"
+  "CMakeFiles/shell_interfaces__rosidl_generator_py.dir/rosidl_generator_py/shell_interfaces/msg/_obstacle_array_s.c.o"
+  "CMakeFiles/shell_interfaces__rosidl_generator_py.dir/rosidl_generator_py/shell_interfaces/msg/_obstacle_array_s.c.o.d"
+  "CMakeFiles/shell_interfaces__rosidl_generator_py.dir/rosidl_generator_py/shell_interfaces/msg/_obstacle_s.c.o"
+  "CMakeFiles/shell_interfaces__rosidl_generator_py.dir/rosidl_generator_py/shell_interfaces/msg/_obstacle_s.c.o.d"
   "CMakeFiles/shell_interfaces__rosidl_generator_py.dir/rosidl_generator_py/shell_interfaces/msg/_trajectory_point_s.c.o"
   "CMakeFiles/shell_interfaces__rosidl_generator_py.dir/rosidl_generator_py/shell_interfaces/msg/_trajectory_point_s.c.o.d"
   "CMakeFiles/shell_interfaces__rosidl_generator_py.dir/rosidl_generator_py/shell_interfaces/msg/_trajectory_s.c.o"

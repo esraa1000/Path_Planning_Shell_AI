@@ -1,0 +1,27 @@
+[4.096s] Invoking command in '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/build/shell_planning': PYTHONPATH=/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/build/shell_planning/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/install/shell_planning/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/build/shell_planning/build --no-deps symlink_data
+[5.515s] running develop
+[6.228s] running egg_info
+[6.228s] creating shell_planning.egg-info
+[6.230s] writing shell_planning.egg-info/PKG-INFO
+[6.231s] writing dependency_links to shell_planning.egg-info/dependency_links.txt
+[6.232s] writing entry points to shell_planning.egg-info/entry_points.txt
+[6.233s] writing requirements to shell_planning.egg-info/requires.txt
+[6.233s] writing top-level names to shell_planning.egg-info/top_level.txt
+[6.234s] writing manifest file 'shell_planning.egg-info/SOURCES.txt'
+[6.260s] reading manifest file 'shell_planning.egg-info/SOURCES.txt'
+[6.265s] writing manifest file 'shell_planning.egg-info/SOURCES.txt'
+[6.290s] running build_ext
+[6.303s] Creating /home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/install/shell_planning/lib/python3.10/site-packages/shell-planning.egg-link (link to .)
+[6.304s] Installing global_planner script to /home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/install/shell_planning/lib/shell_planning
+[6.309s] Installing local_planner script to /home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/install/shell_planning/lib/shell_planning
+[6.310s] 
+[6.310s] Installed /home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/build/shell_planning
+[6.310s] running symlink_data
+[6.311s] creating /home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/install/shell_planning/share/ament_index
+[6.311s] creating /home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/install/shell_planning/share/ament_index/resource_index
+[6.312s] creating /home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/install/shell_planning/share/ament_index/resource_index/packages
+[6.319s] symbolically linking /home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/build/shell_planning/resource/shell_planning -> /home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/install/shell_planning/share/ament_index/resource_index/packages
+[6.320s] symbolically linking /home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/build/shell_planning/package.xml -> /home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/install/shell_planning/share/shell_planning
+[6.323s] creating /home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/install/shell_planning/share/shell_planning/launch
+[6.323s] symbolically linking /home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/build/shell_planning/launch/simulation.launch.py -> /home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/install/shell_planning/share/shell_planning/launch
+[6.412s] Invoked command in '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/build/shell_planning' returned '0': PYTHONPATH=/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/build/shell_planning/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/install/shell_planning/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/build/shell_planning/build --no-deps symlink_data

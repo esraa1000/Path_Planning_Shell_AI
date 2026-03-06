@@ -1,0 +1,24 @@
+[3.928s] Invoking command in '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/build/shell_visualization': PYTHONPATH=/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/build/shell_visualization/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/install/shell_visualization/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/build/shell_visualization/build --no-deps symlink_data
+[4.723s] running develop
+[5.348s] running egg_info
+[5.348s] creating shell_visualization.egg-info
+[5.349s] writing shell_visualization.egg-info/PKG-INFO
+[5.350s] writing dependency_links to shell_visualization.egg-info/dependency_links.txt
+[5.351s] writing entry points to shell_visualization.egg-info/entry_points.txt
+[5.352s] writing requirements to shell_visualization.egg-info/requires.txt
+[5.353s] writing top-level names to shell_visualization.egg-info/top_level.txt
+[5.353s] writing manifest file 'shell_visualization.egg-info/SOURCES.txt'
+[5.358s] reading manifest file 'shell_visualization.egg-info/SOURCES.txt'
+[5.359s] writing manifest file 'shell_visualization.egg-info/SOURCES.txt'
+[5.363s] running build_ext
+[5.363s] Creating /home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/install/shell_visualization/lib/python3.10/site-packages/shell-visualization.egg-link (link to .)
+[5.366s] Installing planner_visualizer script to /home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/install/shell_visualization/lib/shell_visualization
+[5.368s] 
+[5.368s] Installed /home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/build/shell_visualization
+[5.368s] running symlink_data
+[5.369s] creating /home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/install/shell_visualization/share/ament_index
+[5.369s] creating /home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/install/shell_visualization/share/ament_index/resource_index
+[5.369s] creating /home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/install/shell_visualization/share/ament_index/resource_index/packages
+[5.374s] symbolically linking /home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/build/shell_visualization/resource/shell_visualization -> /home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/install/shell_visualization/share/ament_index/resource_index/packages
+[5.375s] symbolically linking /home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/build/shell_visualization/package.xml -> /home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/install/shell_visualization/share/shell_visualization
+[5.531s] Invoked command in '/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/build/shell_visualization' returned '0': PYTHONPATH=/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/build/shell_visualization/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/install/shell_visualization/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/esraamustafa/path_planning/Path_Planning_Shell_AI/ros2_sim/build/shell_visualization/build --no-deps symlink_data

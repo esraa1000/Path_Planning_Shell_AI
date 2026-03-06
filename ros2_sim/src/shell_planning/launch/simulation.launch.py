@@ -27,13 +27,13 @@ def generate_launch_description():
             name='fake_control'
         ),
 
-        # 4. local Planner (The Brain) - output='screen' shows logs
-        Node(
-            package='shell_planning',
-            executable='local_planner',
-            name='local_planner',
-            output='screen' 
-        ),
+    # 4. Global Planner (The Brain) - output='screen' shows logs
+            Node(
+                package='shell_planning',
+                executable='global_planner', # <--- CHANGED from local_planner
+                name='global_planner',       # <--- CHANGED from local_planner
+                output='screen' 
+            ),
 
         # 5. Planner Visualizer (Markers for RViz)
         Node(
